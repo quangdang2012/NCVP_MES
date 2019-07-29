@@ -1,0 +1,1449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="model_cmb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="model_cmb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 121</value>
+  </data>
+  <data name="model_cmb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 23</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="model_cmb.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;model_cmb.Name" xml:space="preserve">
+    <value>model_cmb</value>
+  </data>
+  <data name="&gt;&gt;model_cmb.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ComboBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;model_cmb.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;model_cmb.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="model_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="model_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="model_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 124</value>
+  </data>
+  <data name="model_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 15</value>
+  </data>
+  <data name="model_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="model_lbl.Text" xml:space="preserve">
+    <value>Model:</value>
+  </data>
+  <data name="&gt;&gt;model_lbl.Name" xml:space="preserve">
+    <value>model_lbl</value>
+  </data>
+  <data name="&gt;&gt;model_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;model_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;model_lbl.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="process_cmb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="process_cmb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>640, 121</value>
+  </data>
+  <data name="process_cmb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 23</value>
+  </data>
+  <data name="process_cmb.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;process_cmb.Name" xml:space="preserve">
+    <value>process_cmb</value>
+  </data>
+  <data name="&gt;&gt;process_cmb.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ComboBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;process_cmb.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;process_cmb.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="process_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="process_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="process_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>537, 124</value>
+  </data>
+  <data name="process_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 15</value>
+  </data>
+  <data name="process_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="process_lbl.Text" xml:space="preserve">
+    <value>Process:</value>
+  </data>
+  <data name="&gt;&gt;process_lbl.Name" xml:space="preserve">
+    <value>process_lbl</value>
+  </data>
+  <data name="&gt;&gt;process_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;process_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;process_lbl.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="jigresponse_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="jigresponse_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="jigresponse_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>830, 170</value>
+  </data>
+  <data name="jigresponse_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 15</value>
+  </data>
+  <data name="jigresponse_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="jigresponse_lbl.Text" xml:space="preserve">
+    <value>Jig Response:</value>
+  </data>
+  <data name="&gt;&gt;jigresponse_lbl.Name" xml:space="preserve">
+    <value>jigresponse_lbl</value>
+  </data>
+  <data name="&gt;&gt;jigresponse_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;jigresponse_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;jigresponse_lbl.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="jigause_cmb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="jigause_cmb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>640, 167</value>
+  </data>
+  <data name="jigause_cmb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 23</value>
+  </data>
+  <data name="jigause_cmb.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;jigause_cmb.Name" xml:space="preserve">
+    <value>jigause_cmb</value>
+  </data>
+  <data name="&gt;&gt;jigause_cmb.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ComboBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;jigause_cmb.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;jigause_cmb.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="jigresponse_cmb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="jigresponse_cmb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>923, 167</value>
+  </data>
+  <data name="jigresponse_cmb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 23</value>
+  </data>
+  <data name="jigresponse_cmb.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;jigresponse_cmb.Name" xml:space="preserve">
+    <value>jigresponse_cmb</value>
+  </data>
+  <data name="&gt;&gt;jigresponse_cmb.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ComboBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;jigresponse_cmb.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;jigresponse_cmb.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="jigause_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="jigause_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="jigause_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>537, 170</value>
+  </data>
+  <data name="jigause_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 15</value>
+  </data>
+  <data name="jigause_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="jigause_lbl.Text" xml:space="preserve">
+    <value>Jig Cause:</value>
+  </data>
+  <data name="&gt;&gt;jigause_lbl.Name" xml:space="preserve">
+    <value>jigause_lbl</value>
+  </data>
+  <data name="&gt;&gt;jigause_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;jigause_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;jigause_lbl.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="line_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="line_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="line_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 124</value>
+  </data>
+  <data name="line_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 15</value>
+  </data>
+  <data name="line_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="line_lbl.Text" xml:space="preserve">
+    <value>Line:</value>
+  </data>
+  <data name="&gt;&gt;line_lbl.Name" xml:space="preserve">
+    <value>line_lbl</value>
+  </data>
+  <data name="&gt;&gt;line_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;line_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;line_lbl.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="line_cmb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="line_cmb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 121</value>
+  </data>
+  <data name="line_cmb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 23</value>
+  </data>
+  <data name="line_cmb.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;line_cmb.Name" xml:space="preserve">
+    <value>line_cmb</value>
+  </data>
+  <data name="&gt;&gt;line_cmb.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ComboBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;line_cmb.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;line_cmb.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="timefrom_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="timefrom_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="timefrom_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 170</value>
+  </data>
+  <data name="timefrom_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 15</value>
+  </data>
+  <data name="timefrom_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="timefrom_lbl.Text" xml:space="preserve">
+    <value>TimeFrom:</value>
+  </data>
+  <data name="&gt;&gt;timefrom_lbl.Name" xml:space="preserve">
+    <value>timefrom_lbl</value>
+  </data>
+  <data name="&gt;&gt;timefrom_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;timefrom_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;timefrom_lbl.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="timefrom_dtp.CustomFormat" xml:space="preserve">
+    <value>yyyy/MM/dd</value>
+  </data>
+  <data name="timefrom_dtp.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="timefrom_dtp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 167</value>
+  </data>
+  <data name="timefrom_dtp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 21</value>
+  </data>
+  <data name="timefrom_dtp.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;timefrom_dtp.Name" xml:space="preserve">
+    <value>timefrom_dtp</value>
+  </data>
+  <data name="&gt;&gt;timefrom_dtp.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.DateTimePickerCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;timefrom_dtp.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;timefrom_dtp.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="timeto_dtp.CustomFormat" xml:space="preserve">
+    <value>yyyy/MM/dd</value>
+  </data>
+  <data name="timeto_dtp.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="timeto_dtp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 167</value>
+  </data>
+  <data name="timeto_dtp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 21</value>
+  </data>
+  <data name="timeto_dtp.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;timeto_dtp.Name" xml:space="preserve">
+    <value>timeto_dtp</value>
+  </data>
+  <data name="&gt;&gt;timeto_dtp.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.DateTimePickerCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;timeto_dtp.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;timeto_dtp.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="timeto_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="timeto_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="timeto_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 170</value>
+  </data>
+  <data name="timeto_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 15</value>
+  </data>
+  <data name="timeto_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="timeto_lbl.Text" xml:space="preserve">
+    <value>Time To:</value>
+  </data>
+  <data name="&gt;&gt;timeto_lbl.Name" xml:space="preserve">
+    <value>timeto_lbl</value>
+  </data>
+  <data name="&gt;&gt;timeto_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;timeto_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;timeto_lbl.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="jig_repair_information_dgv.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <metadata name="col_jig_repair_id.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="col_jig_repair_id.HeaderText" xml:space="preserve">
+    <value>Jig Id</value>
+  </data>
+  <data name="col_jig_repair_id.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="col_jig_code.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="col_jig_code.HeaderText" xml:space="preserve">
+    <value> Jig Code </value>
+  </data>
+  <metadata name="col_model_name.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="col_model_name.HeaderText" xml:space="preserve">
+    <value>Model Name</value>
+  </data>
+  <metadata name="col_line_name.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="col_line_name.HeaderText" xml:space="preserve">
+    <value>Line Name</value>
+  </data>
+  <metadata name="col_process_name.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="col_process_name.HeaderText" xml:space="preserve">
+    <value>Process</value>
+  </data>
+  <metadata name="col_jig_cause_name.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="col_jig_cause_name.HeaderText" xml:space="preserve">
+    <value>Cause Name</value>
+  </data>
+  <metadata name="col_response.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="col_response.HeaderText" xml:space="preserve">
+    <value>Response Name</value>
+  </data>
+  <metadata name="col_time_from.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="col_time_from.HeaderText" xml:space="preserve">
+    <value>Time From</value>
+  </data>
+  <data name="col_time_from.Width" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <metadata name="col_time_to.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="col_time_to.HeaderText" xml:space="preserve">
+    <value>Time To</value>
+  </data>
+  <data name="col_time_to.Width" type="System.Int32, mscorlib">
+    <value>76</value>
+  </data>
+  <metadata name="col_before_status.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="col_before_status.HeaderText" xml:space="preserve">
+    <value>Before Status</value>
+  </data>
+  <metadata name="col_after_repair.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="col_after_repair.HeaderText" xml:space="preserve">
+    <value>After Status</value>
+  </data>
+  <metadata name="col_repair_resuft.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="col_repair_resuft.HeaderText" xml:space="preserve">
+    <value>Repair Resuft</value>
+  </data>
+  <metadata name="col_place.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="col_place.HeaderText" xml:space="preserve">
+    <value>Place</value>
+  </data>
+  <data name="jig_repair_information_dgv.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 270</value>
+  </data>
+  <data name="jig_repair_information_dgv.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1268, 404</value>
+  </data>
+  <data name="jig_repair_information_dgv.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;jig_repair_information_dgv.Name" xml:space="preserve">
+    <value>jig_repair_information_dgv</value>
+  </data>
+  <data name="&gt;&gt;jig_repair_information_dgv.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.DataGridViewCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;jig_repair_information_dgv.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;jig_repair_information_dgv.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="update_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="update_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 20</value>
+  </data>
+  <data name="update_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 33</value>
+  </data>
+  <data name="update_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="update_btn.Text" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="&gt;&gt;update_btn.Name" xml:space="preserve">
+    <value>update_btn</value>
+  </data>
+  <data name="&gt;&gt;update_btn.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ButtonCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;update_btn.Parent" xml:space="preserve">
+    <value>setting_gbc</value>
+  </data>
+  <data name="&gt;&gt;update_btn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="add_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="add_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 20</value>
+  </data>
+  <data name="add_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 33</value>
+  </data>
+  <data name="add_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="add_btn.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="&gt;&gt;add_btn.Name" xml:space="preserve">
+    <value>add_btn</value>
+  </data>
+  <data name="&gt;&gt;add_btn.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ButtonCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;add_btn.Parent" xml:space="preserve">
+    <value>setting_gbc</value>
+  </data>
+  <data name="&gt;&gt;add_btn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="clear_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="clear_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>249, 20</value>
+  </data>
+  <data name="clear_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 33</value>
+  </data>
+  <data name="clear_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="clear_btn.Text" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="&gt;&gt;clear_btn.Name" xml:space="preserve">
+    <value>clear_btn</value>
+  </data>
+  <data name="&gt;&gt;clear_btn.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ButtonCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;clear_btn.Parent" xml:space="preserve">
+    <value>setting_gbc</value>
+  </data>
+  <data name="&gt;&gt;clear_btn.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="search_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="search_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 20</value>
+  </data>
+  <data name="search_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 33</value>
+  </data>
+  <data name="search_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="search_btn.Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="&gt;&gt;search_btn.Name" xml:space="preserve">
+    <value>search_btn</value>
+  </data>
+  <data name="&gt;&gt;search_btn.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ButtonCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;search_btn.Parent" xml:space="preserve">
+    <value>setting_gbc</value>
+  </data>
+  <data name="&gt;&gt;search_btn.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="setting_gbc.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="setting_gbc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 197</value>
+  </data>
+  <data name="setting_gbc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>462, 67</value>
+  </data>
+  <data name="setting_gbc.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;setting_gbc.Name" xml:space="preserve">
+    <value>setting_gbc</value>
+  </data>
+  <data name="&gt;&gt;setting_gbc.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.GroupBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;setting_gbc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;setting_gbc.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="jig_code_txt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="jig_code_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 213</value>
+  </data>
+  <data name="jig_code_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 21</value>
+  </data>
+  <data name="jig_code_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;jig_code_txt.Name" xml:space="preserve">
+    <value>jig_code_txt</value>
+  </data>
+  <data name="&gt;&gt;jig_code_txt.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.TextBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;jig_code_txt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;jig_code_txt.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="jig_code_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="jig_code_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="jig_code_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 216</value>
+  </data>
+  <data name="jig_code_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 15</value>
+  </data>
+  <data name="jig_code_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="jig_code_lbl.Text" xml:space="preserve">
+    <value>Jig Code:</value>
+  </data>
+  <data name="&gt;&gt;jig_code_lbl.Name" xml:space="preserve">
+    <value>jig_code_lbl</value>
+  </data>
+  <data name="&gt;&gt;jig_code_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;jig_code_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;jig_code_lbl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelCommon1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelCommon1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="labelCommon1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelCommon1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 124</value>
+  </data>
+  <data name="labelCommon1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 15</value>
+  </data>
+  <data name="labelCommon1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="labelCommon1.Text" xml:space="preserve">
+    <value>Model:</value>
+  </data>
+  <data name="&gt;&gt;labelCommon1.Name" xml:space="preserve">
+    <value>labelCommon1</value>
+  </data>
+  <data name="&gt;&gt;labelCommon1.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;labelCommon1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelCommon1.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="labelCommon2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelCommon2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="labelCommon2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelCommon2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 124</value>
+  </data>
+  <data name="labelCommon2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 15</value>
+  </data>
+  <data name="labelCommon2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="labelCommon2.Text" xml:space="preserve">
+    <value>Line:</value>
+  </data>
+  <data name="&gt;&gt;labelCommon2.Name" xml:space="preserve">
+    <value>labelCommon2</value>
+  </data>
+  <data name="&gt;&gt;labelCommon2.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;labelCommon2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelCommon2.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="comboBoxCommon1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="comboBoxCommon1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 121</value>
+  </data>
+  <data name="comboBoxCommon1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 23</value>
+  </data>
+  <data name="comboBoxCommon1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCommon1.Name" xml:space="preserve">
+    <value>comboBoxCommon1</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCommon1.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ComboBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCommon1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCommon1.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="comboBoxCommon2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="comboBoxCommon2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 121</value>
+  </data>
+  <data name="comboBoxCommon2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 23</value>
+  </data>
+  <data name="comboBoxCommon2.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCommon2.Name" xml:space="preserve">
+    <value>comboBoxCommon2</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCommon2.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ComboBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCommon2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCommon2.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="labelCommon3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelCommon3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="labelCommon3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelCommon3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>537, 124</value>
+  </data>
+  <data name="labelCommon3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 15</value>
+  </data>
+  <data name="labelCommon3.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="labelCommon3.Text" xml:space="preserve">
+    <value>Process:</value>
+  </data>
+  <data name="&gt;&gt;labelCommon3.Name" xml:space="preserve">
+    <value>labelCommon3</value>
+  </data>
+  <data name="&gt;&gt;labelCommon3.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;labelCommon3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelCommon3.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="comboBoxCommon3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="comboBoxCommon3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>640, 121</value>
+  </data>
+  <data name="comboBoxCommon3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 23</value>
+  </data>
+  <data name="comboBoxCommon3.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCommon3.Name" xml:space="preserve">
+    <value>comboBoxCommon3</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCommon3.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ComboBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCommon3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCommon3.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="labelCommon4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelCommon4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="labelCommon4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelCommon4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>537, 170</value>
+  </data>
+  <data name="labelCommon4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 15</value>
+  </data>
+  <data name="labelCommon4.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="labelCommon4.Text" xml:space="preserve">
+    <value>Jig Cause:</value>
+  </data>
+  <data name="&gt;&gt;labelCommon4.Name" xml:space="preserve">
+    <value>labelCommon4</value>
+  </data>
+  <data name="&gt;&gt;labelCommon4.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;labelCommon4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelCommon4.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="comboBoxCommon4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="comboBoxCommon4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>923, 167</value>
+  </data>
+  <data name="comboBoxCommon4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 23</value>
+  </data>
+  <data name="comboBoxCommon4.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCommon4.Name" xml:space="preserve">
+    <value>comboBoxCommon4</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCommon4.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ComboBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCommon4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCommon4.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="comboBoxCommon5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="comboBoxCommon5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>640, 167</value>
+  </data>
+  <data name="comboBoxCommon5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 23</value>
+  </data>
+  <data name="comboBoxCommon5.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCommon5.Name" xml:space="preserve">
+    <value>comboBoxCommon5</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCommon5.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ComboBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCommon5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCommon5.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="labelCommon5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelCommon5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="labelCommon5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelCommon5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>830, 170</value>
+  </data>
+  <data name="labelCommon5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 15</value>
+  </data>
+  <data name="labelCommon5.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="labelCommon5.Text" xml:space="preserve">
+    <value>Jig Response:</value>
+  </data>
+  <data name="&gt;&gt;labelCommon5.Name" xml:space="preserve">
+    <value>labelCommon5</value>
+  </data>
+  <data name="&gt;&gt;labelCommon5.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;labelCommon5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelCommon5.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="labelCommon6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelCommon6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="labelCommon6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelCommon6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 170</value>
+  </data>
+  <data name="labelCommon6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 15</value>
+  </data>
+  <data name="labelCommon6.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="labelCommon6.Text" xml:space="preserve">
+    <value>Time To:</value>
+  </data>
+  <data name="&gt;&gt;labelCommon6.Name" xml:space="preserve">
+    <value>labelCommon6</value>
+  </data>
+  <data name="&gt;&gt;labelCommon6.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;labelCommon6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelCommon6.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="dateTimePickerCommon1.CustomFormat" xml:space="preserve">
+    <value>yyyy/MM/dd</value>
+  </data>
+  <data name="dateTimePickerCommon1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="dateTimePickerCommon1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 167</value>
+  </data>
+  <data name="dateTimePickerCommon1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 21</value>
+  </data>
+  <data name="dateTimePickerCommon1.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerCommon1.Name" xml:space="preserve">
+    <value>dateTimePickerCommon1</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerCommon1.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.DateTimePickerCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerCommon1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerCommon1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="dateTimePickerCommon2.CustomFormat" xml:space="preserve">
+    <value>yyyy/MM/dd</value>
+  </data>
+  <data name="dateTimePickerCommon2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="dateTimePickerCommon2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 167</value>
+  </data>
+  <data name="dateTimePickerCommon2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 21</value>
+  </data>
+  <data name="dateTimePickerCommon2.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerCommon2.Name" xml:space="preserve">
+    <value>dateTimePickerCommon2</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerCommon2.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.DateTimePickerCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerCommon2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dateTimePickerCommon2.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="labelCommon7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelCommon7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="labelCommon7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelCommon7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 170</value>
+  </data>
+  <data name="labelCommon7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 15</value>
+  </data>
+  <data name="labelCommon7.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="labelCommon7.Text" xml:space="preserve">
+    <value>TimeFrom:</value>
+  </data>
+  <data name="&gt;&gt;labelCommon7.Name" xml:space="preserve">
+    <value>labelCommon7</value>
+  </data>
+  <data name="&gt;&gt;labelCommon7.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;labelCommon7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelCommon7.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="buttonCommon1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="buttonCommon1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonCommon1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 20</value>
+  </data>
+  <data name="buttonCommon1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 33</value>
+  </data>
+  <data name="buttonCommon1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="buttonCommon1.Text" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="&gt;&gt;buttonCommon1.Name" xml:space="preserve">
+    <value>buttonCommon1</value>
+  </data>
+  <data name="&gt;&gt;buttonCommon1.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ButtonCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buttonCommon1.Parent" xml:space="preserve">
+    <value>groupBoxCommon1</value>
+  </data>
+  <data name="&gt;&gt;buttonCommon1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="buttonCommon2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="buttonCommon2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonCommon2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 20</value>
+  </data>
+  <data name="buttonCommon2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 33</value>
+  </data>
+  <data name="buttonCommon2.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="buttonCommon2.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="&gt;&gt;buttonCommon2.Name" xml:space="preserve">
+    <value>buttonCommon2</value>
+  </data>
+  <data name="&gt;&gt;buttonCommon2.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ButtonCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buttonCommon2.Parent" xml:space="preserve">
+    <value>groupBoxCommon1</value>
+  </data>
+  <data name="&gt;&gt;buttonCommon2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="buttonCommon3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="buttonCommon3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonCommon3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>249, 20</value>
+  </data>
+  <data name="buttonCommon3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 33</value>
+  </data>
+  <data name="buttonCommon3.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="buttonCommon3.Text" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="&gt;&gt;buttonCommon3.Name" xml:space="preserve">
+    <value>buttonCommon3</value>
+  </data>
+  <data name="&gt;&gt;buttonCommon3.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ButtonCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buttonCommon3.Parent" xml:space="preserve">
+    <value>groupBoxCommon1</value>
+  </data>
+  <data name="&gt;&gt;buttonCommon3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="buttonCommon4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="buttonCommon4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonCommon4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 20</value>
+  </data>
+  <data name="buttonCommon4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 33</value>
+  </data>
+  <data name="buttonCommon4.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="buttonCommon4.Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="&gt;&gt;buttonCommon4.Name" xml:space="preserve">
+    <value>buttonCommon4</value>
+  </data>
+  <data name="&gt;&gt;buttonCommon4.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ButtonCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buttonCommon4.Parent" xml:space="preserve">
+    <value>groupBoxCommon1</value>
+  </data>
+  <data name="&gt;&gt;buttonCommon4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupBoxCommon1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="groupBoxCommon1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 197</value>
+  </data>
+  <data name="groupBoxCommon1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>462, 67</value>
+  </data>
+  <data name="groupBoxCommon1.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCommon1.Name" xml:space="preserve">
+    <value>groupBoxCommon1</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCommon1.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.GroupBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCommon1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCommon1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1271, 676</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Jig Repair Report</value>
+  </data>
+  <data name="&gt;&gt;col_jig_repair_id.Name" xml:space="preserve">
+    <value>col_jig_repair_id</value>
+  </data>
+  <data name="&gt;&gt;col_jig_repair_id.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;col_jig_code.Name" xml:space="preserve">
+    <value>col_jig_code</value>
+  </data>
+  <data name="&gt;&gt;col_jig_code.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;col_model_name.Name" xml:space="preserve">
+    <value>col_model_name</value>
+  </data>
+  <data name="&gt;&gt;col_model_name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;col_line_name.Name" xml:space="preserve">
+    <value>col_line_name</value>
+  </data>
+  <data name="&gt;&gt;col_line_name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;col_process_name.Name" xml:space="preserve">
+    <value>col_process_name</value>
+  </data>
+  <data name="&gt;&gt;col_process_name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;col_jig_cause_name.Name" xml:space="preserve">
+    <value>col_jig_cause_name</value>
+  </data>
+  <data name="&gt;&gt;col_jig_cause_name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;col_response.Name" xml:space="preserve">
+    <value>col_response</value>
+  </data>
+  <data name="&gt;&gt;col_response.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;col_time_from.Name" xml:space="preserve">
+    <value>col_time_from</value>
+  </data>
+  <data name="&gt;&gt;col_time_from.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;col_time_to.Name" xml:space="preserve">
+    <value>col_time_to</value>
+  </data>
+  <data name="&gt;&gt;col_time_to.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;col_before_status.Name" xml:space="preserve">
+    <value>col_before_status</value>
+  </data>
+  <data name="&gt;&gt;col_before_status.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;col_after_repair.Name" xml:space="preserve">
+    <value>col_after_repair</value>
+  </data>
+  <data name="&gt;&gt;col_after_repair.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;col_repair_resuft.Name" xml:space="preserve">
+    <value>col_repair_resuft</value>
+  </data>
+  <data name="&gt;&gt;col_repair_resuft.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;col_place.Name" xml:space="preserve">
+    <value>col_place</value>
+  </data>
+  <data name="&gt;&gt;col_place.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>JigRepairInformationForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form.FormCommonNCVP, MachineMaintenance, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

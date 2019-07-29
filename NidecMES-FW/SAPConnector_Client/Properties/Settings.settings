@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Com.Nidec.Mes.SAPConnector_Client.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="RFC_MANUFACTURING_ORDER" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Z_GTPPFG1201_MO_OUT</Value>
+    </Setting>
+    <Setting Name="RFC_DELIVERY_ORDER" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Z_GTSDFG7301_DELIVERY_RFC</Value>
+    </Setting>
+    <Setting Name="RFC_PICKING_LIST" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Z_GTSDFG7401_SCAN_DELIVERY</Value>
+    </Setting>
+    <Setting Name="RFC_STOCK" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Z_GTPPFG0102_STOCK_OUT</Value>
+    </Setting>
+    <Setting Name="RFC_MATERIAL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Z_GTPPFG0101_MATERIAL_OUT</Value>
+    </Setting>
+    <Setting Name="RFC_MANUFACTURING_ORDER_CONFIRMATION" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Z_GTPPFG1101_MO_CONF_TRANS</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

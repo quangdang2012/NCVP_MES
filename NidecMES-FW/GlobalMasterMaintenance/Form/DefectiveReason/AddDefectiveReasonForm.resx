@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Exit_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="Exit_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>281, 289</value>
+  </data>
+  <data name="Exit_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 33</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Exit_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="Exit_btn.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="&gt;&gt;Exit_btn.Name" xml:space="preserve">
+    <value>Exit_btn</value>
+  </data>
+  <data name="&gt;&gt;Exit_btn.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ButtonCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Exit_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Exit_btn.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="Ok_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="Ok_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>174, 289</value>
+  </data>
+  <data name="Ok_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 33</value>
+  </data>
+  <data name="Ok_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="Ok_btn.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;Ok_btn.Name" xml:space="preserve">
+    <value>Ok_btn</value>
+  </data>
+  <data name="&gt;&gt;Ok_btn.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ButtonCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Ok_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Ok_btn.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="DefectiveReasonCode_txt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="DefectiveReasonCode_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>188, 139</value>
+  </data>
+  <data name="DefectiveReasonCode_txt.MaxLength" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="DefectiveReasonCode_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 21</value>
+  </data>
+  <data name="DefectiveReasonCode_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;DefectiveReasonCode_txt.Name" xml:space="preserve">
+    <value>DefectiveReasonCode_txt</value>
+  </data>
+  <data name="&gt;&gt;DefectiveReasonCode_txt.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.TextBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DefectiveReasonCode_txt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DefectiveReasonCode_txt.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="DefectiveReasonName_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DefectiveReasonName_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="DefectiveReasonName_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 174</value>
+  </data>
+  <data name="DefectiveReasonName_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 15</value>
+  </data>
+  <data name="DefectiveReasonName_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="DefectiveReasonName_lbl.Text" xml:space="preserve">
+    <value>Defective Reason Name</value>
+  </data>
+  <data name="&gt;&gt;DefectiveReasonName_lbl.Name" xml:space="preserve">
+    <value>DefectiveReasonName_lbl</value>
+  </data>
+  <data name="&gt;&gt;DefectiveReasonName_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DefectiveReasonName_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DefectiveReasonName_lbl.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="DefectiveReasonName_txt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="DefectiveReasonName_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>188, 171</value>
+  </data>
+  <data name="DefectiveReasonName_txt.MaxLength" type="System.Int32, mscorlib">
+    <value>128</value>
+  </data>
+  <data name="DefectiveReasonName_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 21</value>
+  </data>
+  <data name="DefectiveReasonName_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;DefectiveReasonName_txt.Name" xml:space="preserve">
+    <value>DefectiveReasonName_txt</value>
+  </data>
+  <data name="&gt;&gt;DefectiveReasonName_txt.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.TextBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DefectiveReasonName_txt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DefectiveReasonName_txt.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="DefectiveReasonCode_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DefectiveReasonCode_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="DefectiveReasonCode_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 142</value>
+  </data>
+  <data name="DefectiveReasonCode_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 15</value>
+  </data>
+  <data name="DefectiveReasonCode_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="DefectiveReasonCode_lbl.Text" xml:space="preserve">
+    <value>Defective Reason Code</value>
+  </data>
+  <data name="&gt;&gt;DefectiveReasonCode_lbl.Name" xml:space="preserve">
+    <value>DefectiveReasonCode_lbl</value>
+  </data>
+  <data name="&gt;&gt;DefectiveReasonCode_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DefectiveReasonCode_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DefectiveReasonCode_lbl.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="DisplayOrder_lbl.AccessibleName" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="DisplayOrder_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DisplayOrder_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DisplayOrder_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DisplayOrder_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 252</value>
+  </data>
+  <data name="DisplayOrder_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 15</value>
+  </data>
+  <data name="DisplayOrder_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="DisplayOrder_lbl.Text" xml:space="preserve">
+    <value>Display Order</value>
+  </data>
+  <data name="&gt;&gt;DisplayOrder_lbl.Name" xml:space="preserve">
+    <value>DisplayOrder_lbl</value>
+  </data>
+  <data name="&gt;&gt;DisplayOrder_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DisplayOrder_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DisplayOrder_lbl.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="DisplayOrder_txt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="DisplayOrder_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>188, 249</value>
+  </data>
+  <data name="DisplayOrder_txt.MaxLength" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="DisplayOrder_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 21</value>
+  </data>
+  <data name="DisplayOrder_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;DisplayOrder_txt.Name" xml:space="preserve">
+    <value>DisplayOrder_txt</value>
+  </data>
+  <data name="&gt;&gt;DisplayOrder_txt.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.TextBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DisplayOrder_txt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DisplayOrder_txt.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="labelCommon2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelCommon2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="labelCommon2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelCommon2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>376, 142</value>
+  </data>
+  <data name="labelCommon2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 15</value>
+  </data>
+  <data name="labelCommon2.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="labelCommon2.Text" xml:space="preserve">
+    <value>(＊)</value>
+  </data>
+  <data name="labelCommon2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;labelCommon2.Name" xml:space="preserve">
+    <value>labelCommon2</value>
+  </data>
+  <data name="&gt;&gt;labelCommon2.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;labelCommon2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelCommon2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="labelCommon1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelCommon1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="labelCommon1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelCommon1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>464, 174</value>
+  </data>
+  <data name="labelCommon1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 15</value>
+  </data>
+  <data name="labelCommon1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="labelCommon1.Text" xml:space="preserve">
+    <value>(＊)</value>
+  </data>
+  <data name="labelCommon1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;labelCommon1.Name" xml:space="preserve">
+    <value>labelCommon1</value>
+  </data>
+  <data name="&gt;&gt;labelCommon1.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;labelCommon1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelCommon1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="labelCommon3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelCommon3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="labelCommon3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelCommon3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 252</value>
+  </data>
+  <data name="labelCommon3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 15</value>
+  </data>
+  <data name="labelCommon3.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="labelCommon3.Text" xml:space="preserve">
+    <value>(＊)</value>
+  </data>
+  <data name="labelCommon3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;labelCommon3.Name" xml:space="preserve">
+    <value>labelCommon3</value>
+  </data>
+  <data name="&gt;&gt;labelCommon3.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;labelCommon3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelCommon3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="UpdateText_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="UpdateText_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="UpdateText_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="UpdateText_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 103</value>
+  </data>
+  <data name="UpdateText_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 15</value>
+  </data>
+  <data name="UpdateText_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="UpdateText_lbl.Text" xml:space="preserve">
+    <value>Update Defective Reason</value>
+  </data>
+  <data name="UpdateText_lbl.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;UpdateText_lbl.Name" xml:space="preserve">
+    <value>UpdateText_lbl</value>
+  </data>
+  <data name="&gt;&gt;UpdateText_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;UpdateText_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;UpdateText_lbl.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="DefectiveCategory_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DefectiveCategory_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="DefectiveCategory_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DefectiveCategory_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 208</value>
+  </data>
+  <data name="DefectiveCategory_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 15</value>
+  </data>
+  <data name="DefectiveCategory_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="DefectiveCategory_lbl.Text" xml:space="preserve">
+    <value>Defective Category</value>
+  </data>
+  <data name="&gt;&gt;DefectiveCategory_lbl.Name" xml:space="preserve">
+    <value>DefectiveCategory_lbl</value>
+  </data>
+  <data name="&gt;&gt;DefectiveCategory_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DefectiveCategory_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DefectiveCategory_lbl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DefectiveCategory_cmb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="DefectiveCategory_cmb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>188, 205</value>
+  </data>
+  <data name="DefectiveCategory_cmb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 23</value>
+  </data>
+  <data name="DefectiveCategory_cmb.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;DefectiveCategory_cmb.Name" xml:space="preserve">
+    <value>DefectiveCategory_cmb</value>
+  </data>
+  <data name="&gt;&gt;DefectiveCategory_cmb.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ComboBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DefectiveCategory_cmb.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DefectiveCategory_cmb.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>553, 366</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAQAAAABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAABAA
+        AAAAAAAAAACAAACAAAAAgIAAgAAAAIAAgACAgAAAgICAAMDAwAAAAP8AAP8AAAD//wD/AAAA/wD/AP//
+        AAD///8AAAAAAAAAAAAAAAAAAAAAAAACIgAAIiAAAAIiAAIiIAAAAiIAAiIgAAACIgIiIiAAAAIiAiIi
+        IAAAAiIiIiIgAAACIiIgIiAAAAIiIiAiIAAAAiIgACIgAAACIiAAIiAAAAIiAAAiIAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD//wAA//8AAOPHAADjhwAA44cAAOIHAADiBwAA4AcAAOBHAADgRwAA4ccAAOHH
+        AADjxwAA//8AAP//AAD//wAA
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Add Defective Reason</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AddDefectiveReasonForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.GlobalMasterMaintenance.FormCommonMaster, GlobalMasterMaintenance, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

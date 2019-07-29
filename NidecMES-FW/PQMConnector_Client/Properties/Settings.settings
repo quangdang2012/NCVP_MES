@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Com.Nidec.Mes.PQMConnector_Client.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SAMPLE_SERVICE_MODEL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://10.64.43.49/pqmv4/api/process?model=master</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

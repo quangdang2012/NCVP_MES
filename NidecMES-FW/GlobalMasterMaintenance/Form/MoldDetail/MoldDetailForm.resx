@@ -1,0 +1,925 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="MoldName_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;colComment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="colRemarks.HeaderText" xml:space="preserve">
+    <value>Remarks</value>
+  </data>
+  <data name="colMoldItemCode.HeaderText" xml:space="preserve">
+    <value>Mold Item</value>
+  </data>
+  <data name="&gt;&gt;colRemarks.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Download_btn.Text" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="&gt;&gt;Export_btn.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ButtonCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="colMoldDrawingNo.HeaderText" xml:space="preserve">
+    <value>Mold Drawing No</value>
+  </data>
+  <data name="colProductionDate.Width" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="&gt;&gt;Search_btn.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;colDepth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ss.Name" xml:space="preserve">
+    <value>ss</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Save_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="&gt;&gt;MoldCode_lbl.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;ss.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ButtonCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="colComment.MinimumWidth" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 5, 7, 5</value>
+  </data>
+  <data name="Update_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>720, 500</value>
+  </data>
+  <data name="Export_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>343, 493</value>
+  </data>
+  <data name="Update_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="MoldCode_lbl.Text" xml:space="preserve">
+    <value>Mold Code</value>
+  </data>
+  <data name="&gt;&gt;Save_btn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Exit_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 33</value>
+  </data>
+  <data name="buttonCommon1.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="colHeight.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="&gt;&gt;Update_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;colSapItemCode.Name" xml:space="preserve">
+    <value>colSapItemCode</value>
+  </data>
+  <data name="Add_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="&gt;&gt;colHeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colProcessWorkCode.Name" xml:space="preserve">
+    <value>colProcessWorkCode</value>
+  </data>
+  <data name="colPeriodicAlarmShotCount3.HeaderText" xml:space="preserve">
+    <value>Periodic Alarm Shot Count3</value>
+  </data>
+  <data name="colRemarks.Width" type="System.Int32, mscorlib">
+    <value>350</value>
+  </data>
+  <data name="&gt;&gt;Search_btn.Name" xml:space="preserve">
+    <value>Search_btn</value>
+  </data>
+  <data name="Delete_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>817, 500</value>
+  </data>
+  <data name="&gt;&gt;colSapItemCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="colLifeAlarmShotCount.HeaderText" xml:space="preserve">
+    <value>Life Alarm Shot Count</value>
+  </data>
+  <data name="colWeight.HeaderText" xml:space="preserve">
+    <value>Weight</value>
+  </data>
+  <data name="Delete_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 33</value>
+  </data>
+  <data name="&gt;&gt;Save_btn.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ButtonCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Download_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;colModel.Name" xml:space="preserve">
+    <value>colModel</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Mold Detail Master</value>
+  </data>
+  <data name="Download_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 33</value>
+  </data>
+  <data name="&gt;&gt;Upload_btn.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ButtonCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="MoldName_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Update_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;Search_btn.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ButtonCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="colRemarks.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Add_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>811, 185</value>
+  </data>
+  <data name="Clear_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>906, 185</value>
+  </data>
+  <data name="&gt;&gt;Save_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MoldName_txt.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.TextBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAQAAAABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAABAA
+        AAAAAAAAAACAAACAAAAAgIAAgAAAAIAAgACAgAAAgICAAMDAwAAAAP8AAP8AAAD//wD/AAAA/wD/AP//
+        AAD///8AAAAAAAAAAAAAAAAAAAAAAAACIgAAIiAAAAIiAAIiIAAAAiIAAiIgAAACIgIiIiAAAAIiAiIi
+        IAAAAiIiIiIgAAACIiIgIiAAAAIiIiAiIAAAAiIgACIgAAACIiAAIiAAAAIiAAAiIAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD//wAA//8AAOPHAADjhwAA44cAAOIHAADiBwAA4AcAAOBHAADgRwAA4ccAAOHH
+        AADjxwAA//8AAP//AAD//wAA
+</value>
+  </data>
+  <data name="Download_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="&gt;&gt;colPeriodicAlarmShotCount1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colMoldItemCode.Name" xml:space="preserve">
+    <value>colMoldItemCode</value>
+  </data>
+  <data name="Mold_dgv.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;colMoldItemCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="colPeriodicAlarmShotCount2.Width" type="System.Int32, mscorlib">
+    <value>118</value>
+  </data>
+  <data name="Download_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;Exit_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MoldName_lbl.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Search_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 33</value>
+  </data>
+  <data name="colModel.HeaderText" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="&gt;&gt;colMoldCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Upload_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>440, 500</value>
+  </data>
+  <data name="Upload_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="MoldCode_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="MoldCode_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 21</value>
+  </data>
+  <data name="&gt;&gt;Mold_dgv.Name" xml:space="preserve">
+    <value>Mold_dgv</value>
+  </data>
+  <data name="MoldCode_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="MoldCode_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 124</value>
+  </data>
+  <data name="&gt;&gt;colLifeAlarmShotCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colPeriodicAlarmShotCount2.Name" xml:space="preserve">
+    <value>colPeriodicAlarmShotCount2</value>
+  </data>
+  <data name="&gt;&gt;Delete_btn.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="colMoldCode.HeaderText" xml:space="preserve">
+    <value>Mold Code</value>
+  </data>
+  <data name="MoldCode_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="colMoldName.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Update_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="Exit_btn.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="Clear_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="Update_btn.Text" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="Add_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 33</value>
+  </data>
+  <data name="&gt;&gt;MoldName_txt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;colDepth.Name" xml:space="preserve">
+    <value>colDepth</value>
+  </data>
+  <data name="&gt;&gt;Export_btn.Name" xml:space="preserve">
+    <value>Export_btn</value>
+  </data>
+  <data name="colWidth.HeaderText" xml:space="preserve">
+    <value>Width</value>
+  </data>
+  <data name="&gt;&gt;Add_btn.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="MoldCode_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 127</value>
+  </data>
+  <data name="Exit_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>912, 500</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MoldDetailForm</value>
+  </data>
+  <data name="&gt;&gt;colModel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Exit_btn.Name" xml:space="preserve">
+    <value>Exit_btn</value>
+  </data>
+  <data name="Save_btn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;colLifeShotCount.Name" xml:space="preserve">
+    <value>colLifeShotCount</value>
+  </data>
+  <data name="&gt;&gt;Export_btn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Delete_btn.Name" xml:space="preserve">
+    <value>Delete_btn</value>
+  </data>
+  <data name="colPeriodicAlarmShotCount3.Width" type="System.Int32, mscorlib">
+    <value>118</value>
+  </data>
+  <data name="&gt;&gt;colWidth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Save_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;MoldName_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;MoldCode_txt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Clear_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="colLifeShotCount.HeaderText" xml:space="preserve">
+    <value>Life Shot Count</value>
+  </data>
+  <data name="&gt;&gt;Delete_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ExcelExport_sfdlg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colMoldId.Name" xml:space="preserve">
+    <value>colMoldId</value>
+  </data>
+  <data name="&gt;&gt;colLifeAlarmShotCount.Name" xml:space="preserve">
+    <value>colLifeAlarmShotCount</value>
+  </data>
+  <data name="&gt;&gt;colMoldName.Name" xml:space="preserve">
+    <value>colMoldName</value>
+  </data>
+  <data name="Delete_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;Update_btn.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;Download_btn.Name" xml:space="preserve">
+    <value>Download_btn</value>
+  </data>
+  <data name="&gt;&gt;buttonCommon1.Name" xml:space="preserve">
+    <value>buttonCommon1</value>
+  </data>
+  <data name="colMoldCategory.HeaderText" xml:space="preserve">
+    <value>Mold Category</value>
+  </data>
+  <data name="MoldCode_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 15</value>
+  </data>
+  <data name="&gt;&gt;buttonCommon1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Search_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MoldName_lbl.Name" xml:space="preserve">
+    <value>MoldName_lbl</value>
+  </data>
+  <data name="Download_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="Save_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>629, 500</value>
+  </data>
+  <data name="&gt;&gt;colWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MoldName_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="colLifeShotCount.Width" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="MoldName_lbl.Text" xml:space="preserve">
+    <value>Mold Name</value>
+  </data>
+  <data name="&gt;&gt;colPeriodicAlarmShotCount2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Update_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 33</value>
+  </data>
+  <data name="&gt;&gt;Upload_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Search_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>714, 185</value>
+  </data>
+  <data name="colProductionDate.HeaderText" xml:space="preserve">
+    <value>Production Date</value>
+  </data>
+  <data name="&gt;&gt;colProductionDate.Name" xml:space="preserve">
+    <value>colProductionDate</value>
+  </data>
+  <data name="&gt;&gt;buttonCommon1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="colMoldName.HeaderText" xml:space="preserve">
+    <value>Mold Name</value>
+  </data>
+  <data name="colHeight.HeaderText" xml:space="preserve">
+    <value>Height</value>
+  </data>
+  <data name="&gt;&gt;colMoldCode.Name" xml:space="preserve">
+    <value>colMoldCode</value>
+  </data>
+  <data name="&gt;&gt;colLifeShotCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="colWeight.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="Search_btn.Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="ss.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="Upload_btn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;MoldName_txt.Name" xml:space="preserve">
+    <value>MoldName_txt</value>
+  </data>
+  <data name="colPeriodicAlarmShotCount1.Width" type="System.Int32, mscorlib">
+    <value>118</value>
+  </data>
+  <data name="&gt;&gt;MoldCode_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MoldCode_txt.Name" xml:space="preserve">
+    <value>MoldCode_txt</value>
+  </data>
+  <data name="&gt;&gt;colMoldName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MoldName_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="Add_btn.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="&gt;&gt;Mold_dgv.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.DataGridViewCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Mold_dgv.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="MoldName_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 21</value>
+  </data>
+  <data name="colMoldId.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;Clear_btn.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ButtonCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="Upload_btn.Text" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="Search_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="&gt;&gt;MoldCode_txt.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.TextBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="colMoldId.HeaderText" xml:space="preserve">
+    <value>Mold Id</value>
+  </data>
+  <data name="Exit_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="colDepth.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="colSapItemCode.HeaderText" xml:space="preserve">
+    <value>Sap Item</value>
+  </data>
+  <data name="Mold_dgv.Size" type="System.Drawing.Size, System.Drawing">
+    <value>981, 265</value>
+  </data>
+  <data name="&gt;&gt;MoldCode_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Clear_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;colProductionDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MoldCode_lbl.Name" xml:space="preserve">
+    <value>MoldCode_lbl</value>
+  </data>
+  <data name="&gt;&gt;colComment.Name" xml:space="preserve">
+    <value>colComment</value>
+  </data>
+  <data name="&gt;&gt;MoldName_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="MoldName_txt.MaxLength" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.GlobalMasterMaintenance.FormCommonMaster, GlobalMasterMaintenance, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="Exit_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="&gt;&gt;Export_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="colPeriodicAlarmShotCount2.HeaderText" xml:space="preserve">
+    <value>Periodic Alarm Shot Count2</value>
+  </data>
+  <data name="&gt;&gt;ExcelExport_sfdlg.Name" xml:space="preserve">
+    <value>ExcelExport_sfdlg</value>
+  </data>
+  <data name="&gt;&gt;Add_btn.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ButtonCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="Download_btn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Upload_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 33</value>
+  </data>
+  <data name="&gt;&gt;Clear_btn.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;Upload_btn.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="colComment.HeaderText" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="&gt;&gt;colHeight.Name" xml:space="preserve">
+    <value>colHeight</value>
+  </data>
+  <data name="&gt;&gt;colPeriodicAlarmShotCount3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colRemarks.Name" xml:space="preserve">
+    <value>colRemarks</value>
+  </data>
+  <data name="&gt;&gt;Exit_btn.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ButtonCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="MoldCode_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MoldName_txt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="Upload_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="Delete_btn.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="colMoldId.Width" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;colMoldId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Delete_btn.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ButtonCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="MoldName_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 15</value>
+  </data>
+  <data name="Exit_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;Update_btn.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ButtonCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="MoldCode_txt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="&gt;&gt;colMoldDrawingNo.Name" xml:space="preserve">
+    <value>colMoldDrawingNo</value>
+  </data>
+  <data name="Add_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;colMoldCategory.Name" xml:space="preserve">
+    <value>colMoldCategory</value>
+  </data>
+  <data name="Search_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;colPeriodicAlarmShotCount3.Name" xml:space="preserve">
+    <value>colPeriodicAlarmShotCount3</value>
+  </data>
+  <data name="&gt;&gt;colProcessWorkCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MoldName_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 125</value>
+  </data>
+  <data name="Upload_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="MoldName_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 128</value>
+  </data>
+  <data name="Save_btn.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Save_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="Delete_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="MoldCode_txt.MaxLength" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1004, 588</value>
+  </data>
+  <data name="colPeriodicAlarmShotCount1.HeaderText" xml:space="preserve">
+    <value>Periodic Alarm Shot Count1</value>
+  </data>
+  <data name="&gt;&gt;buttonCommon1.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ButtonCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="colWidth.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="&gt;&gt;Mold_dgv.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="Mold_dgv.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;MoldName_txt.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ss.Location" type="System.Drawing.Point, System.Drawing">
+    <value>343, 493</value>
+  </data>
+  <data name="&gt;&gt;Exit_btn.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="colProcessWorkCode.HeaderText" xml:space="preserve">
+    <value>Process Work</value>
+  </data>
+  <data name="Mold_dgv.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 229</value>
+  </data>
+  <data name="&gt;&gt;colMoldDrawingNo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Save_btn.Name" xml:space="preserve">
+    <value>Save_btn</value>
+  </data>
+  <data name="&gt;&gt;Add_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;colPeriodicAlarmShotCount1.Name" xml:space="preserve">
+    <value>colPeriodicAlarmShotCount1</value>
+  </data>
+  <data name="&gt;&gt;colWidth.Name" xml:space="preserve">
+    <value>colWidth</value>
+  </data>
+  <data name="Save_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 33</value>
+  </data>
+  <data name="Clear_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 33</value>
+  </data>
+  <data name="&gt;&gt;Add_btn.Name" xml:space="preserve">
+    <value>Add_btn</value>
+  </data>
+  <data name="Clear_btn.Text" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="&gt;&gt;Clear_btn.Name" xml:space="preserve">
+    <value>Clear_btn</value>
+  </data>
+  <data name="&gt;&gt;Download_btn.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ButtonCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;MoldCode_txt.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;colWeight.Name" xml:space="preserve">
+    <value>colWeight</value>
+  </data>
+  <data name="Export_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;ss.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Download_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>531, 500</value>
+  </data>
+  <data name="buttonCommon1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>343, 493</value>
+  </data>
+  <data name="Delete_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="&gt;&gt;Upload_btn.Name" xml:space="preserve">
+    <value>Upload_btn</value>
+  </data>
+  <data name="&gt;&gt;Download_btn.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ss.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Update_btn.Name" xml:space="preserve">
+    <value>Update_btn</value>
+  </data>
+  <data name="&gt;&gt;colMoldCategory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="colDepth.HeaderText" xml:space="preserve">
+    <value>Depth</value>
+  </data>
+  <metadata name="colRemarks.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colSapItemCode.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colWeight.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colModel.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colPeriodicAlarmShotCount2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colMoldDrawingNo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colDepth.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colMoldCategory.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-Hans</value>
+  </metadata>
+  <metadata name="colMoldId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colProcessWorkCode.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colMoldName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colWidth.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ExcelExport_sfdlg.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="colLifeAlarmShotCount.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colLifeShotCount.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colHeight.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colMoldCode.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colMoldItemCode.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colComment.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colPeriodicAlarmShotCount1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colProductionDate.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colPeriodicAlarmShotCount3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="mmcc00001" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="mmcc00002" xml:space="preserve">
+    <value>你确定要添加 {0} ?</value>
+  </data>
+  <data name="mmcc00003" xml:space="preserve">
+    <value>您确定要更新 : [{0}] ?</value>
+  </data>
+  <data name="mmcc00004" xml:space="preserve">
+    <value>您确定要删除 : [{0}] ?</value>
+  </data>
+  <data name="mmcc00005" xml:space="preserve">
+    <value>不完整的数据 [{0}]</value>
+  </data>
+  <data name="mmcc00006" xml:space="preserve">
+    <value>数据已经存在 [{0}]</value>
+  </data>
+  <data name="mmce00001" xml:space="preserve">
+    <value>保存失败。 记录已经存在 [{0}]</value>
+  </data>
+  <data name="mmce00002" xml:space="preserve">
+    <value>请输入 [{0}]</value>
+  </data>
+  <data name="mmce00003" xml:space="preserve">
+    <value>不能使用中文。</value>
+  </data>
+  <data name="mmce00004" xml:space="preserve">
+    <value>国家代码不正确.</value>
+  </data>
+  <data name="mmce00005" xml:space="preserve">
+    <value>语言代码不正确.</value>
+  </data>
+  <data name="mmce00006" xml:space="preserve">
+    <value>只能使用小写字母或数字 [{0}]</value>
+  </data>
+  <data name="mmce00007" xml:space="preserve">
+    <value>由于与数据关联，数据无法删除 [ {0} ]</value>
+  </data>
+  <data name="mmce00008" xml:space="preserve">
+    <value>所选文件没有工作表 [{0}]</value>
+  </data>
+  <data name="mmce00011" xml:space="preserve">
+    <value>导入NG:[{0}]不能为空。</value>
+  </data>
+  <data name="mmce00012" xml:space="preserve">
+    <value>导入NG:记录[{0}]已经存在。 </value>
+  </data>
+  <data name="mmce0009" xml:space="preserve">
+    <value>数据重复 [{0}]</value>
+  </data>
+  <data name="mmce0010" xml:space="preserve">
+    <value>数据不合法 [{0}]</value>
+  </data>
+  <data name="mmci00001" xml:space="preserve">
+    <value>记录已成功添加。</value>
+  </data>
+  <data name="mmci00002" xml:space="preserve">
+    <value>记录已成功更新。</value>
+  </data>
+  <data name="mmci00003" xml:space="preserve">
+    <value>记录已成功删除。</value>
+  </data>
+  <data name="mmci00004" xml:space="preserve">
+    <value>[{0}].[窗体名称 : {1}].[登录用户 : {2}] 开始</value>
+  </data>
+  <data name="mmci00005" xml:space="preserve">
+    <value>[{0}].[窗体名称 : {1}].[登录用户 : {2}] 结束.</value>
+  </data>
+  <data name="mmci00006" xml:space="preserve">
+    <value>没有找到数据！</value>
+  </data>
+  <data name="mmci00007" xml:space="preserve">
+    <value>已经有被其他用户删除。</value>
+  </data>
+  <data name="mmci00008" xml:space="preserve">
+    <value>请输入最少4个字符 [ {0} ]</value>
+  </data>
+  <data name="mmci00009" xml:space="preserve">
+    <value>请稍候...</value>
+  </data>
+  <data name="mmci00010" xml:space="preserve">
+    <value>数据上传成功.</value>
+  </data>
+  <data name="mmci00011" xml:space="preserve">
+    <value>文件未找到. [{0}]</value>
+  </data>
+  <data name="mmci00012" xml:space="preserve">
+    <value>用户数据导出成功..</value>
+  </data>
+  <data name="mmci00013" xml:space="preserve">
+    <value>[{0}] 已存在，单击 [是] 覆盖原始文件，覆盖后无法恢复.</value>
+  </data>
+  <data name="mmci00014" xml:space="preserve">
+    <value>请从列表中选择任何用户。</value>
+  </data>
+  <data name="mmci00015" xml:space="preserve">
+    <value>请上传Excel文件。</value>
+  </data>
+  <data name="mmci00016" xml:space="preserve">
+    <value>为了您能成功追加数据，请修改Excel错误数据。</value>
+  </data>
+  <data name="mmci00017" xml:space="preserve">
+    <value>导入NG:[{0}]只能使用字母和数字。</value>
+  </data>
+  <data name="mmci00018" xml:space="preserve">
+    <value>导入NG:[{0}]只能使用数字。</value>
+  </data>
+  <data name="mmci00020" xml:space="preserve">
+    <value>[{0}]  表格不存在于Excel中</value>
+  </data>
+  <data name="mmci00021" xml:space="preserve">
+    <value>标准EXCEL文件下载完成。</value>
+  </data>
+  <data name="mmce00013" xml:space="preserve">
+    <value>请输入正确的模具编号进行检索。</value>
+  </data>
+  <data name="CavityCode" xml:space="preserve">
+    <value>模号</value>
+  </data>
+  <data name="CavityName" xml:space="preserve">
+    <value>模号名称</value>
+  </data>
+  <data name="LOCATION_TYPE_PROCESS" xml:space="preserve">
+    <value>工程</value>
+  </data>
+  <data name="LOCATION_TYPE_WAREHOUSE" xml:space="preserve">
+    <value>库存地点</value>
+  </data>
+  <data name="mmce00009" xml:space="preserve">
+    <value>复制 [{0}]</value>
+  </data>
+  <data name="mmce00010" xml:space="preserve">
+    <value>无效 [{0}]</value>
+  </data>
+  <data name="mmce00014" xml:space="preserve">
+    <value>Cannot move the processwork up with greater sequence no for same processwork.</value>
+  </data>
+  <data name="mmce00015" xml:space="preserve">
+    <value>对于相同的流程工作，不能以较少的序列号移动流程。</value>
+  </data>
+  <data name="mmce00016" xml:space="preserve">
+    <value>只选择一个库存位置进行处理。</value>
+  </data>
+  <data name="mmce00017" xml:space="preserve">
+    <value>[{0}] 长度应小于或等于[{1}]</value>
+  </data>
+  <data name="mmce00018" xml:space="preserve">
+    <value>模号 [{0}] 在模具中不存在。</value>
+  </data>
+  <data name="mmce00019" xml:space="preserve">
+    <value>标准合模周期时间应大于零。</value>
+  </data>
+  <data name="mmce00020" xml:space="preserve">
+    <value>模具中存在重复的模号[{0}] 模号名称[{1}]</value>
+  </data>
+  <data name="mmce00021" xml:space="preserve">
+    <value>SAP品番[{0}]与[MES品番、模具、标状合模周期、图番]的关系</value>
+  </data>
+  <data name="mmce00022" xml:space="preserve">
+    <value>SAP品番 [{0}] 应与模具为 1 : 1 的关系 .</value>
+  </data>
+  <data name="mmce00023" xml:space="preserve">
+    <value>请输入有效的数值。</value>
+  </data>
+  <data name="mmce00024" xml:space="preserve">
+    <value>EXCEL上传验证时出现异常。</value>
+  </data>
+  <data name="mmce00025" xml:space="preserve">
+    <value>没有找到SAP品番数据。</value>
+  </data>
+  <data name="mmce00026" xml:space="preserve">
+    <value>未找到模具数据。</value>
+  </data>
+  <data name="mmce00027" xml:space="preserve">
+    <value>模号表中的模具编号 [{0}]无效</value>
+  </data>
+  <data name="mmci00019" xml:space="preserve">
+    <value>工程编号不正确。</value>
+  </data>
+  <data name="mmci00022" xml:space="preserve">
+    <value>因为存在数据关联，无法删除数据。</value>
+  </data>
+  <data name="mmci00023" xml:space="preserve">
+    <value>如果更改结果计数值[{0}]将更新所有指令详细结果计数值[{1}]。</value>
+  </data>
+  <data name="mmci00024" xml:space="preserve">
+    <value>请单击“规格设置”输入点检规格。</value>
+  </data>
+  <data name="mmci00025" xml:space="preserve">
+    <value>请单击“点检频度”输入点检频度。</value>
+  </data>
+  <data name="mmci00026" xml:space="preserve">
+    <value>请单击“点检项目”以输入点检项目。</value>
+  </data>
+  <data name="mmci00027" xml:space="preserve">
+    <value>请单击“点检工程”以输入点检工程。</value>
+  </data>
+  <data name="mmci00028" xml:space="preserve">
+    <value>请单击“点检过程”以输入点检过程。</value>
+  </data>
+  <data name="mmci00029" xml:space="preserve">
+    <value>点检规格记录存在于所选点检项目中。 请删除点检规格数据。</value>
+  </data>
+  <data name="mmci00030" xml:space="preserve">
+    <value>开始日期大于结束日期，请选择有效日期。</value>
+  </data>
+  <data name="mmci00031" xml:space="preserve">
+    <value>获取数据正在进行中。</value>
+  </data>
+  <data name="mmci00032" xml:space="preserve">
+    <value>模具数据导出成功</value>
+  </data>
+  <data name="mmci00033" xml:space="preserve">
+    <value>Excel工作表中的数据不正确</value>
+  </data>
+  <data name="mmci00034" xml:space="preserve">
+    <value>空 [{0}]</value>
+  </data>
+  <data name="mmci00035" xml:space="preserve">
+    <value>请单击“详细”以输入详细信息。</value>
+  </data>
+  <data name="mmci00036" xml:space="preserve">
+    <value>复制[{0}]中，请稍候。</value>
+  </data>
+  <data name="mmci00037" xml:space="preserve">
+    <value>正在更新[{0}] [{1}]，请稍候。</value>
+  </data>
+  <data name="mmci00038" xml:space="preserve">
+    <value>正在删除[{0}] [{1}]，请稍候。</value>
+  </data>
+  <data name="mmci00039" xml:space="preserve">
+    <value>正在复制格式[{0}]，请稍候。</value>
+  </data>
+  <data name="mmci00040" xml:space="preserve">
+    <value>记录已注册[{0}]，[{1}]</value>
+  </data>
+  <data name="mmci00041" xml:space="preserve">
+    <value>没有找到所选项目代码[{0}]的SAP品番。</value>
+  </data>
+  <data name="mmci00042" xml:space="preserve">
+    <value>正在复制格式[{0}]，请稍候。</value>
+  </data>
+  <data name="mmci00043" xml:space="preserve">
+    <value>正在更新[{0}] [{1}]，请稍候。</value>
+  </data>
+  <data name="mmci00044" xml:space="preserve">
+    <value>格式名称[{0}]，已存在。</value>
+  </data>
+  <data name="mmci00045" xml:space="preserve">
+    <value>格式名称[{0}]，已存在。</value>
+  </data>
+  <data name="mmci00046" xml:space="preserve">
+    <value>请选择至少一个[{0}]。</value>
+  </data>
+  <data name="mmci00047" xml:space="preserve">
+    <value>请在表格中输入一个标准合模时间。</value>
+  </data>
+  <data name="mmci00048" xml:space="preserve">
+    <value>点检项目[{0}]没有点检规格和频度设置的数据。 你想复制吗？</value>
+  </data>
+  <data name="ModelCode" xml:space="preserve">
+    <value>模具编号</value>
+  </data>
+  <data name="MoldCategoryCode" xml:space="preserve">
+    <value>模具类别编号</value>
+  </data>
+  <data name="MoldItemCode" xml:space="preserve">
+    <value>模具品番编号</value>
+  </data>
+  <data name="SINGLE_LINE" xml:space="preserve">
+    <value>单线</value>
+  </data>
+  <data name="SINGLE_LINE_MACHINE" xml:space="preserve">
+    <value>单线和单机</value>
+  </data>
+  <data name="SINGLE_MACHINE" xml:space="preserve">
+    <value>单机</value>
+  </data>
+  <data name="StdCycleTime" xml:space="preserve">
+    <value>标准合模周期</value>
+  </data>
+</root>

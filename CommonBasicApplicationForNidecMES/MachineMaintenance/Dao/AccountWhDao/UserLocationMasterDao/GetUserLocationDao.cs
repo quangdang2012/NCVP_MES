@@ -1,0 +1,67 @@
+﻿using Com.Nidec.Mes.Common.Basic.MachineMaintenance.Vo.AccountWhVo;
+using Com.Nidec.Mes.Framework;
+using System;
+using System.Data;
+using System.Text;
+
+namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao
+{
+    public class GetUserLocationDao : AbstractDataAccessObject
+    {
+        public override ValueObject Execute(TransactionContext trxContext, ValueObject vo)
+        {
+            UserLocationVo inVo = (UserLocationVo)vo;
+            StringBuilder sql = new StringBuilder();
+            ValueObjectList<UserLocationVo> voList = new ValueObjectList<UserLocationVo>();
+            DbCommandAdaptor sqlCommandAdapter = base.GetDbCommandAdaptor(trxContext, string.Empty);
+            DbParameterList sqlParameter = sqlCommandAdapter.CreateParameterList();
+            sql.Append("select user_location_id,user_location_cd,user_location_name,dept_cd,  registration_user_cd,registration_date_time,factory_cd from  m_user_location");
+            sql.Append(" Where 1=1 ");
+            if (!String.IsNullOrEmpty(inVo.FactoryCode))
+            {
+                sql.Append(" and factory_cd = :factory_cd ");
+                sqlParameter.AddParameterString("factory_cd", inVo.FactoryCode);
+            }
+            if (inVo.UserLocationId > 0)
+            {
+                sql.Append(" and user_location_id = :user_location_id ");
+                sqlParameter.AddParameterInteger("user_location_id", inVo.UserLocationId);
+            }
+            if (!string.IsNullOrEmpty(inVo.UserLocationCode))
+            {
+                sql.Append(" and user_location_cd = :user_location_cd ");
+                sqlParameter.AddParameterString("user_location_cd", inVo.UserLocationCode);
+            }
+            if (!string.IsNullOrEmpty(inVo.UserLocationName))
+            {
+                sql.Append(" and user_location_name = :user_location_name ");
+                sqlParameter.AddParameterString("user_location_name", inVo.UserLocationName);
+            }
+           
+
+            //create command
+            //DbCommandAdaptor 
+            sqlCommandAdapter = base.GetDbCommandAdaptor(trxContext, sql.ToString());
+
+            //execute SQL
+            IDataReader dataReader = sqlCommandAdapter.ExecuteReader(trxContext, sqlParameter);
+
+            while (dataReader.Read())
+            {
+                UserLocationVo outVo = new UserLocationVo
+                {
+                    UserLocationCode = dataReader["user_location_cd"].ToString(),
+                    UserLocationId = int.Parse(dataReader["user_location_id"].ToString()),
+                    UserLocationName =dataReader["user_location_name"].ToString(),
+                    DeptCode = dataReader["dept_cd"].ToString(),
+                    RegistrationUserCode = dataReader["registration_user_cd"].ToString(),
+                    RegistrationDateTime = DateTime.Parse(dataReader["registration_date_time"].ToString()),
+                    FactoryCode = dataReader["factory_cd"].ToString()
+                };
+                voList.add(outVo);
+            }
+            dataReader.Close();
+            return voList;
+        }
+    }
+}

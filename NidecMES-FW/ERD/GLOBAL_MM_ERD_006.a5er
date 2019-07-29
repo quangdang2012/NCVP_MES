@@ -1,0 +1,3032 @@
+﻿# A5:ER FORMAT:11
+# A5:ER ENCODING:UTF8
+# A5:ER Mk-1 Copyright (C)2007 m.matsubara
+# A5:SQL Mk-2 Copyright (C)1997 m.matsubara
+#  http://www.wind.sannet.ne.jp/m_matsu/developer/a5m2/
+
+[Manager]
+ProjectName=GLOBAL_MM
+Author=NTPL
+MaxEntityRowShow=1000
+ReadOnlyRecommend=0
+Page=Main
+PageInfo="Main",2,"A3Landscape",$FFFFFF
+LogicalView=0
+DecodeDomain=0
+ViewModePageIndividually=1
+ViewMode=2
+ViewFormat=0
+UseNondependenceDashLine=0
+FontName=Tahoma
+FontSize=6
+PaperSize=A4Landscape
+HeaderLeft=
+HeaderCenter=
+HeaderRight=
+FooterLeft=
+FooterCenter=
+FooterRight=
+ShowPageoutRelation=1
+RDBMSType=6
+RDBMSTypeName=PostgreSQL
+GenerateCommentStatement_LName=0
+DefaultPkName=%0:s_PKC
+DefaultPkIndexName=%0:s_PKI
+DefaultIndexName=%0:s_IX%1:d
+DefaultFkName=%0:s_FK%1:d
+SqlSeparator=0
+ShowTag=1
+ShowCommonAttributes=0
+
+[View]
+PName=v_sap_item
+LName=v_sap_item
+Comment=
+ViewOption=
+Query= SELECT Distinct sap_item.sap_matnr_item_cd, \n    sap_item.sap_maktx_item_name, \n    sap_item.sap_mtart_item_type, \n    sap_item.sap_ersda_created_date, \n    sap_item.sap_laeda_modified_date, \n    sap_item.sap_lvorm1_delete_flag_local, \n    sap_item.sap_xchpf_batch_management_info, \n    sap_item.sap_meins_measure_unit, \n    sap_item.sap_bismt_material_no_legacy, \n    sap_item.sap_matkl_material_grp_id, \n    sap_item.sap_spart_sales_division_name, \n    sap_item.sap_prdha_product_level, \n    sap_item.sap_mstae_material_status_overall, \n    sap_item.sap_mtpos_item_category_group, \n    sap_item.sap_ntgew_weight, \n    sap_item.sap_gewei_weight_unit, \n    sap_item.sap_volume_volume, \n    sap_item.sap_volume_volume_unit, \n    sap_item.sap_groes_size, \n    sap_item.sap_zeinr_document_number, \n    sap_item.sap_werks_factory_cd, \n    sap_item.sap_lvorm2_delete_flag_factory, \n    sap_item.sap_disgr_mrp_group, \n    sap_item.sap_ekgrp_purchasing_group, \n    sap_item.sap_mmsta_material_status_specific, \n    sap_item.sap_dismm_mrp_type, \n    sap_item.sap_minbe_reorder_point, \n    sap_item.sap_fxhor_planning_time_fence, \n    sap_item.sap_dispo_mrp_controller, \n    sap_item.sap_dsnam_spool_request_name, \n    sap_item.sap_disls_lot_size, \n    sap_item.sap_bstmi_min_lot_size, \n    sap_item.sap_bstma_max_lot_size, \n    sap_item.sap_bstfe_fixed_lot_size, \n    sap_item.sap_mabst_max_stock_level, \n    sap_item.sap_rdprf_rounding_profile, \n    sap_item.sap_bstrf_po_quantity, \n    sap_item.sap_beskz_procurement_type, \n    sap_item.sap_sobsl_special_procurement_type, \n    sap_item.sap_lgpro_issue_storage_location, \n    sap_item.sap_usequ_quota_arrangement_usage, \n    sap_item.sap_vspvb_proposed_supply_area, \n    sap_item.sap_rgekz_backflush, \n    sap_item.sap_lgfsb_default_storage_location, \n    sap_item.sap_dzeit_inhouse_production_time, \n    sap_item.sap_plifz_planned_delivery_time, \n    sap_item.sap_webaz_good_receipt_processing_time, \n    sap_item.sap_mrppp_ppc_planning_calendar, \n    sap_item.sap_fhori_scheduling_margin_keys, \n    sap_item.sap_eisbe_safety_stock, \n    sap_item.sap_lgrad_service_level, \n    sap_item.sap_eislo_min_safety_stock, \n    sap_item.sap_rwpro_coverage_profile, \n    sap_item.sap_shflg_safety_time_indicator, \n    sap_item.sap_shzet_safety_time, \n    sap_item.sap_shpro_safety_time_period, \n    sap_item.sap_strgr_planning_strategy_group, \n    sap_item.sap_vrmod_consumption_mode, \n    sap_item.sap_vint1_consumption_period, \n    sap_item.sap_vint2_consumption_period, \n    sap_item.sap_miskz_mixed_mrp_indicator, \n    sap_item.sap_mtvfp_checking_group, \n    sap_item.sap_altsl_altsl, \n    sap_item.sap_kausf_component_scrap, \n    sap_item.sap_kzaus_discontinuation_indicator, \n    sap_item.sap_ausdt_interrupt_date, \n    sap_item.sap_nfmat_follow_up_material, \n    sap_item.registration_user_cd, \n    sap_item.registration_date_time, \n    sap_item.factory_cd\n   FROM sap_item\n   left join sap_item itm2 on sap_item.sap_matnr_item_cd = itm2.sap_matnr_item_cd\n   and sap_item.registration_date_time < itm2.registration_date_time  and sap_item.factory_cd = itm2.factory_cd                            \n  Where  itm2.registration_date_time ISNULL;
+LNameByComment=1
+Color=$000000
+BkColor=$FFFFFF
+Position="Main",850,2500,510,310
+Page=Main
+Left=850
+Top=2500
+
+[Relation]
+Entity1=m_mes_user
+Entity2=m_user_line_building
+RelationType1=2
+RelationType2=3
+Fields1=user_cd
+Fields2=user_cd
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,9500,500,9500,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=950
+Bar2=50
+Bar3=950
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_line_building
+Entity2=m_user_line_building
+RelationType1=2
+RelationType2=3
+Fields1=line_building_id
+Fields2=line_building_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,9500,500,9500,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=950
+Bar2=50
+Bar3=950
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_user_line_building
+LName=user line building master
+Comment=
+TableOption=
+Page=MAIN
+Left=3300
+Top=2500
+Field="user_line_building_id","user_line_building_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="user_cd","user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="line_building_id","line_building_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="facory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_user_line_building_uidx1=1,user_cd,line_building_id,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$FFCC66
+ModifiedDateTime=20190222104936
+Position="MAIN",3300,2500,288,185
+
+[Relation]
+Entity1=m_work_content_type
+Entity2=m_work_content
+RelationType1=2
+RelationType2=3
+Fields1=work_content_type_id
+Fields2=work_content_type_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,9500,500,9500,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=950
+Bar2=50
+Bar3=950
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_line
+Entity2=m_line_work_content
+RelationType1=2
+RelationType2=3
+Fields1=line_id
+Fields2=line_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,9500,500,9500,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=950
+Bar2=50
+Bar3=950
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_work_content
+Entity2=m_line_work_content
+RelationType1=2
+RelationType2=3
+Fields1=work_content_id
+Fields2=work_content_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,9500,500,9460,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=950
+Bar2=50
+Bar3=946
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_line_work_content
+LName=line_work_content
+Comment=
+TableOption=
+Page=MAIN
+Left=1550
+Top=2600
+Field="line_work_content_id","line_work_content_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="line_id","line_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="work_content_id","work_content_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration_user_cd","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration_date_time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory_cd","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_line_work_content_uidx1=1,line_id,work_content_id,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$FFCC66
+ModifiedDateTime=20190207125900
+Position="MAIN",1550,2600
+
+[Entity]
+PName=m_work_content_type
+LName=prodution_work_content type master
+Comment=
+TableOption=
+Page=MAIN
+Left=2100
+Top=2300
+Field="work_content_type_id","work_content_type_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="work_content_type_cd","work_content_type_cd","@VARCHAR(16)","NOT NULL",,"","",$FFFFFFFF,""
+Field="work_content_type_name","work_content_type_name","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration_user_cd","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration_date_time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory_cd","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_work_content_type_uidx1=1,work_content_type_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$FFCC66
+ModifiedDateTime=20190222104451
+Position="MAIN",2100,2300
+
+[Entity]
+PName=m_work_content
+LName=prodution_work_content
+Comment=
+TableOption=
+Page=MAIN
+Left=1950
+Top=2600
+Field="work_content_id","work_content_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="work_content_cd","work_content_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="work_content_name","work_content_name","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,""
+Field="work_content_type_id","work_content_type_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="display order","display_order","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="remark","remark","@VARCHAR(256)",,,"","",$FFFFFFFF,""
+Field="registration_user_cd","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration_date_time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory_cd","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_work_content_uidx1=1,work_content_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$FFCC66
+ModifiedDateTime=20190206173528
+Position="MAIN",1950,2600
+
+[Relation]
+Entity1=m_building
+Entity2=m_factory_production_days
+RelationType1=2
+RelationType2=3
+Fields1=building_id
+Fields2=building_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,8602,1398,9500,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=860
+Bar2=140
+Bar3=950
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_building
+Entity2=m_line_building
+RelationType1=2
+RelationType2=3
+Fields1=building_id
+Fields2=building_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,7685,2315,9500,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=768
+Bar2=232
+Bar3=950
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_line
+Entity2=m_line_building
+RelationType1=2
+RelationType2=3
+Fields1=line_id
+Fields2=line_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,7685,2315,6622,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=768
+Bar2=232
+Bar3=662
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_line_building
+LName=line building master
+Comment=
+TableOption=
+Page=MAIN
+Left=1550
+Top=1600
+Field="line_building_id","line_building_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="line id","line_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="building_id","building_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="facory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_line_building_uidx1=1,line_id,building_id,factory_cd
+Index=m_line_building_uidx2=1,line_id,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$FFCC66
+ModifiedDateTime=20190226091900
+Position="MAIN",1550,1600
+
+[Relation]
+Entity1=sap_item
+Entity2=sap_item_history
+RelationType1=1
+RelationType2=3
+Fields1=sap_matnr_item_cd
+Fields2=sap_matnr_item_cd
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,9500,500,9477,R,R
+Dependence=0
+Caption=
+PName=
+ModifiedDateTime=20190130140833
+LineMode=0
+Bar1=950
+Bar2=50
+Bar3=948
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_line
+Entity2=m_line_rest_time
+RelationType1=2
+RelationType2=3
+Fields1=line_id
+Fields2=line_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,6029,2244,1434,R,R
+Dependence=0
+Caption=
+PName=
+ModifiedDateTime=20190130140517
+LineMode=0
+Bar1=603
+Bar2=224
+Bar3=143
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_defective_reason
+Entity2=m_line_defective_reason
+RelationType1=2
+RelationType2=3
+Fields1=defective_reason_id
+Fields2=defective_reason_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,7407,2593,4165,R,R
+Dependence=0
+Caption=
+PName=
+ModifiedDateTime=20190130140304
+LineMode=0
+Bar1=741
+Bar2=259
+Bar3=416
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_line
+Entity2=m_line_defective_reason
+RelationType1=2
+RelationType2=3
+Fields1=line_id
+Fields2=line_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,7033,2967,5414,R,R
+Dependence=0
+Caption=
+PName=
+ModifiedDateTime=20190130140147
+LineMode=0
+Bar1=703
+Bar2=297
+Bar3=541
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=sap_item_history
+LName=sap item history (maters)
+Comment=
+TableOption=
+Page=MAIN
+Left=500
+Top=2400
+Field="sap_item_history_id","sap_item_history_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="sap_matnr_item_cd","sap_matnr_item_cd","@VARCHAR(18)",,,"","",$FFFFFFFF,""
+Field="sap_maktx_item_name","sap_maktx_item_name","@VARCHAR(40)",,,"","",$FFFFFFFF,""
+Field="sap_mtart_item_type","sap_mtart_item_type","@VARCHAR(4)",,,"","material type",$FFFFFFFF,""
+Field="sap_ersda_created_date","sap_ersda_created_date","timestamp",,,"","",$FFFFFFFF,""
+Field="sap_laeda_modified_date","sap_laeda_modified_date","timestamp",,,"","",$FFFFFFFF,""
+Field="sap_lvorm1_delete_flag_local","sap_lvorm1_delete_flag_local","@CHAR(1)",,,"","",$FFFFFFFF,""
+Field="sap_xchpf_batch_management_info","sap_xchpf_batch_management_info","@CHAR(1)",,,"","",$FFFFFFFF,""
+Field="sap_meins_measure_unit","sap_meins_measure_unit","@VARCHAR(3)",,,"","",$FFFFFFFF,""
+Field="sap_bismt_item_no_legacy","sap_bismt_material_no_legacy","@VARCHAR(18)",,,"","",$FFFFFFFF,""
+Field="sap_matkl_item_grp_id","sap_matkl_material_grp_id","@VARCHAR(9)",,,"","",$FFFFFFFF,""
+Field="sap_spart_sales_division_name","sap_spart_sales_division_name","@VARCHAR(2)",,,"","",$FFFFFFFF,""
+Field="sap_prdha_product_level","sap_prdha_product_level","@VARCHAR(18)",,,"","hierarchy level",$FFFFFFFF,""
+Field="sap_mstae_item_status_overall","sap_mstae_material_status_overall","@VARCHAR(2)",,,"","",$FFFFFFFF,""
+Field="sap_mtpos_item_category_group","sap_mtpos_item_category_group","@VARCHAR(4)",,,"","",$FFFFFFFF,""
+Field="sap_ntgew_weight","sap_ntgew_weight","decimal",,,"","",$FFFFFFFF,""
+Field="sap_gewei_weight_unit","sap_gewei_weight_unit","@VARCHAR(8)",,,"","",$FFFFFFFF,""
+Field="sap_volume_volume","sap_volume_volume","decimal",,,"","",$FFFFFFFF,""
+Field="sap_volume_volume_unit","sap_volume_volume_unit","@VARCHAR(3)",,,"","",$FFFFFFFF,""
+Field="sap_groes_size","sap_groes_size","@VARCHAR(32)",,,"","",$FFFFFFFF,""
+Field="sap_zeinr_document_number","sap_zeinr_document_number","@VARCHAR(22)",,,"","",$FFFFFFFF,""
+Field="sap_werks_factory_cd","sap_werks_factory_cd","@VARCHAR(4)",,,"","",$FFFFFFFF,""
+Field="sap_lvorm2_delete_flag_factory","sap_lvorm2_delete_flag_factory","@CHAR(1)",,,"","",$FFFFFFFF,""
+Field="sap_disgr_mrp_group","sap_disgr_mrp_group","@VARCHAR(4)",,,"","",$FFFFFFFF,""
+Field="sap_ekgrp_purchasing_group","sap_ekgrp_purchasing_group","@VARCHAR(3)",,,"","",$FFFFFFFF,""
+Field="sap_mmsta_material_status_specific","sap_mmsta_material_status_specific","@VARCHAR(2)",,,"","",$FFFFFFFF,""
+Field="sap_dismm_mrp_type","sap_dismm_mrp_type","@VARCHAR(2)",,,"","",$FFFFFFFF,""
+Field="sap_minbe_reorder_point","sap_minbe_reorder_point","decimal",,,"","",$FFFFFFFF,""
+Field="sap_fxhor_planning_time_fence","sap_fxhor_planning_time_fence","integer",,,"","",$FFFFFFFF,""
+Field="sap_dispo_mrp_controller","sap_dispo_mrp_controller","@VARCHAR(3)",,,"","",$FFFFFFFF,""
+Field="sap_dsnam_spool_request_name","sap_dsnam_spool_request_name","@VARCHAR(18)",,,"","",$FFFFFFFF,""
+Field="sap_disls_lot_size","sap_disls_lot_size","@VARCHAR(2)",,,"","",$FFFFFFFF,""
+Field="sap_bstmi_min_lot_size","sap_bstmi_min_lot_size","decimal",,,"","",$FFFFFFFF,""
+Field="sap_bstma_max_lot_size","sap_bstma_max_lot_size","decimal",,,"","",$FFFFFFFF,""
+Field="sap_bstfe_fixed_lot_size","sap_bstfe_fixed_lot_size","decimal",,,"","",$FFFFFFFF,""
+Field="sap_mabst_max_stock_level","sap_mabst_max_stock_level","decimal",,,"","",$FFFFFFFF,""
+Field="sap_rdprf_rounding_profile","sap_rdprf_rounding_profile","@VARCHAR(4)",,,"","",$FFFFFFFF,""
+Field="sap_bstrf_po_quantity","sap_bstrf_po_quantity","decimal",,,"","",$FFFFFFFF,""
+Field="sap_beskz_Procurement_type","sap_beskz_Procurement_type","@CHAR(1)",,,"","",$FFFFFFFF,""
+Field="sap_sobsl_special_Procurement_type","sap_sobsl_special_Procurement_type","@VARCHAR(2)",,,"","",$FFFFFFFF,""
+Field="sap_lgpro_issue_storage_location","sap_lgpro_issue_storage_location","@VARCHAR(4)",,,"","",$FFFFFFFF,""
+Field="sap_usequ_quota_arrangement_usage","sap_usequ_quota_arrangement_usage","@VARCHAR(1)",,,"","",$FFFFFFFF,""
+Field="sap_vspvb_proposed_supply_area","sap_vspvb_proposed_supply_area","@VARCHAR(10)",,,"","",$FFFFFFFF,""
+Field="sap_rgekz_backflush","sap_rgekz_backflush","@CHAR(1)",,,"","",$FFFFFFFF,""
+Field="sap_lgfsb_default_storage_location","sap_lgfsb_default_storage_location","@VARCHAR(4)",,,"","",$FFFFFFFF,""
+Field="sap_dzeit_inhouse_production_time","sap_dzeit_inhouse_production_time","integer",,,"","",$FFFFFFFF,""
+Field="sap_plifz_planned_delivery_time","sap_plifz_planned_delivery_time","integer",,,"","days",$FFFFFFFF,""
+Field="sap_webaz_good_receipt_processing_time","sap_webaz_good_receipt_processing_time","integer",,,"","days",$FFFFFFFF,""
+Field="sap_mrppp_ppc_planning_calendar","sap_mrppp_ppc_planning_calendar","@VARCHAR(3)",,,"","",$FFFFFFFF,""
+Field="sap_fhori_scheduling_margin_keys","sap_fhori_scheduling_margin_keys","@VARCHAR(3)",,,"","",$FFFFFFFF,""
+Field="sap_eisbe_safety_stock","sap_eisbe_safety_stock","decimal",,,"","",$FFFFFFFF,""
+Field="sap_lgrad_service_level","sap_lgrad_service_level","decimal",,,"","",$FFFFFFFF,""
+Field="sap_eislo_min_safety_stock","sap_eislo_min_safety_stock","decimal",,,"","",$FFFFFFFF,""
+Field="sap_rwpro_coverage_profile","sap_rwpro_coverage_profile","@VARCHAR(3)",,,"","",$FFFFFFFF,""
+Field="sap_shflg_safety_time_indicator","sap_shflg_safety_time_indicator","@CHAR(1)",,,"","",$FFFFFFFF,""
+Field="sap_shzet_safety_time","sap_shzet_safety_time","integer",,,"","",$FFFFFFFF,""
+Field="sap_shpro_safety_time_period","sap_shpro_safety_time_period","@VARCHAR(3)",,,"","",$FFFFFFFF,""
+Field="sap_strgr_planning_strategy_group","sap_strgr_planning_strategy_group","@VARCHAR(2)",,,"","",$FFFFFFFF,""
+Field="sap_vrmod_consumption_mode","sap_vrmod_consumption_mode","@CHAR(1)",,,"","",$FFFFFFFF,""
+Field="sap_vint1_consumption_period","sap_vint1_consumption_period","integer",,,"","backward",$FFFFFFFF,""
+Field="sap_vint2_consumption_period","sap_vint2_consumption_period","integer",,,"","forward",$FFFFFFFF,""
+Field="sap_miskz_mixed_mrp_indicator","sap_miskz_mixed_mrp_indicator","@CHAR(1)",,,"","",$FFFFFFFF,""
+Field="sap_mtvfp_checking_group","sap_mtvfp_checking_group","@VARCHAR(2)",,,"","",$FFFFFFFF,""
+Field="sap_altsl_altsl","sap_altsl_altsl","@CHAR(1)",,,"","",$FFFFFFFF,""
+Field="sap_kausf_component_scrap","sap_kausf_component_scrap","decimal",,,"","",$FFFFFFFF,""
+Field="sap_kzaus_discontinuation_indicator","sap_kzaus_discontinuation_indicator","@CHAR(1)",,,"","",$FFFFFFFF,""
+Field="sap_ausdt_interrupt_date","sap_ausdt_interrupt_date","timestamp",,,"","",$FFFFFFFF,""
+Field="sap_nfmat_follow_up_material","sap_nfmat_follow_up_material","@VARCHAR(18)",,,"","",$FFFFFFFF,""
+Field="registration_user_cd","registration_user_cd","@VARCHAR(32)",,,"","",$FFFFFFFF,""
+Field="registration_date_time","registration_date_time","timestamp",,,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)",,,"","",$FFFFFFFF,""
+Index=sap_item_history_idx1=0,sap_matnr_item_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$8FC5ED
+ModifiedDateTime=20181226091652
+Position="MAIN",500,2400,342,434
+
+[Relation]
+Entity1=m_line
+Entity2=m_line_sap_item
+RelationType1=2
+RelationType2=3
+Fields1=line_id
+Fields2=line_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,5004,4996,8545,R,R
+Dependence=0
+Caption=
+PName=
+ModifiedDateTime=20190130134719
+LineMode=0
+Bar1=500
+Bar2=500
+Bar3=854
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=sap_item
+Entity2=m_line_sap_item
+RelationType1=3
+RelationType2=3
+Fields1=sap_matnr_item_cd
+Fields2=sap_matnr_item_cd
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,4960,5040,3528,R,R
+Dependence=0
+Caption=
+PName=
+ModifiedDateTime=20190130134040
+LineMode=0
+Bar1=496
+Bar2=504
+Bar3=353
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=sap_item
+Entity2=m_item_line_inspection_format
+RelationType1=1
+RelationType2=3
+Fields1=sap_matnr_item_cd
+Fields2=sap_matnr_item_cd
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,9500,500,9352,R,R
+Dependence=0
+Caption=
+PName=
+ModifiedDateTime=20190130133935
+LineMode=0
+Bar1=950
+Bar2=50
+Bar3=935
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=sap_item
+LName=sap item (maters)
+Comment=
+TableOption=
+Page=MAIN
+Left=500
+Top=1900
+Field="sap_matnr_item_cd","sap_matnr_item_cd","@VARCHAR(18)","NOT NULL",,"","",$FFFFFFFF,""
+Field="sap_maktx_item_name","sap_maktx_item_name","@VARCHAR(40)",,,"","",$FFFFFFFF,""
+Field="sap_mtart_item_type","sap_mtart_item_type","@VARCHAR(4)",,,"","material type",$FFFFFFFF,""
+Field="sap_ersda_created_date","sap_ersda_created_date","timestamp",,,"","",$FFFFFFFF,""
+Field="sap_laeda_modified_date","sap_laeda_modified_date","timestamp",,,"","",$FFFFFFFF,""
+Field="sap_lvorm1_delete_flag_local","sap_lvorm1_delete_flag_local","@CHAR(1)",,,"","",$FFFFFFFF,""
+Field="sap_xchpf_batch_management_info","sap_xchpf_batch_management_info","@CHAR(1)",,,"","",$FFFFFFFF,""
+Field="sap_meins_measure_unit","sap_meins_measure_unit","@VARCHAR(3)",,,"","",$FFFFFFFF,""
+Field="sap_bismt_item_no_legacy","sap_bismt_material_no_legacy","@VARCHAR(18)",,,"","",$FFFFFFFF,""
+Field="sap_matkl_item_grp_id","sap_matkl_material_grp_id","@VARCHAR(9)",,,"","",$FFFFFFFF,""
+Field="sap_spart_sales_division_name","sap_spart_sales_division_name","@VARCHAR(2)",,,"","",$FFFFFFFF,""
+Field="sap_prdha_product_level","sap_prdha_product_level","@VARCHAR(18)",,,"","hierarchy level",$FFFFFFFF,""
+Field="sap_mstae_item_status_overall","sap_mstae_material_status_overall","@VARCHAR(2)",,,"","",$FFFFFFFF,""
+Field="sap_mtpos_item_category_group","sap_mtpos_item_category_group","@VARCHAR(4)",,,"","",$FFFFFFFF,""
+Field="sap_ntgew_weight","sap_ntgew_weight","decimal",,,"","",$FFFFFFFF,""
+Field="sap_gewei_weight_unit","sap_gewei_weight_unit","@VARCHAR(8)",,,"","",$FFFFFFFF,""
+Field="sap_volume_volume","sap_volume_volume","decimal",,,"","",$FFFFFFFF,""
+Field="sap_volume_volume_unit","sap_volume_volume_unit","@VARCHAR(3)",,,"","",$FFFFFFFF,""
+Field="sap_groes_size","sap_groes_size","@VARCHAR(32)",,,"","",$FFFFFFFF,""
+Field="sap_zeinr_document_number","sap_zeinr_document_number","@VARCHAR(22)",,,"","",$FFFFFFFF,""
+Field="sap_werks_factory_cd","sap_werks_factory_cd","@VARCHAR(4)",,,"","",$FFFFFFFF,""
+Field="sap_lvorm2_delete_flag_factory","sap_lvorm2_delete_flag_factory","@CHAR(1)",,,"","",$FFFFFFFF,""
+Field="sap_disgr_mrp_group","sap_disgr_mrp_group","@VARCHAR(4)",,,"","",$FFFFFFFF,""
+Field="sap_ekgrp_purchasing_group","sap_ekgrp_purchasing_group","@VARCHAR(3)",,,"","",$FFFFFFFF,""
+Field="sap_mmsta_material_status_specific","sap_mmsta_material_status_specific","@VARCHAR(2)",,,"","",$FFFFFFFF,""
+Field="sap_dismm_mrp_type","sap_dismm_mrp_type","@VARCHAR(2)",,,"","",$FFFFFFFF,""
+Field="sap_minbe_reorder_point","sap_minbe_reorder_point","decimal",,,"","",$FFFFFFFF,""
+Field="sap_fxhor_planning_time_fence","sap_fxhor_planning_time_fence","integer",,,"","",$FFFFFFFF,""
+Field="sap_dispo_mrp_controller","sap_dispo_mrp_controller","@VARCHAR(3)",,,"","",$FFFFFFFF,""
+Field="sap_dsnam_spool_request_name","sap_dsnam_spool_request_name","@VARCHAR(18)",,,"","",$FFFFFFFF,""
+Field="sap_disls_lot_size","sap_disls_lot_size","@VARCHAR(2)",,,"","",$FFFFFFFF,""
+Field="sap_bstmi_min_lot_size","sap_bstmi_min_lot_size","decimal",,,"","",$FFFFFFFF,""
+Field="sap_bstma_max_lot_size","sap_bstma_max_lot_size","decimal",,,"","",$FFFFFFFF,""
+Field="sap_bstfe_fixed_lot_size","sap_bstfe_fixed_lot_size","decimal",,,"","",$FFFFFFFF,""
+Field="sap_mabst_max_stock_level","sap_mabst_max_stock_level","decimal",,,"","",$FFFFFFFF,""
+Field="sap_rdprf_rounding_profile","sap_rdprf_rounding_profile","@VARCHAR(4)",,,"","",$FFFFFFFF,""
+Field="sap_bstrf_po_quantity","sap_bstrf_po_quantity","decimal",,,"","",$FFFFFFFF,""
+Field="sap_beskz_Procurement_type","sap_beskz_Procurement_type","@CHAR(1)",,,"","",$FFFFFFFF,""
+Field="sap_sobsl_special_Procurement_type","sap_sobsl_special_Procurement_type","@VARCHAR(2)",,,"","",$FFFFFFFF,""
+Field="sap_lgpro_issue_storage_location","sap_lgpro_issue_storage_location","@VARCHAR(4)",,,"","",$FFFFFFFF,""
+Field="sap_usequ_quota_arrangement_usage","sap_usequ_quota_arrangement_usage","@VARCHAR(1)",,,"","",$FFFFFFFF,""
+Field="sap_vspvb_proposed_supply_area","sap_vspvb_proposed_supply_area","@VARCHAR(10)",,,"","",$FFFFFFFF,""
+Field="sap_rgekz_backflush","sap_rgekz_backflush","@CHAR(1)",,,"","",$FFFFFFFF,""
+Field="sap_lgfsb_default_storage_location","sap_lgfsb_default_storage_location","@VARCHAR(4)",,,"","",$FFFFFFFF,""
+Field="sap_dzeit_inhouse_production_time","sap_dzeit_inhouse_production_time","integer",,,"","",$FFFFFFFF,""
+Field="sap_plifz_planned_delivery_time","sap_plifz_planned_delivery_time","integer",,,"","days",$FFFFFFFF,""
+Field="sap_webaz_good_receipt_processing_time","sap_webaz_good_receipt_processing_time","integer",,,"","days",$FFFFFFFF,""
+Field="sap_mrppp_ppc_planning_calendar","sap_mrppp_ppc_planning_calendar","@VARCHAR(3)",,,"","",$FFFFFFFF,""
+Field="sap_fhori_scheduling_margin_keys","sap_fhori_scheduling_margin_keys","@VARCHAR(3)",,,"","",$FFFFFFFF,""
+Field="sap_eisbe_safety_stock","sap_eisbe_safety_stock","decimal",,,"","",$FFFFFFFF,""
+Field="sap_lgrad_service_level","sap_lgrad_service_level","decimal",,,"","",$FFFFFFFF,""
+Field="sap_eislo_min_safety_stock","sap_eislo_min_safety_stock","decimal",,,"","",$FFFFFFFF,""
+Field="sap_rwpro_coverage_profile","sap_rwpro_coverage_profile","@VARCHAR(3)",,,"","",$FFFFFFFF,""
+Field="sap_shflg_safety_time_indicator","sap_shflg_safety_time_indicator","@CHAR(1)",,,"","",$FFFFFFFF,""
+Field="sap_shzet_safety_time","sap_shzet_safety_time","integer",,,"","",$FFFFFFFF,""
+Field="sap_shpro_safety_time_period","sap_shpro_safety_time_period","@VARCHAR(3)",,,"","",$FFFFFFFF,""
+Field="sap_strgr_planning_strategy_group","sap_strgr_planning_strategy_group","@VARCHAR(2)",,,"","",$FFFFFFFF,""
+Field="sap_vrmod_consumption_mode","sap_vrmod_consumption_mode","@CHAR(1)",,,"","",$FFFFFFFF,""
+Field="sap_vint1_consumption_period","sap_vint1_consumption_period","integer",,,"","backward",$FFFFFFFF,""
+Field="sap_vint2_consumption_period","sap_vint2_consumption_period","integer",,,"","forward",$FFFFFFFF,""
+Field="sap_miskz_mixed_mrp_indicator","sap_miskz_mixed_mrp_indicator","@CHAR(1)",,,"","",$FFFFFFFF,""
+Field="sap_mtvfp_checking_group","sap_mtvfp_checking_group","@VARCHAR(2)",,,"","",$FFFFFFFF,""
+Field="sap_altsl_altsl","sap_altsl_altsl","@CHAR(1)",,,"","",$FFFFFFFF,""
+Field="sap_kausf_component_scrap","sap_kausf_component_scrap","decimal",,,"","",$FFFFFFFF,""
+Field="sap_kzaus_discontinuation_indicator","sap_kzaus_discontinuation_indicator","@CHAR(1)",,,"","",$FFFFFFFF,""
+Field="sap_ausdt_interrupt_date","sap_ausdt_interrupt_date","timestamp",,,"","",$FFFFFFFF,""
+Field="sap_nfmat_follow_up_material","sap_nfmat_follow_up_material","@VARCHAR(18)",,,"","",$FFFFFFFF,""
+Field="registration_user_cd","registration_user_cd","@VARCHAR(32)",,,"","",$FFFFFFFF,""
+Field="registration_date_time","registration_date_time","timestamp",,,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)",,,"","",$FFFFFFFF,""
+Index=sap_item_idx1=0,sap_matnr_item_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$FFFFFF
+ModifiedDateTime=20190226095949
+Position="MAIN",500,1900,307,434
+
+[Entity]
+PName=m_line_sap_item
+LName=line item master
+Comment=
+TableOption=
+Page=MAIN
+Left=950
+Top=2150
+Field="line_sap_item_id","line_sap_item_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="line id","line_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="sap_item_cd","sap_matnr_item_cd","@VARCHAR(18)","NOT NULL",,"","",$FFFFFFFF,""
+Field="cycle_time","cycle_time","decimal","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="facory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_line_sap_item_uidx1=1,line_id,sap_matnr_item_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$FFCC66
+ModifiedDateTime=20190205114055
+Position="MAIN",950,2150,312,185
+
+[Relation]
+Entity1=m_customer
+Entity2=m_customer_line
+RelationType1=2
+RelationType2=3
+Fields1=customer_id
+Fields2=customer_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,5247,500,4832,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=525
+Bar2=50
+Bar3=483
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_line_rest_time
+LName=line rest time master
+Comment=
+TableOption=
+Page=MAIN
+Left=1300
+Top=2150
+Field="line_rest_time_id","line_rest_time_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="line id","line_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="shift","shift","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="plan rest minutes","plan_rest_minutes","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="facory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_line_rest_time_uidx1=1,line_id,shift,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$FFCC66
+ModifiedDateTime=20190205114318
+Position="MAIN",1300,2150,345,189
+
+[Entity]
+PName=m_customer_line
+LName=customer line master
+Comment=
+TableOption=
+Page=MAIN
+Left=3700
+Top=1750
+Field="customer id","customer_line_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="customer id","customer_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="line id","line_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_customer_line_uki1=1,customer_id,line_id,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$FFCC66
+ModifiedDateTime=20190206173628
+Position="MAIN",3700,1750
+
+[Entity]
+PName=m_line_defective_reason
+LName=line defective reason master
+Comment=
+TableOption=
+Page=MAIN
+Left=1350
+Top=2400
+Field="line_defective_reason_id","line_defective_reason_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="line id","line_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="defective reason id","defective_reason_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="facory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_line_defective_reason_uidx1=1,line_id,defective_reason_id,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$FFCC66
+ModifiedDateTime=20190205114126
+Position="MAIN",1350,2400,314,164
+
+[Entity]
+PName=m_factory_production_days
+LName=factory production days
+Comment=
+TableOption=
+Page=MAIN
+Left=1650
+Top=2250
+Field="factory_production_days_id","factory_production_days_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="year","year","integer","NOT NULL",,"","年",$FFFFFFFF,""
+Field="month","month","integer","NOT NULL",,"","月",$FFFFFFFF,""
+Field="days","days","integer","NOT NULL",,"","稼动天数",$FFFFFFFF,""
+Field="building_id","building_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration_user_cd","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration_date_time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory_cd","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_factory_production_days_uidx1=1,year,month,building_id,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$FFCC66
+ModifiedDateTime=20190205115143
+Position="MAIN",1650,2250,380,220
+
+[Relation]
+Entity1=m_inspection_item
+Entity2=m_inspection_item_selection_datatype_value
+RelationType1=2
+RelationType2=3
+Fields1=inspection_item_id
+Fields2=inspection_item_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,9500,500,9500,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=950
+Bar2=50
+Bar3=950
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_inspection_item_selection_datatype_value
+LName=m_inspection_item_selection_datatype_value
+Comment=
+TableOption=
+Page=MAIN
+Left=2550
+Top=2400
+Field="inspection_item_selection_datatype_value_id","inspection_item_selection_datatype_value_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="inspection_item_selection_datatype_value_cd","inspection_item_selection_datatype_value_cd","@VARCHAR(128)","NOT NULL",,"","",$FFFFFFFF,""
+Field="inspection_item_selection_datatype_value_text","inspection_item_selection_datatype_value_text","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,""
+Field="display_order","display_order","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="inspection_item_id","inspection_item_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_inspection_item_selection_datatype_value_uidx1=1,inspection_item_selection_datatype_value_cd,inspection_item_id,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$99FFFF
+ModifiedDateTime=20181227163508
+Position="MAIN",2550,2400,577,267
+
+[Relation]
+Entity1=m_model
+Entity2=m_mold_item
+RelationType1=2
+RelationType2=3
+Fields1=model_id
+Fields2=model_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,2311,7689,1696,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=231
+Bar2=769
+Bar3=170
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_mold_category
+Entity2=m_mold_detail
+RelationType1=2
+RelationType2=3
+Fields1=mold_category_id
+Fields2=mold_category_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,718,9282,718,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=72
+Bar2=928
+Bar3=72
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_model
+LName=model master
+Comment=
+TableOption=
+Page=MAIN
+Left=50
+Top=2400
+Field="model id","model_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="model code","model_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="model name","model_name","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_model_uidx1=1,model_cd
+EffectMode=None
+Color=$000000
+BkColor=$99FFFF
+ModifiedDateTime=20181217100238
+Position="MAIN",50,2400,288,159
+
+[Entity]
+PName=m_mold_item
+LName=mold item master
+Comment=
+TableOption=
+Page=MAIN
+Left=50
+Top=2600
+Field="mold item id","mold_item_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="mold id","mold_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="global_item_id","global_item_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="std cycle time","std_cycle_time","decimal","NOT NULL",,"","value will include seconds",$FFFFFFFF,""
+Field="model_id","model_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="drawing_no","drawing_no","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_mold_item_uidx1=1,mold_id,global_item_id
+EffectMode=None
+Color=$000000
+BkColor=$99FFFF
+ModifiedDateTime=20181217100305
+Position="MAIN",50,2600,310,249
+
+[Entity]
+PName=m_mold_detail
+LName=mold detail master
+Comment=
+TableOption=
+Page=MAIN
+Left=50
+Top=2100
+Field="mold detail id","mold_detail_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="mold id","mold_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="mold_category_id","mold_category_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="life alarm shot count","life_alarm_shot_count","integer",,,"","",$FFFFFFFF,""
+Field="periodic mnt alarm shot count1","periodic_mnt_alarm_shot_count1","integer",,,"","",$FFFFFFFF,""
+Field="periodic mnt alarm shot count2","periodic_mnt_alarm_shot_count2","integer",,,"","",$FFFFFFFF,""
+Field="periodic mnt alarm shot count3","periodic_mnt_alarm_shot_count3","integer",,,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_mold_detail_uidx1=1,mold_id
+EffectMode=None
+Color=$000000
+BkColor=$99FFFF
+ModifiedDateTime=20181217100252
+Position="MAIN",50,2100
+
+[Entity]
+PName=m_mold_category
+LName=mold category master
+Comment=
+TableOption=
+Page=MAIN
+Left=50
+Top=1850
+Field="mold category id","mold_category_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="mold category code","mold_category_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="mold category name","mold_category_name","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,""
+Field="display order","display_order","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_mold_category_uidx1=1,mold_category_cd
+EffectMode=None
+Color=$000000
+BkColor=$99FFFF
+ModifiedDateTime=20181217100215
+Position="MAIN",50,1850
+
+[Relation]
+Entity1=m_local_item
+Entity2=m_local_supplier_cavity
+RelationType1=2
+RelationType2=3
+Fields1=item_id
+Fields2=item_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,8384,7940,1973,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=838
+Bar2=794
+Bar3=197
+TermPos1=R
+TermPos2=R
+
+[Line]
+Page=Main
+Left=3126
+Top=1593
+Width=70
+Height=20
+
+[Comment]
+Comment=Copy option in UI to use same value for multiple specification
+FontName=Tahoma
+FontBold=0
+FontItalic=0
+FontUnderline=0
+FontSize=9
+FontColor=$000000
+LineColor=$000000
+BkColor=$FFFFFF
+Page=Main
+Left=3200
+Top=1550
+Width=589
+Height=162
+
+[Line]
+Page=Main
+Left=2000
+Top=2050
+Width=109
+Height=41
+
+[Comment]
+Comment=Used  for 1 line and 1 item
+FontName=Tahoma
+FontBold=0
+FontItalic=0
+FontUnderline=0
+FontSize=9
+FontColor=$000000
+LineColor=$000000
+BkColor=$FFFFFF
+Page=Main
+Left=2100
+Top=2050
+Width=324
+Height=136
+
+[Relation]
+Entity1=m_inspection_process
+Entity2=m_inspection_item
+RelationType1=1
+RelationType2=3
+Fields1=inspection_process_id
+Fields2=inspection_process_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,8601,4821,2396,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=860
+Bar2=482
+Bar3=240
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_inspection_format
+Entity2=m_inspection_process
+RelationType1=2
+RelationType2=3
+Fields1=inspection_format_id
+Fields2=inspection_format_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,5375,1136,2214,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=538
+Bar2=114
+Bar3=221
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_inspection_process
+LName=m_inspection_process
+Comment=
+TableOption=
+Page=MAIN
+Left=2200
+Top=1400
+Field="inspection_process_id","inspection_process_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="inspection_process_cd","inspection_process_cd","@VARCHAR(128)","NOT NULL",,"","",$FFFFFFFF,""
+Field="inspection_process_name","inspection_process_name","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,""
+Field="inspection_format_id","inspection_format_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="display_order","display_order","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date tme","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_inspection_process_uidx1=1,inspection_process_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$99FFFF
+ModifiedDateTime=20181227150253
+Position="MAIN",2200,1400,344,238
+
+[Relation]
+Entity1=m_inspection_item
+Entity2=m_inspection_test_instruction
+RelationType1=1
+RelationType2=3
+Fields1=inspection_item_id
+Fields2=
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,5948,4243,9444,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=595
+Bar2=424
+Bar3=944
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_inspection_item
+Entity2=m_inspection_specification
+RelationType1=2
+RelationType2=3
+Fields1=inspection_item_id
+Fields2=inspection_item_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,4684,6366,9500,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=468
+Bar2=637
+Bar3=950
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_line
+Entity2=m_item_line_inspection_format
+RelationType1=1
+RelationType2=3
+Fields1=line_id
+Fields2=
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,9500,500,9,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=950
+Bar2=50
+Bar3=1
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_inspection_format
+Entity2=m_item_line_inspection_format
+RelationType1=2
+RelationType2=3
+Fields1=inspection_format_id
+Fields2=inspection_format_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,9500,4287,9500,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=950
+Bar2=429
+Bar3=950
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_item_line_inspection_format
+LName=m_item_line_inspection_format
+Comment=
+TableOption=
+Page=MAIN
+Left=1600
+Top=1950
+Field="item_line_inspection_format_id","item_line_inspection_format_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="sap item code","sap_matnr_item_cd","@VARCHAR(18)",,,"","",$FFFFFFFF,""
+Field="line_id","line_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="inspection_format_id","inspection_format_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_item_line_inspection_format_uidx1=1,sap_matnr_item_cd,line_id,factory_cd,inspection_format_id
+Index=m_item_line_inspection_format_uidx2=1,inspection_format_id,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$99FFFF
+ModifiedDateTime=20190130132536
+Position="MAIN",1600,1950,384,227
+
+[Entity]
+PName=m_inspection_format
+LName=m_inspection_format
+Comment=
+TableOption=
+Page=MAIN
+Left=2150
+Top=1700
+Field="inspection_format_id","inspection_format_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="inspection_format_cd","inspection_format_cd","@VARCHAR(128)","NOT NULL",,"","",$FFFFFFFF,""
+Field="inspection_format_name","inspection_format_name","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,""
+Field="is_deleted","is_deleted","@CHAR(1)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_inspection_format_uidx=1,inspection_format_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$99FFFF
+ModifiedDateTime=20190115102727
+Position="MAIN",2150,1700,311,194
+
+[Relation]
+Entity1=m_inspection_test_instruction
+Entity2=m_inspection_test_instruction_detail
+RelationType1=2
+RelationType2=3
+Fields1=inspection_test_instruction_id
+Fields2=inspection_test_instruction_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,5003,500,4481,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=500
+Bar2=50
+Bar3=448
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_inspection_test_instruction_detail
+LName=m_inspection_test_instruction_detail
+Comment=
+TableOption=
+Page=MAIN
+Left=3200
+Top=2100
+Field="inspection_test_instruction_detail_id","inspection_test_instruction_detail_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="inspection_test_instruction_detail_cd","inspection_test_instruction_detail_cd","@VARCHAR(128)","NOT NULL",,"","",$FFFFFFFF,""
+Field="inspection_test_instruction_detail_text","inspection_test_instruction_detail_text","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,""
+Field="inspection_test_instruction_detail_result_count","inspection_test_instruction_detail_result_count","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="inspection_test_instruction_detail_machine_text","inspection_test_instruction_detail_machine_text","@VARCHAR(32)",,,"","",$FFFFFFFF,""
+Field="inspection_test_instruction_id","inspection_test_instruction_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_inspection_test_instruction_detail_uidx=1,inspection_test_instruction_detail_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$99FFFF
+ModifiedDateTime=20181227150233
+Position="MAIN",3200,2100,595,259
+
+[Entity]
+PName=m_inspection_specification
+LName=m_inspection_specification
+Comment=
+TableOption=
+Page=MAIN
+Left=2750
+Top=1450
+Field="inspection_specification_id","inspection_specification_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="inspection_specification_cd","inspection_specification_cd","@VARCHAR(128)","NOT NULL",,"","",$FFFFFFFF,""
+Field="inspection_specification_text","inspection_specification_text","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,""
+Field="value_from","value_from","@VARCHAR(50)","NOT NULL",,"","",$FFFFFFFF,""
+Field="value_to","value_to","@VARCHAR(50)",,,"","",$FFFFFFFF,""
+Field="unit","unit","@VARCHAR(5)",,,"","mm/kg",$FFFFFFFF,""
+Field="operator_from","operator_from","@VARCHAR(5)",,,"","min/max",$FFFFFFFF,""
+Field="operator_to","operator_to","@VARCHAR(5)",,,"","",$FFFFFFFF,""
+Field="inspection_item_id","inspection_item_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="specification_result_judge_type","specification_result_judge_type","integer","NOT NULL",,"","1.auto\n2.manual",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_inspection_specification_uidx1=1,inspection_specification_cd,factory_cd
+Index=m_inspection_specification_uidx2=1,inspection_item_id,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$99FFFF
+ModifiedDateTime=20181227150246
+Position="MAIN",2750,1450,375,376
+
+[Entity]
+PName=m_inspection_item
+LName=m_inspection_item
+Comment=
+TableOption=
+Page=MAIN
+Left=2550
+Top=1900
+Field="inspection_item_id","inspection_item_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="inspection_item_cd","inspection_item_cd","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,""
+Field="inspection_item_name","inspection_item_name","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,""
+Field="parent_inspection_item_id","parent_inspection_item_id","integer",,,"","",$FFFFFFFF,""
+Field="inspection_process_id","inspection_process_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="inspection_item_data_type","inspection_item_data_type","integer","NOT NULL",,"","1-decimal\n2-boolean\n3-varchar\n4-bytea\n5-integer",$FFFFFFFF,""
+Field="inspection_item_result_input_decimal_digits","inspection_item_result_input_decimal_digits","integer",,,"","",$FFFFFFFF,""
+Field="is_inspection_item_mandatory","is_inspection_item_mandatory","integer","NOT NULL",,"","0-no/1-yes",$FFFFFFFF,""
+Field="is_inspection_employee_mandatory","is_inspection_employee_mandatory","integer","NOT NULL",,"","0-no/1-yes",$FFFFFFFF,""
+Field="is_inspection_machine_mandatory","is_inspection_machine_mandatory","integer","NOT NULL",,"","0-no/1-yes",$FFFFFFFF,""
+Field="display_order","display_order","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_inspection_item_uidx1=1,inspection_item_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$99FFFF
+ModifiedDateTime=20181227150225
+Position="MAIN",2550,1900,567,407
+
+[Entity]
+PName=m_inspection_test_instruction
+LName=m_inspection_test_instruction
+Comment=
+TableOption=
+Page=MAIN
+Left=3200
+Top=1800
+Field="inspection_test_instruction_id","inspection_test_instruction_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="inspection_test_instruction_cd","inspection_test_instruction_cd","@VARCHAR(128)","NOT NULL",,"","",$FFFFFFFF,""
+Field="inspection_test_instruction_text","inspection_test_instruction_text","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,""
+Field="inspection_item_id","inspection_item_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_inspection_test_instruction_uidx1=1,inspection_test_instruction_cd,factory_cd
+Index=m_inspection_test_instruction_uidx2=1,inspection_item_id,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$99FFFF
+ModifiedDateTime=20181227150238
+Position="MAIN",3200,1800,433,194
+
+[Relation]
+Entity1=m_stock_location
+Entity2=m_process_stocklocation
+RelationType1=2
+RelationType2=3
+Fields1=stock_location_id
+Fields2=stock_location_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,4531,5469,4687,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=453
+Bar2=547
+Bar3=469
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_process
+Entity2=m_process_stocklocation
+RelationType1=2
+RelationType2=3
+Fields1=process_id
+Fields2=process_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,2158,7842,939,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=216
+Bar2=784
+Bar3=94
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_process_stocklocation
+LName=process stock location
+Comment=
+TableOption=
+Page=MAIN
+Left=1700
+Top=500
+Field="process_stocklocation_id","process_stocklocation_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="process id","process_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="stock_location_id","stock_location_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date tme","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_process_stocklocation_uidx1=1,process_id,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20181009114040
+Position="MAIN",1700,500,302,206
+
+[Relation]
+Entity1=m_local_item
+Entity2=m_global_local_item
+RelationType1=2
+RelationType2=3
+Fields1=item_id
+Fields2=global_local_item_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,7798,2202,7172,R,R
+Dependence=1
+Caption=
+PName=
+LineMode=0
+Bar1=780
+Bar2=220
+Bar3=717
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_global_item
+Entity2=m_global_local_item
+RelationType1=2
+RelationType2=3
+Fields1=global_item_id
+Fields2=global_item_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,7798,8964,5726,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=780
+Bar2=896
+Bar3=573
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_global_local_item
+LName=global local item master
+Comment=
+TableOption=
+Page=MAIN
+Left=0
+Top=850
+Field="global_local_item_id","global_local_item_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="global_item_id","global_item_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="local_item_id","local_item_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_global_local_item_uidx1=1,global_item_id,local_item_id
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20180831114926
+Position="MAIN",0,850,280,179
+
+[Entity]
+PName=m_global_item
+LName=global item master
+Comment=
+TableOption=
+Page=MAIN
+Left=350
+Top=700
+Field="global_item_id","global_item_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="global_item_cd","global_item_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="global_item_name","global_item_name","@VARCHAR(64)","NOT NULL",,"","model code",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_global_item_uidx1=1,global_item_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20180710164813
+Position="MAIN",350,700,279,200
+
+[Entity]
+PName=m_sap_user
+LName=sap user
+Comment=
+TableOption=
+Page=MAIN
+Left=2800
+Top=1200
+Field="sap_user_id","sap_user_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="mes_user_cd","mes_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="sap_user","sap_user","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="sap_password","sap_password","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user cd","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration datetime","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_sap_user_uidx1=1,mes_user_cd,sap_user,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20180622134233
+Position="MAIN",2800,1200,235,185
+
+[Entity]
+PName=m_stock_location
+LName=stock location master
+Comment=
+TableOption=
+Page=MAIN
+Left=1750
+Top=150
+Field="stock_location_id","stock_location_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="stock_location_code","stock_location_code","@VARCHAR(16)","NOT NULL",,"","",$FFFFFFFF,""
+Field="stock_location_name","stock_location_name","@VARCHAR(16)","NOT NULL",,"","",$FFFFFFFF,""
+Field="display_order","display_order","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="location_type","location_type","integer","NOT NULL",,"","0-process/1-warehouse",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_stock_location_udix1=1,stock_location_code,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20180823104126
+Position="MAIN",1750,150,310,262
+
+[Relation]
+Entity1=m_location
+Entity2=m_area_master
+RelationType1=1
+RelationType2=3
+Fields1=location_id
+Fields2=location_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,7255,9256,4974,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=726
+Bar2=926
+Bar3=497
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_palette_master
+LName=palette master
+Comment=
+TableOption=
+Page=MAIN
+Left=2300
+Top=950
+Field="palette id","palette_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="palette code","palette_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="palette name","palette_name","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,""
+Field="area id","area_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_palette_uidx1=1,palette_cd,area_id,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20190119172118
+Position="MAIN",2300,950,267,196
+
+[Entity]
+PName=m_shelf_master
+LName=shelf master
+Comment=
+TableOption=
+Page=MAIN
+Left=2350
+Top=600
+Field="shelf id","shelf_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="shelf code","shelf_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="shelf name","shelf_name","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,""
+Field="area id","area_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_shelf_uidx1=1,shelf_cd,area_id,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20190119172108
+Position="MAIN",2350,600,260,212
+
+[Entity]
+PName=m_area_master
+LName=area master
+Comment=
+TableOption=
+Page=MAIN
+Left=2050
+Top=550
+Field="area id","area_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="area code","area_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="area name","area_name","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,""
+Field="location id","location_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_area_uidx1=1,area_cd,location_id,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20190119172101
+Position="MAIN",2050,550,249,214
+
+[Relation]
+Entity1=m_area_master
+Entity2=m_shelf_master
+RelationType1=1
+RelationType2=3
+Fields1=area_id
+Fields2=area_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,3234,6609,2936,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=323
+Bar2=661
+Bar3=294
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_area_master
+Entity2=m_palette_master
+RelationType1=1
+RelationType2=3
+Fields1=area_id
+Fields2=area_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,7208,7275,370,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=721
+Bar2=728
+Bar3=37
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_factory
+Entity2=m_building
+RelationType1=2
+RelationType2=3
+Fields1=factory_cd
+Fields2=factory_cd
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,681,9319,508,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=68
+Bar2=932
+Bar3=51
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_building
+Entity2=m_location
+RelationType1=2
+RelationType2=3
+Fields1=building_id
+Fields2=building_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,2580,3530,2295,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=258
+Bar2=353
+Bar3=230
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_location
+LName=location master
+Comment=
+TableOption=
+Page=MAIN
+Left=2150
+Top=100
+Field="location id","location_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="location code","location_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="location name","location_name","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,""
+Field="building id","building_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_location_uidx1=1,location_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20190119172049
+Position="MAIN",2150,100,241,217
+
+[Entity]
+PName=m_building
+LName=building master
+Comment=
+TableOption=
+Page=MAIN
+Left=2450
+Top=100
+Field="building id","building_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="building code","building_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="building name","building_name","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_building_uidx1=1,building_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20190205145733
+Position="MAIN",2450,100,251,193
+
+[Relation]
+Entity1=m_defective_category
+Entity2=m_defective_reason
+RelationType1=1
+RelationType2=3
+Fields1=defective_category_id
+Fields2=
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,3022,6978,3056,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=302
+Bar2=698
+Bar3=306
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_defective_category
+LName=defective category master
+Comment=
+TableOption=
+Page=MAIN
+Left=950
+Top=1550
+Field="defective category id","defective_category_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="defective category code","defective_category_cd","@VARCHAR(3)","NOT NULL",,"","",$FFFFFFFF,""
+Field="defective category name","defective_category_name","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_defective_category_uidx1=1,defective_category_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20180622160459
+Position="MAIN",950,1550,275,217
+
+[Entity]
+PName=m_employee
+LName=employee master
+Comment=
+TableOption=
+Page=MAIN
+Left=3250
+Top=1250
+Field="employee code","employee_cd","@VARCHAR(16)","NOT NULL",0,"","",$FFFFFFFF,""
+Field="employee  name","employee_name","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,"  "
+Field="department","department","@VARCHAR(16)","NOT NULL",,"","",$FFFFFFFF,""
+Field="is_active","is_active","integer","NOT NULL",,"","0-active,1-inactive",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_employee_uidx1=1,employee_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20181207122140
+Position="MAIN",3250,1250,296,210
+
+[Relation]
+Entity1=m_local_supplier
+Entity2=m_local_supplier_cavity
+RelationType1=2
+RelationType2=3
+Fields1=local_supplier_id
+Fields2=local_supplier_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,7725,2275,6910,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=772
+Bar2=228
+Bar3=691
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_local_supplier_cavity
+LName=local supplier cavity master
+Comment=
+TableOption=
+Page=MAIN
+Left=650
+Top=1650
+Field="cavity id","cavity_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="cavity code","cavity_cd","@VARCHAR(6)","NOT NULL",,"","",$FFFFFFFF,""
+Field="cavity name","cavity_name","@VARCHAR(48)","NOT NULL",,"","",$FFFFFFFF,""
+Field="local supplier id","local_supplier_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="item id","item_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_local_supplier_cavity_uidx1=1,local_supplier_id,cavity_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20181212141412
+Position="MAIN",650,1650,275,217
+
+[Entity]
+PName=m_local_supplier
+LName=local supplier master
+Comment=
+TableOption=
+Page=MAIN
+Left=350
+Top=1650
+Field="local supplier id","local_supplier_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="local supplier code","local_supplier_cd","@VARCHAR(5)","NOT NULL",,"","",$FFFFFFFF,""
+Field="local supplier name","local_supplier_name","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_local_supplier_uidx1=1,local_supplier_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20181212141436
+Position="MAIN",350,1650,246,198
+
+[Line]
+Page=Main
+Left=2127
+Top=1318
+Width=0
+Height=0
+
+[Relation]
+Entity1=m_machine
+Entity2=m_processwork_machine
+RelationType1=2
+RelationType2=3
+Fields1=machine_id
+Fields2=machine_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,4894,5106,4889,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=489
+Bar2=511
+Bar3=489
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_line
+Entity2=m_processwork_line
+RelationType1=2
+RelationType2=3
+Fields1=line_id
+Fields2=line_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,3993,6007,3985,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=399
+Bar2=601
+Bar3=398
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_process_work
+Entity2=m_processwork_machine
+RelationType1=1
+RelationType2=3
+Fields1=process_work_id
+Fields2=process_work_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,4894,7266,0,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=489
+Bar2=727
+Bar3=0
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_process_work
+Entity2=m_processwork_line
+RelationType1=2
+RelationType2=3
+Fields1=process_work_id
+Fields2=process_work_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,1075,6007,1298,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=108
+Bar2=601
+Bar3=130
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_processwork_machine
+LName=processwork machine master
+Comment=
+TableOption=
+Page=MAIN
+Left=1700
+Top=1350
+Field="processwork machine id","processwork_machine_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="process work id","process_work_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="machine id","machine_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_processwork_machine_uidx1=1,process_work_id,machine_id,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20180622140214
+Position="MAIN",1700,1350,278,196
+
+[Entity]
+PName=m_processwork_line
+LName=processwork line master
+Comment=
+TableOption=
+Page=MAIN
+Left=1350
+Top=1350
+Field="process work line id","processwork_line_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="process work id","process_work_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="line id","line_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_processwork_line_uidx1=1,process_work_id,line_id,factory_cd
+Index=m_processwork_line_uidx2=1,line_id,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20190226091819
+Position="MAIN",1350,1350,246,164
+
+[Entity]
+PName=m_machine
+LName=machine master
+Comment=
+TableOption=
+Page=MAIN
+Left=1750
+Top=1700
+Field="machine id","machine_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="machine code","machine_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Field="machine name","machine_name","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_machine_uidx1=1,machine_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20180719154943
+Position="MAIN",1750,1700,243,180
+
+[Entity]
+PName=m_line
+LName=line master
+Comment=
+TableOption=
+Page=MAIN
+Left=1300
+Top=1700
+Field="line id","line_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="line code","line_cd","@VARCHAR(16)","NOT NULL",,"","",$FFFFFFFF,""
+Field="line name","line_name","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_line_uidx1=1,line_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20190225104745
+Position="MAIN",1300,1700,233,183
+
+[Entity]
+PName=m_customer
+LName=customer master
+Comment=
+TableOption=
+Page=MAIN
+Left=3650
+Top=1150
+Field="customer id","customer_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="customer code","customer_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="customer name","customer_name","@VARCHAR(128)","NOT NULL",,"","",$FFFFFFFF,"  "
+Field="address1","address1","@VARCHAR(128)",,,"","",$FFFFFFFF,""
+Field="address2","address2","@VARCHAR(128)",,,"","",$FFFFFFFF,""
+Field="phone no","phone_no","@VARCHAR(32)",,,"","",$FFFFFFFF,""
+Field="email","email","@VARCHAR(32)",,,"","",$FFFFFFFF,""
+Field="remark","remarks","@VARCHAR(128)",,,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_customer_uki1=1,customer_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20171015193242
+Position="MAIN",3650,1150,368,323
+
+[Entity]
+PName=s_update_log
+LName=update log
+Comment=For storing master record change history.
+TableOption=
+Page=MAIN
+Left=3750
+Top=700
+Field="log id","log_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="table name","table_name","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="fields","fields","@VARCHAR(2000)",,,"","",$FFFFFFFF,""
+Field="values","values","@VARCHAR(2000)",,,"","",$FFFFFFFF,""
+Field="crud","crud","@CHAR(1)",,,"","",$FFFFFFFF,""
+Field="log contents","log_contents","xml",,,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+EffectMode=None
+Color=$000000
+BkColor=$FFFFFF
+ModifiedDateTime=20180601181841
+Position="MAIN",3750,700,291,243
+
+[Relation]
+Entity1=m_country_language
+Entity2=m_mes_user
+RelationType1=1
+RelationType2=3
+Fields1=locale_id
+Fields2=locale_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,8361,5066,7607,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=836
+Bar2=507
+Bar3=761
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_mes_user
+Entity2=m_login_password
+RelationType1=2
+RelationType2=3
+Fields1=user_cd
+Fields2=user_cd
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,1445,5159,4843,R,R
+Dependence=1
+Caption=
+PName=
+LineMode=0
+Bar1=144
+Bar2=516
+Bar3=484
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_inventory_reason
+LName=inventory reason master
+Comment=
+TableOption=
+Page=MAIN
+Left=950
+Top=1900
+Field="invenroty reason id","inventory_reason_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="invenroty reason code","inventory_reason_cd","@VARCHAR(3)","NOT NULL",,"","",$FFFFFFFF,""
+Field="invenroty reason name","inventory_reason_name","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_inventory_reason_uidx1=1,inventory_reason_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20170823125106
+Position="MAIN",950,1900,262,159
+
+[Relation]
+Entity1=m_process_flow_rule
+Entity2=m_item_process_work
+RelationType1=2
+RelationType2=3
+Fields1=process_flow_rule_id
+Fields2=process_flow_rule_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,4049,5922,4036,R,R
+Dependence=0
+Caption=
+PName=
+ModifiedDateTime=20170602165806
+LineMode=0
+Bar1=405
+Bar2=592
+Bar3=404
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_process_flow_rule
+LName=process flow rule master
+Comment=
+TableOption=
+Page=MAIN
+Left=850
+Top=150
+Field="process flow rule id","process_flow_rule_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="process flow rule code","process_flow_rule_cd","@CHAR(3)","NOT NULL",,"","",$FFFFFFFF,""
+Field="comment","comment","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@vARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_process_flow_rule_uidx1=1,process_flow_rule_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20180622133900
+Position="MAIN",850,150,314,167
+
+[Relation]
+Entity1=m_process_work
+Entity2=m_process_work_local_supplier
+RelationType1=1
+RelationType2=3
+Fields1=process_work_id
+Fields2=process_work_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,8648,5545,3868,R,R
+Dependence=0
+Caption=
+PName=
+LineMode=0
+Bar1=865
+Bar2=554
+Bar3=387
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_process_work_local_supplier
+LName=process work local supplier master
+Comment=
+TableOption=
+Page=MAIN
+Left=1700
+Top=950
+Field="process work local supplier id","process_work_local_supplier_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="local supplier id","local_supplier_id","integer","NOT NULL",,"","Business Key 1",$FFFFFFFF,""
+Field="pocess work id","process_work_id","integer","NOT NULL",,"","Business Key 2",$FFFFFFFF,""
+Field="registration user cd","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_process_work_local_supplier_uidx1=1,local_supplier_id,process_work_id,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20180622140147
+Position="MAIN",1700,950,312,183
+
+[Relation]
+Entity1=m_process_work
+Entity2=m_item_process_work
+RelationType1=2
+RelationType2=3
+Fields1=process_work_id
+Fields2=process_work_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,1133,4751,2170,R,R
+Dependence=0
+Caption=
+PName=
+ModifiedDateTime=20170517175436
+LineMode=0
+Bar1=113
+Bar2=475
+Bar3=217
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_country_language
+LName=country language master
+Comment=
+TableOption=
+Page=MAIN
+Left=3650
+Top=100
+Field="locale id","locale_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="country","country","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Field="language","language","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_country_language_uidx1=2,country,language
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20170823110147
+Position="MAIN",3650,100,304,134
+
+[Relation]
+Entity1=m_equipment
+Entity2=m_casting_machine_furnace
+RelationType1=2
+RelationType2=3
+Fields1=equipment_id
+Fields2=equipment_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,616,6779,573,R,R
+Dependence=0
+Caption=
+PName=
+ModifiedDateTime=20161221092939
+LineMode=0
+Bar1=62
+Bar2=678
+Bar3=57
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_casting_machine_furnace
+Entity2=m_casting_machine
+RelationType1=2
+RelationType2=4
+Fields1=casting_machine_furnace_id
+Fields2=casting_machine_furnace_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,473,5132,3802,R,R
+Dependence=0
+Caption=
+PName=
+ModifiedDateTime=20161221092928
+LineMode=0
+Bar1=47
+Bar2=513
+Bar3=380
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_casting_machine_furnace
+LName=casting machine furnace master
+Comment=
+TableOption=
+Page=MAIN
+Left=50
+Top=450
+Field="casting machine furnace id","casting_machine_furnace_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="casting machine furnace code","casting_machine_furnace_cd","@VARCHAR(4)","NOT NULL",,"","",$FFFFFFFF,""
+Field="casting machine furnace name","casting_machine_furnace_name","@VARCHAR(40)","NOT NULL",,"","",$FFFFFFFF,""
+Field="equipment id","equipment_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","for IDM ",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_casting_machine_furnace_uidx1=1,casting_machine_furnace_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20180622133847
+Position="MAIN",50,450,301,225
+
+[Relation]
+Entity1=m_process_work
+Entity2=m_process_work_defective_reason
+RelationType1=2
+RelationType2=3
+Fields1=process_work_id
+Fields2=process_work_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,4550,3334,665,R,R
+Dependence=0
+Caption=
+PName=
+ModifiedDateTime=20161221092147
+LineMode=0
+Bar1=455
+Bar2=333
+Bar3=66
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_mes_user
+LName=MES user master
+Comment=
+TableOption=
+Page=MAIN
+Left=3350
+Top=400
+Field="user code","user_cd","@VARCHAR(32)","NOT NULL",0,"","",$FFFFFFFF,""
+Field="user name","user_name","@VARCHAR(128)","NOT NULL",,"","",$FFFFFFFF,"  "
+Field="locale id","locale_id","integer",,,"","",$FFFFFFFF,""
+Field="multi_login_flag","multi_login_flag","@CHAR(1)",,,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="registrated_factory code","registrated_factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20170825112414
+Position="MAIN",3350,400,296,246
+
+[Entity]
+PName=m_mes_role
+LName=MES role master
+Comment=
+TableOption=
+Page=MAIN
+Left=2900
+Top=400
+Field="role code","role_cd","@VARCHAR(16)","NOT NULL",0,"","",$FFFFFFFF,""
+Field="role name","role_name","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20170627094535
+Position="MAIN",2900,400,296,169
+
+[Entity]
+PName=m_mes_user_role
+LName=MES user role master
+Comment=
+TableOption=
+Page=MAIN
+Left=3000
+Top=950
+Field="user role id","user_role_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="user code","user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="role code","role_cd","@VARCHAR(16)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_user_role=1,user_cd,role_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20170627094557
+Position="MAIN",3000,950,299,201
+
+[Relation]
+Entity1=m_mes_role
+Entity2=m_mes_user_role
+RelationType1=2
+RelationType2=3
+Fields1=role_cd
+Fields2=role_cd
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,8126,5208,85,R,R
+Dependence=0
+Caption=
+PName=
+ModifiedDateTime=20161220152550
+LineMode=0
+Bar1=813
+Bar2=521
+Bar3=8
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_mes_user
+Entity2=m_mes_user_role
+RelationType1=2
+RelationType2=3
+Fields1=user_cd
+Fields2=user_cd
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,559,5249,2058,R,R
+Dependence=0
+Caption=
+PName=
+ModifiedDateTime=20161220152605
+LineMode=0
+Bar1=56
+Bar2=525
+Bar3=206
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_authority_control
+LName=authority control master
+Comment=
+TableOption=
+Page=MAIN
+Left=2550
+Top=400
+Field="authority control code","authority_control_cd","@VARCHAR(14)","NOT NULL",0,"","Authorization code to match with user control\qs permission control properties.",$FFFFFFFF,""
+Field="authority control name","authority_control_name","@VARCHAR(128)","NOT NULL",,"","",$FFFFFFFF,""
+Field="parent control code","parent_control_cd","@VARCHAR(14)",,,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20170530110723
+Position="MAIN",2550,400,296,179
+
+[Entity]
+PName=m_factory
+LName=factory master
+Comment=
+TableOption=
+Page=MAIN
+Left=2850
+Top=100
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",0,"","",$FFFFFFFF,""
+Field="factory name","factory_name","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20180515171916
+Position="MAIN",2850,100,294,144
+
+[Entity]
+PName=m_user_factory
+LName=user factory master
+Comment=
+TableOption=
+Page=MAIN
+Left=3200
+Top=100
+Field="user factory id","user_factory_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="user code","user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Field="display order","display_order","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_user_factory_uidx1=1,user_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20170727151425
+Position="MAIN",3200,100,294,178
+
+[Relation]
+Entity1=m_mes_user
+Entity2=m_user_factory
+RelationType1=2
+RelationType2=3
+Fields1=user_cd
+Fields2=user_cd
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,1872,5225,1885,R,R
+Dependence=0
+Caption=
+PName=
+ModifiedDateTime=20161202110611
+LineMode=0
+Bar1=187
+Bar2=522
+Bar3=188
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_factory
+Entity2=m_user_factory
+RelationType1=2
+RelationType2=3
+Fields1=factory_cd
+Fields2=factory_cd
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,913,5256,1750,R,R
+Dependence=0
+Caption=
+PName=
+ModifiedDateTime=20161202110648
+LineMode=0
+Bar1=91
+Bar2=526
+Bar3=175
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_role_authority_control
+LName=role authority control master
+Comment=
+TableOption=
+Page=MAIN
+Left=2650
+Top=950
+Field="role authority control id","role_authority_control_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="role code","role_cd","@VARCHAR(16)","NOT NULL",,"","",$FFFFFFFF,""
+Field="authority control code","authority_control_cd","@VARCHAR(14)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_role_authority_control_uidx1=1,role_cd,authority_control_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20170627094654
+Position="MAIN",2650,950,302,204
+
+[Relation]
+Entity1=m_mes_role
+Entity2=m_role_authority_control
+RelationType1=2
+RelationType2=3
+Fields1=role_cd
+Fields2=role_cd
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,670,5208,6087,R,R
+Dependence=0
+Caption=
+PName=
+ModifiedDateTime=20161220152542
+LineMode=0
+Bar1=67
+Bar2=521
+Bar3=609
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_authority_control
+Entity2=m_role_authority_control
+RelationType1=2
+RelationType2=3
+Fields1=authority_control_cd
+Fields2=authority_control_cd
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,5168,4954,3157,R,R
+Dependence=0
+Caption=
+PName=
+ModifiedDateTime=20161220152613
+LineMode=0
+Bar1=517
+Bar2=495
+Bar3=316
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_login_password
+LName=login password
+Comment=
+TableOption=
+Page=MAIN
+Left=3800
+Top=450
+Field="user code","user_cd","@VARCHAR(32)","NOT NULL",0,"","",$FFFFFFFF,""
+Field="password","password","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user cd","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+EffectMode=None
+Color=$000000
+BkColor=$FFFFFF
+ModifiedDateTime=20170825112429
+Position="MAIN",3800,450,296,156
+
+[Relation]
+Entity1=m_defective_reason
+Entity2=m_process_work_defective_reason
+RelationType1=2
+RelationType2=3
+Fields1=defective_reason_id
+Fields2=defective_reason_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,3669,3443,4119,R,R
+Dependence=0
+Caption=
+PName=
+ModifiedDateTime=20161221092201
+LineMode=0
+Bar1=367
+Bar2=344
+Bar3=412
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_process_work_defective_reason
+LName=process defective reason master
+Comment=
+TableOption=
+Page=MAIN
+Left=1050
+Top=850
+Field="process work defective reason id","process_work_defective_reason_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="defective reason id","defective_reason_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="pocess work id","process_work_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="facory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_process_defecti_reason_uidx1=1,process_work_id,defective_reason_id,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20180622140033
+Position="MAIN",1050,850,318,220
+
+[Relation]
+Entity1=m_process
+Entity2=m_process_work
+RelationType1=2
+RelationType2=4
+Fields1=process_id
+Fields2=process_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,5408,4592,3706,R,R
+Dependence=0
+Caption=
+PName=
+ModifiedDateTime=20161201144952
+LineMode=0
+Bar1=541
+Bar2=459
+Bar3=371
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_process_work
+LName=process work master
+Comment=It is necessary to add a method to express the work representative of the process among the work belonging to that process.\n
+TableOption=
+Page=MAIN
+Left=1350
+Top=500
+Field="process work id","process_work_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="process work code","process_work_cd","@VARCHAR(16)","NOT NULL",,"","",$FFFFFFFF,""
+Field="process work name","process_work_name","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,""
+Field="process id","process_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="line machine selection","line_machine_selection","integer","NOT NULL",,"","1- single line/2- single Machine/3-single line and single machine",$FFFFFFFF,""
+Field="display order","display_order","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="is phantom","is_phantom","@CHAR(1)","NOT NULL",,"","0:standard / 1:phantom (values are defined in Setting File)",$00000000,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_process_work_uidx1=1,process_work_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20190226161615
+Position="MAIN",1350,500,297,299
+
+[Relation]
+Entity1=m_local_item
+Entity2=m_item_process_work
+RelationType1=2
+RelationType2=3
+Fields1=item_id
+Fields2=item_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,3833,4946,1321,R,R
+Dependence=0
+Caption=
+PName=
+ModifiedDateTime=20161221092515
+LineMode=0
+Bar1=383
+Bar2=495
+Bar3=132
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_local_item
+Entity2=m_mold_type
+RelationType1=2
+RelationType2=3
+Fields1=item_id
+Fields2=item_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,8132,5904,0,R,R
+Dependence=0
+Caption=
+PName=
+ModifiedDateTime=20161221092622
+LineMode=0
+Bar1=813
+Bar2=590
+Bar3=0
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_mold_type
+Entity2=m_mold
+RelationType1=2
+RelationType2=4
+Fields1=mold_type_id
+Fields2=mold_type_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,2813,5376,2776,R,R
+Dependence=0
+Caption=
+PName=
+ModifiedDateTime=20161221092753
+LineMode=0
+Bar1=281
+Bar2=538
+Bar3=278
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_mold_type
+LName=mold type master
+Comment=
+TableOption=
+Page=MAIN
+Left=0
+Top=1100
+Field="mold type id","mold_type_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="mold type code","mold_type_cd","@VARCHAR(16)","NOT NULL",,"","",$FFFFFFFF,""
+Field="mold type name","mold_type_name","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,""
+Field="item id","item_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_mold_type_uidx1=1,mold_type_cd,item_id,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20180622133946
+Position="MAIN",0,1100,329,217
+
+[Entity]
+PName=m_local_item
+LName=local item master
+Comment=
+TableOption=
+Page=MAIN
+Left=650
+Top=900
+Field="item id","item_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="item  code","item_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="item name","item_name","@VARCHAR(64)","NOT NULL",,"","model code",$FFFFFFFF,""
+Field="unit type","unit_type","integer","NOT NULL",,"","0:Count / 1:Weight (values are defined in Setting File)",$00000000,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_local_item_uidx2=1,item_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20180706171215
+Position="MAIN",650,900,304,204
+
+[Relation]
+Entity1=m_mold
+Entity2=m_cavity
+RelationType1=2
+RelationType2=4
+Fields1=mold_id
+Fields2=mold_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,3967,4813,3954,R,R
+Dependence=0
+Caption=
+PName=
+ModifiedDateTime=20161221092723
+LineMode=0
+Bar1=397
+Bar2=481
+Bar3=395
+TermPos1=R
+TermPos2=R
+
+[Relation]
+Entity1=m_equipment
+Entity2=m_casting_machine
+RelationType1=2
+RelationType2=2
+Fields1=equipment_id
+Fields2=equipment_id
+Cardinarity1=
+Cardinarity2=
+Position="MAIN",0,586,4686,4891,R,R
+Dependence=0
+Caption=
+PName=
+ModifiedDateTime=20161221092909
+LineMode=0
+Bar1=59
+Bar2=469
+Bar3=489
+TermPos1=R
+TermPos2=R
+
+[Entity]
+PName=m_equipment
+LName=equipment master
+Comment=
+TableOption=
+Page=MAIN
+Left=50
+Top=100
+Field="equipment id","equipment_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="equipment code","equipment_cd","@VARCHAR(16)","NOT NULL",,"","",$FFFFFFFF,""
+Field="equipment name","equipment_name","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,""
+Field="instration date","instration_dt","date","NOT NULL",,"","",$FFFFFFFF,""
+Field="asset number","asset_no","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="manufacturer","manufacturer","@VARCHAR(32)",,,"","",$FFFFFFFF,""
+Field="model name","model_name","@VARCHAR(64)",,,"","",$FFFFFFFF,""
+Field="model code","model_cd","@VARCHAR(32)",,,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","for IDM ",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_equipment_uidx1=1,equipment_cd,factory_cd
+EffectMode=None
+Color=$000080
+BkColor=$808000
+ModifiedDateTime=20180622154242
+Position="MAIN",50,100,280,288
+
+[Entity]
+PName=m_item_process_work
+LName=item process work master
+Comment=Master for managing process work flow.
+TableOption=
+Page=MAIN
+Left=850
+Top=450
+Field="item process work id","item_process_work_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="item id","item_id","integer","NOT NULL",,"","Business Key 1",$FFFFFFFF,""
+Field="pocess work id","process_work_id","integer","NOT NULL",,"","Business Key 2",$FFFFFFFF,""
+Field="process_work_sequence","process_work_sequence","integer","NOT NULL",,"","to have same processwork repeatedly",$FFFFFFFF,""
+Field="is optional process","is_optional_process","@CHAR(1)","NOT NULL",,"","0:mandatory / 1:optional",$FFFFFFFF,""
+Field="skip prevention flag","skip_prevention_flg","@CHAR(1)","NOT NULL",,"","necesity of checking presence of previous process result (0:no need  / 1:need)",$FFFFFFFF,""
+Field="work order","work_order","integer","NOT NULL",,"","Order of process work for each item.Value is maintained in Process work master maintenace screen automatically.",$FFFFFFFF,""
+Field="process flow rule id","process_flow_rule_id","integer",,,"","",$FFFFFFFF,""
+Field="item_process_type_cd","item_process_type_cd","@CHAR(1)","NOT NULL",,"","0-Normal/1-RTV/2-Purchase/3-salvage",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_item_process_work_uidx1=1,item_id,work_order,item_process_type_cd,factory_cd
+Index=m_item_process_work_uidx2=1,item_id,process_work_id,process_work_sequence,item_process_type_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20190110100847
+Position="MAIN",850,450,315,321
+
+[Entity]
+PName=m_defective_reason
+LName=defective reason master
+Comment=
+TableOption=
+Page=MAIN
+Left=950
+Top=1200
+Field="defective reason id","defective_reason_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="defective reason code","defective_reason_cd","@VARCHAR(16)","NOT NULL",,"","AKey1-2, BKey1-1",$FFFFFFFF,""
+Field="defective reason name","defective_reason_name","@VARCHAR(128)","NOT NULL",,"","",$FFFFFFFF,""
+Field="defective category id","defective_category_id","integer",,,"","",$FFFFFFFF,""
+Field="display order","display_order","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_defective_reason_uidx1=1,defective_reason_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20180622160528
+Position="MAIN",950,1200,357,212
+
+[Entity]
+PName=m_process
+LName=process master
+Comment=
+TableOption=
+Page=MAIN
+Left=1250
+Top=150
+Field="process id","process_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="process code","process_cd","@VARCHAR(16)","NOT NULL",,"","",$FFFFFFFF,""
+Field="process name","process_name","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date tme","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_process_uidx1=1,process_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20180622133955
+Position="MAIN",1250,150,296,225
+
+[Entity]
+PName=m_cavity
+LName=cavity master
+Comment=
+TableOption=
+Page=MAIN
+Left=0
+Top=1550
+Field="cavity id","cavity_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="cavity code","cavity_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="cavity name","cavity_name","@VARCHAR(48)","NOT NULL",,"","",$FFFFFFFF,""
+Field="mold id","mold_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_cavity_uidx1=1,cavity_cd,mold_id
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20181018131446
+Position="MAIN",0,1550,289,225
+
+[Entity]
+PName=m_mold
+LName=mold master
+Comment=
+TableOption=
+Page=MAIN
+Left=450
+Top=1150
+Field="mold id","mold_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="mold code","mold_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="mold name","mold_name","@VARCHAR(64)","NOT NULL",,"","",$FFFFFFFF,""
+Field="mold type id","mold_type_id","integer",,,"","",$FFFFFFFF,""
+Field="width","width","decimal",,,"","",$FFFFFFFF,""
+Field="depth","depth","decimal",,,"","",$FFFFFFFF,""
+Field="height","height","decimal",,,"","",$FFFFFFFF,""
+Field="weight","weight","decimal",,,"","",$FFFFFFFF,""
+Field="production date time","production_date_time","timestamp",,,"","",$FFFFFFFF,""
+Field="life shot count","life_shot_count","integer",,,"","",$FFFFFFFF,""
+Field="comment","comment","@VARCHAR(128)",,,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_mold_uidx1=1,mold_cd,mold_type_id,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20180622135641
+Position="MAIN",450,1150,283,400
+
+[Entity]
+PName=m_casting_machine
+LName=casting machine master
+Comment=
+TableOption=
+Page=MAIN
+Left=450
+Top=150
+Field="casting machine id","casting_machine_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="casting machine code","casting_machine_cd","@VARCHAR(6)","NOT NULL",,"","",$FFFFFFFF,""
+Field="casting machine name","casting_machine_name","@VARCHAR(48)","NOT NULL",,"","",$FFFFFFFF,""
+Field="casting machine furnace id","casting_machine_furnace_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="equipment id","equipment_id","integer","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration user code","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","for IDM ",$FFFFFFFF,""
+Field="registration date time","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=m_casting_machine_uidx1=1,casting_machine_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$C0DCC0
+ModifiedDateTime=20180622133838
+Position="MAIN",450,150,328,243

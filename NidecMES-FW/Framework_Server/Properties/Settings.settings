@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Com.Nidec.Mes.Framework_Server.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DEFAULT_REMOTE_MES_SERVER_DEFAULT_SERVICE_NAME" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DefaultRemoteCbmInvokerProxy</Value>
+    </Setting>
+    <Setting Name="DEFAULT_REMOTE_MES_SERVER_DEFAULT_2008_SERVICE_NAME" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DefaultRemoteCbmInvokerProxy_2008</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

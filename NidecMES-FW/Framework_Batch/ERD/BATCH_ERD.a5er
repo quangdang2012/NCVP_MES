@@ -1,0 +1,59 @@
+﻿# A5:ER FORMAT:11
+# A5:ER ENCODING:UTF8
+# A5:ER Mk-1 Copyright (C)2007 m.matsubara
+# A5:SQL Mk-2 Copyright (C)1997 m.matsubara
+#  http://www.wind.sannet.ne.jp/m_matsu/developer/a5m2/
+
+[Manager]
+ProjectName=Framework
+Author=
+MaxEntityRowShow=1000
+ReadOnlyRecommend=0
+Page=Main
+PageInfo="Main",2,"A3Landscape",$FFFFFF
+LogicalView=1
+DecodeDomain=0
+ViewModePageIndividually=1
+ViewMode=2
+ViewFormat=0
+UseNondependenceDashLine=0
+FontName=Tahoma
+FontSize=6
+PaperSize=A4Landscape
+HeaderLeft=
+HeaderCenter=
+HeaderRight=
+FooterLeft=
+FooterCenter=
+FooterRight=
+ShowPageoutRelation=1
+RDBMSType=6
+RDBMSTypeName=PostgreSQL
+DefaultPkName=%0:s_PKC
+DefaultPkIndexName=%0:s_PKI
+DefaultIndexName=%0:s_IX%1:d
+DefaultFkName=%0:s_FK%1:d
+SqlSeparator=0
+ShowTag=1
+ShowCommonAttributes=0
+
+[Entity]
+PName=t_batch_process
+LName=batch process
+Comment=
+TableOption=
+Page=MAIN
+Left=350
+Top=300
+Field="batch_process_id","batch_process_id","serial","NOT NULL",0,"","",$FFFFFFFF,""
+Field="batch_process_cd","batch_process_cd","@VARCHAR(256)","NOT NULL",,"","",$FFFFFFFF,""
+Field="is_stop_requested","is_stop_requested","boolean","NOT NULL",,"False","stop request from administrative tool",$FFFFFFFF,""
+Field="registration user cd","registration_user_cd","@VARCHAR(32)","NOT NULL",,"","",$FFFFFFFF,""
+Field="registration datetime","registration_date_time","timestamp","NOT NULL",,"","",$FFFFFFFF,""
+Field="factory code","factory_cd","@VARCHAR(8)","NOT NULL",,"","",$FFFFFFFF,""
+Index=t_batch_process_uidx1=1,batch_process_cd,factory_cd
+EffectMode=None
+Color=$000000
+BkColor=$FFFFFF
+ModifiedDateTime=20190128123943
+Position="MAIN",350,300,386,169

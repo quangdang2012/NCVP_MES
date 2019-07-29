@@ -1,0 +1,78 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Com.Nidec.Mes.Framework_Batch.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SCHED_RETURN_IN_BATCH_CONTROLLER_BATCH_EXECUTION_SUCCESS" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">300</Value>
+    </Setting>
+    <Setting Name="SCHED_RETURN_IN_BATCH_CONTROLLER_EXECUTION_COMPLETE_EXCEPTION" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">305</Value>
+    </Setting>
+    <Setting Name="SCHED_RETURN_IN_BATCH_CONTROLLER_MULTIPLE_INVOKE_RETRY_THREAD_WAIT_EXCEPTION" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">402</Value>
+    </Setting>
+    <Setting Name="SCHED_RETURN_IN_BATCH_CONTROLLER_EXECUTION_THREAD_WAIT_EXCEPTION" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">304</Value>
+    </Setting>
+    <Setting Name="SCHED_RETURN_IN_BATCH_CONTROLLER_RETRY_EXECUTION_ON_EXCEPTION_THREAD_WAIT_EXCEPTION" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">501</Value>
+    </Setting>
+    <Setting Name="SCHED_RETURN_IN_BATCH_CONTROLLER_RETRY_EXECUTION_ON_EXCEPTION_REACHED_MAX_COUNT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">502</Value>
+    </Setting>
+    <Setting Name="SCHED_RETURN_IN_BATCH_CONTROLLER_BATCH_MAIN_INSTANCE_NOT_AVAILABLE" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">302</Value>
+    </Setting>
+    <Setting Name="SCHED_RETURN_IN_BATCH_CONTROLLER_MULTIPLE_INVOKE_EXCEPTION" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">401</Value>
+    </Setting>
+    <Setting Name="SCHED_RETURN_IN_BATCH_CONTROLLER_MULTIPLE_INVOKE_RETRY_REACHED_MAX_COUNT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">403</Value>
+    </Setting>
+    <Setting Name="SCHED_RETURN_IN_BATCH_CONTROLLER_EXECUTION_EXCEPTION_NO_RETRY" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">303</Value>
+    </Setting>
+    <Setting Name="SCHED_RETURN_IN_EXCEPTION_HANDLER_UNEXPECTED_EXCEPTION" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">205</Value>
+    </Setting>
+    <Setting Name="SCHED_RETURN_IN_EXCEPTION_HANDLER_APPLICATION_EXCEPTION" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">201</Value>
+    </Setting>
+    <Setting Name="SCHED_RETURN_IN_EXCEPTION_HANDLER_SYSTEM_EXCEPTION" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">202</Value>
+    </Setting>
+    <Setting Name="SCHED_RETURN_IN_EXCEPTION_HANDLER_EXCEPTION" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">203</Value>
+    </Setting>
+    <Setting Name="SCHED_RETURN_IN_EXCEPTION_HANDLER_EXCEPTION_IN_EXIT_APPLICATION" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">204</Value>
+    </Setting>
+    <Setting Name="SCHED_RETURN_IN_EXCEPTION_HANDLER_EXCEPTION_IN_ABNORMAL_EXIT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">206</Value>
+    </Setting>
+    <Setting Name="SCHED_RETURN_IN_BATCH_CONTROLLER_EXCEPTION_IN_EXIT_APPLICATION" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">301</Value>
+    </Setting>
+    <Setting Name="SCHED_RETURN_IN_BATCH_CONTROLLER_MULTIPLE_INVOKE_EXCEPTION_NO_RETRY" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">404</Value>
+    </Setting>
+    <Setting Name="SCHED_RETURN_IN_APPLICATION_INITIALIZER_SYSTEM_EXCEPTION" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">101</Value>
+    </Setting>
+    <Setting Name="SCHED_RETURN_IN_APPLICATION_INITIALIZER_UNHANDLED_EXCEPTION" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">102</Value>
+    </Setting>
+    <Setting Name="SCHED_RETURN_IN_BATCH_CONTROLLER_MULTIPLE_INVOKE_DATA_NOT_FOUND" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">405</Value>
+    </Setting>
+    <Setting Name="SCHED_RETURN_IN_BATCH_CONTROLLER_EXECUTION_COMPLETE_AFTER_STOP_REQUEST" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">306</Value>
+    </Setting>
+    <Setting Name="SCHED_RETURN_IN_BATCH_CONTROLLER_EXECUTION_COMPLETE_AFTER_STOP_REQUEST_EXCEPTION" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">307</Value>
+    </Setting>
+    <Setting Name="SCHED_RETURN_IN_BATCH_CONTROLLER_EXECUTION_COMPLETE_AFTER_STOP_REQUEST_DATA_NOT_FOUND" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">308</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

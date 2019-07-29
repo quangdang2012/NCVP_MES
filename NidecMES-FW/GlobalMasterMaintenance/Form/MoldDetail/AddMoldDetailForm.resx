@@ -1,0 +1,1402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;MoldName_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Comment_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;LifeAlarmShotCount_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Model_cmb.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="LifeShotCount_txt.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="MoldName_txt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="&gt;&gt;Comment_txt.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="labelCommon3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>320, 632</value>
+  </data>
+  <data name="Model_cmb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 23</value>
+  </data>
+  <data name="Width_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 219</value>
+  </data>
+  <data name="&gt;&gt;MoldType_cmb.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MoldDrawingNo_txt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ProductionDate_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;labelCommon2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxCommon1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="PeriodicAlarmShotCount3_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>465, 339</value>
+  </data>
+  <data name="&gt;&gt;PASC1_txt.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.TextBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="PeriodicAlarmShotCount1_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Model_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Height_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 297</value>
+  </data>
+  <data name="LifeAlarmShotCount_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>465, 219</value>
+  </data>
+  <data name="ProductionDate_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 375</value>
+  </data>
+  <data name="&gt;&gt;LifeAlarmShot_txt.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.TextBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;MoldType_lbl.Name" xml:space="preserve">
+    <value>MoldType_lbl</value>
+  </data>
+  <data name="MoldType_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 632</value>
+  </data>
+  <data name="PASC1_txt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="PeriodicAlarmShotCount3_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;LifeShotCount_txt.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.TextBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="Weight_txt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="Depth_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 258</value>
+  </data>
+  <data name="&gt;&gt;labelCommon3.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;MoldCode_txt.Name" xml:space="preserve">
+    <value>MoldCode_txt</value>
+  </data>
+  <data name="labelCommon3.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;PeriodicAlarmShotCount3_lbl.Name" xml:space="preserve">
+    <value>PeriodicAlarmShotCount3_lbl</value>
+  </data>
+  <data name="GlobalItemCode_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="Width_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="MoldCategory_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="&gt;&gt;Width_txt.Name" xml:space="preserve">
+    <value>Width_txt</value>
+  </data>
+  <data name="&gt;&gt;Model_lbl.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="PASC2_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;Comment_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PeriodicAlarmShotCount3_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="PASC3_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>627, 336</value>
+  </data>
+  <data name="PASC3_txt.MaxLength" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;labelCommon4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Exit_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>657, 564</value>
+  </data>
+  <data name="&gt;&gt;ItemNumber_btn.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.TextBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="Weight_txt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="&gt;&gt;MoldType_cmb.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;UpdateText_lbl.Name" xml:space="preserve">
+    <value>UpdateText_lbl</value>
+  </data>
+  <data name="&gt;&gt;Weight_txt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MoldCode_lbl.Name" xml:space="preserve">
+    <value>MoldCode_lbl</value>
+  </data>
+  <data name="&gt;&gt;labelCommon1.Name" xml:space="preserve">
+    <value>labelCommon1</value>
+  </data>
+  <data name="&gt;&gt;MoldCode_lbl.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="MoldCode_txt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="&gt;&gt;PASC3_txt.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.TextBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="GlobalItemCode_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 171</value>
+  </data>
+  <data name="PASC3_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Add Mold Detail</value>
+  </data>
+  <data name="&gt;&gt;Exit_btn.Name" xml:space="preserve">
+    <value>Exit_btn</value>
+  </data>
+  <data name="&gt;&gt;Depth_txt.Name" xml:space="preserve">
+    <value>Depth_txt</value>
+  </data>
+  <data name="&gt;&gt;Height_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PeriodicAlarmShotCount2_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="Depth_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;Comment_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;LifeShotCount_txt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PeriodicAlarmShotCount1_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="textBoxCommon1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 216</value>
+  </data>
+  <data name="&gt;&gt;UpdateText_lbl.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="Width_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;Width_lbl.Name" xml:space="preserve">
+    <value>Width_lbl</value>
+  </data>
+  <data name="&gt;&gt;labelCommon4.Name" xml:space="preserve">
+    <value>labelCommon4</value>
+  </data>
+  <data name="&gt;&gt;GlobalItem_cmb.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Width_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="LifeAlarmShotCount_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 15</value>
+  </data>
+  <data name="&gt;&gt;MoldCode_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Weight_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Height_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;Comment_lbl.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="MoldDrawingNo_txt.MaxLength" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="LifeAlarmShot_txt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="&gt;&gt;GlobalItem_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MoldDrawingNo_txt.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.TextBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Height_txt.Name" xml:space="preserve">
+    <value>Height_txt</value>
+  </data>
+  <data name="UpdateText_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Comment_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 441</value>
+  </data>
+  <data name="PeriodicAlarmShotCount1_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PeriodicAlarmShotCount2_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 15</value>
+  </data>
+  <data name="&gt;&gt;GlobalItem_cmb.Name" xml:space="preserve">
+    <value>GlobalItem_cmb</value>
+  </data>
+  <data name="&gt;&gt;PASC3_txt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Depth_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="MoldDrawingNo_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 21</value>
+  </data>
+  <data name="&gt;&gt;Depth_txt.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;Depth_txt.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.TextBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="GlobalItem_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 174</value>
+  </data>
+  <data name="&gt;&gt;PeriodicAlarmShotCount1_lbl.ZOrder" xml:space="preserve">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;MoldDrawingNo_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;MoldName_txt.Name" xml:space="preserve">
+    <value>MoldName_txt</value>
+  </data>
+  <data name="&gt;&gt;LifeAlarmShot_txt.ZOrder" xml:space="preserve">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;Ok_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ItemNumber_txt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LifeShotCount_txt.Name" xml:space="preserve">
+    <value>LifeShotCount_txt</value>
+  </data>
+  <data name="LifeShotCount_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="MoldCategory_lbl.Text" xml:space="preserve">
+    <value>Mold Category</value>
+  </data>
+  <data name="labelCommon6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>816, 378</value>
+  </data>
+  <data name="labelCommon6.Text" xml:space="preserve">
+    <value>(＊)</value>
+  </data>
+  <data name="labelCommon4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Model_lbl.Name" xml:space="preserve">
+    <value>Model_lbl</value>
+  </data>
+  <data name="&gt;&gt;PeriodicAlarmShotCount3_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LifeAlarmShot_txt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="MoldType_cmb.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;MoldCategory_cmb.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ComboBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;PeriodicAlarmShotCount2_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.GlobalMasterMaintenance.AddMoldForm, GlobalMasterMaintenance, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="UpdateText_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 103</value>
+  </data>
+  <data name="&gt;&gt;GlobalItem_cmb.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ComboBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;MoldCategory_lbl.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="Model_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 6, 9, 6</value>
+  </data>
+  <data name="Height_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 294</value>
+  </data>
+  <data name="labelCommon1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>372, 177</value>
+  </data>
+  <data name="&gt;&gt;Height_lbl.Name" xml:space="preserve">
+    <value>Height_lbl</value>
+  </data>
+  <data name="&gt;&gt;ItemNumber_Txt.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelCommon7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 219</value>
+  </data>
+  <data name="LifeShotCount_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;MoldItemCode_txt.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelCommon2.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="LifeAlarmShotCount_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="Width_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 215</value>
+  </data>
+  <data name="LifeAlarmShot_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>627, 216</value>
+  </data>
+  <data name="MoldCategory_cmb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="Model_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="Weight_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 20</value>
+  </data>
+  <data name="&gt;&gt;labelCommon5.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="PASC1_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 21</value>
+  </data>
+  <data name="LifeShotCount_txt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="&gt;&gt;LifeShotCount_lbl.Name" xml:space="preserve">
+    <value>LifeShotCount_lbl</value>
+  </data>
+  <data name="&gt;&gt;PeriodicAlarmShotCount2_lbl.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;Exit_btn.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;MoldName_txt.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.TextBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;MoldDrawingNo_lbl.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="labelCommon4.Text" xml:space="preserve">
+    <value>(＊)</value>
+  </data>
+  <data name="&gt;&gt;PASC3_txt.Name" xml:space="preserve">
+    <value>PASC3_txt</value>
+  </data>
+  <data name="PeriodicAlarmShotCount3_lbl.Text" xml:space="preserve">
+    <value>Periodic Alarm Shot Count3</value>
+  </data>
+  <data name="&gt;&gt;Depth_txt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PASC1_txt.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="PeriodicAlarmShotCount1_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="&gt;&gt;Height_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;MoldName_lbl.Name" xml:space="preserve">
+    <value>MoldName_lbl</value>
+  </data>
+  <data name="MoldType_cmb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 632</value>
+  </data>
+  <data name="&gt;&gt;GlobalItem_cmb.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Comment_lbl.Name" xml:space="preserve">
+    <value>Comment_lbl</value>
+  </data>
+  <data name="&gt;&gt;MoldCategory_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;labelCommon6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Ok_btn.Name" xml:space="preserve">
+    <value>Ok_btn</value>
+  </data>
+  <data name="MoldCategory_cmb.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;ProductionDate_dtp.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.DateTimePickerCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Weight_txt.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;ProductionDate_dtp.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;Weight_txt.Name" xml:space="preserve">
+    <value>Weight_txt</value>
+  </data>
+  <data name="Depth_txt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="ProductionDate_dtp.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="UpdateText_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 15</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAQAAAABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAABAA
+        AAAAAAAAAACAAACAAAAAgIAAgAAAAIAAgACAgAAAgICAAMDAwAAAAP8AAP8AAAD//wD/AAAA/wD/AP//
+        AAD///8AAAAAAAAAAAAAAAAAAAAAAAACIgAAIiAAAAIiAAIiIAAAAiIAAiIgAAACIgIiIiAAAAIiAiIi
+        IAAAAiIiIiIgAAACIiIgIiAAAAIiIiAiIAAAAiIgACIgAAACIiAAIiAAAAIiAAAiIAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD//wAA//8AAOPHAADjhwAA44cAAOIHAADiBwAA4AcAAOBHAADgRwAA4ccAAOHH
+        AADjxwAA//8AAP//AAD//wAA
+</value>
+  </data>
+  <data name="Model_lbl.Text" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="&gt;&gt;Model_cmb.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ComboBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="Weight_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;LifeAlarmShotCount_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="Comment_txt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;ProductionDate_dtp.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="MoldDrawingNo_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>627, 375</value>
+  </data>
+  <data name="&gt;&gt;MoldName_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="PeriodicAlarmShotCount1_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="ItemNumber_Txt.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="UpdateText_lbl.Text" xml:space="preserve">
+    <value>Update Mold Detail</value>
+  </data>
+  <data name="&gt;&gt;labelCommon7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Model_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;ItemNumber_Txt.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.TextBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;MoldType_lbl.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;labelCommon7.Name" xml:space="preserve">
+    <value>labelCommon7</value>
+  </data>
+  <data name="&gt;&gt;ProductionDate_lbl.Name" xml:space="preserve">
+    <value>ProductionDate_lbl</value>
+  </data>
+  <data name="PASC1_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>627, 257</value>
+  </data>
+  <data name="&gt;&gt;ItemNumber_txt.Name" xml:space="preserve">
+    <value>ItemNumber_txt</value>
+  </data>
+  <data name="&gt;&gt;MoldDrawingNo_txt.Name" xml:space="preserve">
+    <value>MoldDrawingNo_txt</value>
+  </data>
+  <data name="MoldDrawingNo_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 15</value>
+  </data>
+  <data name="ItemNumber_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 216</value>
+  </data>
+  <data name="MoldCode_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 135</value>
+  </data>
+  <data name="labelCommon4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="MoldCategory_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelCommon4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="PASC1_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;LifeAlarmShotCount_lbl.Name" xml:space="preserve">
+    <value>LifeAlarmShotCount_lbl</value>
+  </data>
+  <data name="&gt;&gt;MoldItemCode_lbl.Name" xml:space="preserve">
+    <value>MoldItemCode_lbl</value>
+  </data>
+  <data name="Model_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ItemNumber_Txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 216</value>
+  </data>
+  <data name="Height_txt.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="MoldCategory_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="labelCommon4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;labelCommon2.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;LifeShotCount_txt.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="Depth_txt.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;labelCommon1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MoldItemCode_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="MoldName_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 177</value>
+  </data>
+  <data name="labelCommon5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="PeriodicAlarmShotCount2_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MoldCategory_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>465, 141</value>
+  </data>
+  <data name="PeriodicAlarmShotCount3_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 15</value>
+  </data>
+  <data name="&gt;&gt;MoldDrawingNo_lbl.Name" xml:space="preserve">
+    <value>MoldDrawingNo_lbl</value>
+  </data>
+  <data name="&gt;&gt;GlobalItemCode_lbl.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="labelCommon6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="labelCommon5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelCommon6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="MoldDrawingNo_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="MoldDrawingNo_txt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="LifeAlarmShotCount_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;ProductionDate_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="labelCommon5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 15</value>
+  </data>
+  <data name="&gt;&gt;Depth_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="Comment_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 438</value>
+  </data>
+  <data name="&gt;&gt;PASC2_txt.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.TextBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;GlobalItemCode_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;labelCommon6.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="Weight_txt.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="Comment_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="MoldCategory_cmb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>627, 135</value>
+  </data>
+  <data name="PASC3_txt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="&gt;&gt;LifeAlarmShot_txt.Name" xml:space="preserve">
+    <value>LifeAlarmShot_txt</value>
+  </data>
+  <data name="PeriodicAlarmShotCount2_lbl.Text" xml:space="preserve">
+    <value>Periodic Alarm Shot Count2</value>
+  </data>
+  <data name="labelCommon7.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="&gt;&gt;labelCommon6.Name" xml:space="preserve">
+    <value>labelCommon6</value>
+  </data>
+  <data name="MoldDrawingNo_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="&gt;&gt;GlobalItemCode_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Width_txt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ProductionDate_dtp.Name" xml:space="preserve">
+    <value>ProductionDate_dtp</value>
+  </data>
+  <data name="LifeAlarmShot_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 21</value>
+  </data>
+  <data name="&gt;&gt;GlobalItemCode_txt.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.TextBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;labelCommon7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ItemNumber_txt.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelCommon3.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="MoldItemCode_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="PASC1_txt.MaxLength" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;labelCommon4.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;labelCommon3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="MoldCategory_cmb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 23</value>
+  </data>
+  <data name="PeriodicAlarmShotCount2_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="&gt;&gt;GlobalItem_lbl.Name" xml:space="preserve">
+    <value>GlobalItem_lbl</value>
+  </data>
+  <data name="&gt;&gt;MoldCode_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Height_lbl.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;PeriodicAlarmShotCount1_lbl.Name" xml:space="preserve">
+    <value>PeriodicAlarmShotCount1_lbl</value>
+  </data>
+  <data name="&gt;&gt;Ok_btn.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ButtonCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="MoldItemCode_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 216</value>
+  </data>
+  <data name="labelCommon4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>816, 138</value>
+  </data>
+  <data name="Model_cmb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>627, 174</value>
+  </data>
+  <data name="Depth_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 255</value>
+  </data>
+  <data name="&gt;&gt;Model_cmb.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MoldName_txt.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="PeriodicAlarmShotCount1_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 15</value>
+  </data>
+  <data name="&gt;&gt;Exit_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="MoldCode_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 138</value>
+  </data>
+  <data name="MoldDrawingNo_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Ok_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;Weight_txt.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.TextBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="MoldType_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="labelCommon2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>372, 138</value>
+  </data>
+  <data name="&gt;&gt;UpdateText_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;textBoxCommon1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Ok_btn.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;PeriodicAlarmShotCount3_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="PeriodicAlarmShotCount2_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Model_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>465, 179</value>
+  </data>
+  <data name="GlobalItem_cmb.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="Ok_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>550, 564</value>
+  </data>
+  <data name="&gt;&gt;GlobalItem_lbl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;MoldType_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PASC2_txt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AddMoldDetailForm</value>
+  </data>
+  <data name="MoldItemCode_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="labelCommon6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 15</value>
+  </data>
+  <data name="&gt;&gt;Model_cmb.Name" xml:space="preserve">
+    <value>Model_cmb</value>
+  </data>
+  <data name="LifeAlarmShotCount_lbl.Text" xml:space="preserve">
+    <value>Life Alarm Shot Count</value>
+  </data>
+  <data name="labelCommon5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="labelCommon6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;GlobalItemCode_txt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="GlobalItemCode_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 174</value>
+  </data>
+  <data name="labelCommon4.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="labelCommon5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PASC2_txt.MaxLength" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;MoldCategory_cmb.Name" xml:space="preserve">
+    <value>MoldCategory_cmb</value>
+  </data>
+  <data name="GlobalItem_cmb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 171</value>
+  </data>
+  <data name="&gt;&gt;PeriodicAlarmShotCount3_lbl.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;ItemNumber_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PASC2_txt.ZOrder" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;MoldType_cmb.Name" xml:space="preserve">
+    <value>MoldType_cmb</value>
+  </data>
+  <data name="&gt;&gt;GlobalItem_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="Model_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 15</value>
+  </data>
+  <data name="&gt;&gt;labelCommon3.Name" xml:space="preserve">
+    <value>labelCommon3</value>
+  </data>
+  <data name="&gt;&gt;ItemNumber_txt.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.TextBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;PeriodicAlarmShotCount2_lbl.Name" xml:space="preserve">
+    <value>PeriodicAlarmShotCount2_lbl</value>
+  </data>
+  <data name="PASC2_txt.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="LifeShotCount_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 405</value>
+  </data>
+  <data name="MoldDrawingNo_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;PASC1_txt.Name" xml:space="preserve">
+    <value>PASC1_txt</value>
+  </data>
+  <data name="&gt;&gt;GlobalItemCode_lbl.Name" xml:space="preserve">
+    <value>GlobalItemCode_lbl</value>
+  </data>
+  <data name="&gt;&gt;MoldCategory_lbl.Name" xml:space="preserve">
+    <value>MoldCategory_lbl</value>
+  </data>
+  <data name="GlobalItem_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="&gt;&gt;LifeShotCount_lbl.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;ItemNumber_btn.Name" xml:space="preserve">
+    <value>ItemNumber_btn</value>
+  </data>
+  <data name="MoldDrawingNo_lbl.Text" xml:space="preserve">
+    <value>Mold Drawing No</value>
+  </data>
+  <data name="&gt;&gt;MoldName_txt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="MoldCategory_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 15</value>
+  </data>
+  <data name="LifeAlarmShot_txt.MaxLength" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;GlobalItemCode_txt.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Weight_lbl.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;MoldType_cmb.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ComboBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;MoldDrawingNo_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="PeriodicAlarmShotCount1_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>465, 261</value>
+  </data>
+  <data name="&gt;&gt;Weight_lbl.Name" xml:space="preserve">
+    <value>Weight_lbl</value>
+  </data>
+  <data name="&gt;&gt;Model_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="PeriodicAlarmShotCount3_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="Comment_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 108</value>
+  </data>
+  <data name="&gt;&gt;PASC2_txt.Name" xml:space="preserve">
+    <value>PASC2_txt</value>
+  </data>
+  <data name="&gt;&gt;Depth_lbl.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;UpdateText_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MoldCode_txt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MoldItemCode_txt.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.TextBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;PASC2_txt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PeriodicAlarmShotCount2_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>465, 300</value>
+  </data>
+  <data name="&gt;&gt;Height_txt.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;labelCommon7.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;labelCommon5.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;MoldCategory_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PeriodicAlarmShotCount1_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Height_txt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MoldItemCode_txt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Exit_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;MoldCode_txt.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.TextBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;MoldCategory_cmb.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MoldCategory_cmb.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="MoldDrawingNo_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>465, 378</value>
+  </data>
+  <data name="MoldName_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 174</value>
+  </data>
+  <data name="&gt;&gt;ProductionDate_lbl.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;Comment_txt.Name" xml:space="preserve">
+    <value>Comment_txt</value>
+  </data>
+  <data name="&gt;&gt;labelCommon2.Name" xml:space="preserve">
+    <value>labelCommon2</value>
+  </data>
+  <data name="&gt;&gt;MoldItemCode_txt.Name" xml:space="preserve">
+    <value>MoldItemCode_txt</value>
+  </data>
+  <data name="&gt;&gt;LifeAlarmShotCount_lbl.ZOrder" xml:space="preserve">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;Width_txt.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="LifeShotCount_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 408</value>
+  </data>
+  <data name="ItemNumber_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="PeriodicAlarmShotCount1_lbl.Text" xml:space="preserve">
+    <value>Periodic Alarm Shot Count1</value>
+  </data>
+  <data name="ItemNumber_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 216</value>
+  </data>
+  <data name="PASC3_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 21</value>
+  </data>
+  <data name="PASC3_txt.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;ItemNumber_Txt.Name" xml:space="preserve">
+    <value>ItemNumber_Txt</value>
+  </data>
+  <data name="&gt;&gt;Depth_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="LifeAlarmShotCount_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Height_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;LifeShotCount_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;labelCommon6.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;labelCommon5.Name" xml:space="preserve">
+    <value>labelCommon5</value>
+  </data>
+  <data name="&gt;&gt;labelCommon5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxCommon1.Name" xml:space="preserve">
+    <value>textBoxCommon1</value>
+  </data>
+  <data name="Width_txt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="&gt;&gt;MoldItemCode_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="Height_txt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="labelCommon5.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="ProductionDate_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="PASC2_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>627, 297</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>846, 608</value>
+  </data>
+  <data name="MoldCategory_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;MoldItemCode_lbl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;PASC1_txt.ZOrder" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <data name="labelCommon4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 15</value>
+  </data>
+  <data name="&gt;&gt;Width_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MoldName_lbl.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="Weight_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 336</value>
+  </data>
+  <data name="MoldType_cmb.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;labelCommon4.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;LifeShotCount_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="labelCommon6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Comment_txt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="MoldType_lbl.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Comment_txt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="Weight_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;Height_txt.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.TextBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ItemNumber_btn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Width_txt.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.TextBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;PeriodicAlarmShotCount2_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Depth_lbl.Name" xml:space="preserve">
+    <value>Depth_lbl</value>
+  </data>
+  <data name="GlobalItemCode_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="Weight_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 333</value>
+  </data>
+  <data name="LifeAlarmShot_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="labelCommon5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>816, 177</value>
+  </data>
+  <data name="labelCommon6.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;Weight_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="MoldItemCode_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 219</value>
+  </data>
+  <data name="&gt;&gt;MoldType_lbl.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="Model_cmb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="MoldDrawingNo_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ItemNumber_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="PASC2_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 21</value>
+  </data>
+  <data name="LifeAlarmShotCount_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;GlobalItemCode_txt.Name" xml:space="preserve">
+    <value>GlobalItemCode_txt</value>
+  </data>
+  <data name="LifeAlarmShot_txt.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="PeriodicAlarmShotCount3_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ItemNumber_Txt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PASC1_txt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Width_txt.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;MoldCode_txt.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="textBoxCommon1.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="&gt;&gt;Model_cmb.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;MoldDrawingNo_txt.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ProductionDate_dtp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 372</value>
+  </data>
+  <data name="&gt;&gt;PASC3_txt.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="labelCommon5.Text" xml:space="preserve">
+    <value>(＊)</value>
+  </data>
+  <data name="&gt;&gt;Width_lbl.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;labelCommon1.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.LabelCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;labelCommon1.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;textBoxCommon1.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.TextBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Exit_btn.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.ButtonCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Comment_txt.Type" xml:space="preserve">
+    <value>Com.Nidec.Mes.Framework.TextBoxCommon, Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-Hans</value>
+  </metadata>
+</root>

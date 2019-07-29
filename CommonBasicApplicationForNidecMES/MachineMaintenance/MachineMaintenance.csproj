@@ -1,0 +1,1366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{081D440D-19E7-4BCF-9957-B57A5D821108}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Com.Nidec.Mes.Common.Basic.MachineMaintenance</RootNamespace>
+    <AssemblyName>MachineMaintenance</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\FW\NidecMES\Dll\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Framework">
+      <HintPath>..\..\NidecMES-FW\Dll\Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="GlobalMasterMaintenance">
+      <HintPath>..\..\NidecMES-FW\Dll\GlobalMasterMaintenance.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\NidecMES-FW\Dll\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="npgsql">
+      <HintPath>..\..\NidecMES-FW\Dll\npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cbm\AccountWhCbm\AccountCodeCbm\AddAccountCodeCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\AccountCodeCbm\CheckAccountCodeCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\AccountCodeCbm\DeleteAccountCodeCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\AccountCodeCbm\GetAccountCodeCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\AccountCodeCbm\UpdateAccountCodeCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\AccountLocationCbm\AddAccountLocationCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\AccountLocationCbm\CheckAccountLocationCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\AccountLocationCbm\DeleteAccountLocationCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\AccountLocationCbm\GetAccountLocationCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\AccountLocationCbm\UpdateAccountLocationCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\AccountMainCbm\AddAccountMainCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\AccountMainCbm\SeachAccountMainCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\AccountMainCbm\TotalDEPAccountMainCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\AccountMainCbm\TotalRankDEPAccountMainCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\AccountMainCbm\UpdateAccountMainCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\AccountMainCbm\UpdateAccountMainDGVCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\AssetMasterCbm\AddAssetCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\AssetMasterCbm\CheckAssetCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\AssetMasterCbm\DeleteAssetCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\AssetMasterCbm\GetAssetCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\AssetMasterCbm\UpdateAssetCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\DetailPositionCbm\AddDetailPositionCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\DetailPositionCbm\CheckDetailPositionCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\DetailPositionCbm\DeleteDetailPositionCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\DetailPositionCbm\GetDetailPositionCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\DetailPositionCbm\UpdateDetailPositionCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\InvertoryCheckCbm\AddInvertoryCheckCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\InvertoryCheckCbm\CheckInvertoryRowCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\InvertoryCheckCbm\GetAccountMainIdCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\InvertoryCheckCbm\GetMaxCheckTimeIdCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\InvertoryCheckCbm\GetWarehouseMainIdCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\InvertoryCheckCbm\SearchInvertoryCheckCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\InvertoryCheckCbm\UpdateACCInvertoryCheckCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\InvertoryCheckCbm\UpdateACCInvertoryRankCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\InvertoryCheckCbm\UpdateWHInvertoryCheckCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\InvertoryCheckCbm\UpdateWHInvertoryRankCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\InvertoryTimeCbm\AddInvertoryTimeCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\InvertoryTimeCbm\CheckInvertoryTimeCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\InvertoryTimeCbm\DeleteInvertoryTimeCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\InvertoryTimeCbm\GetInvertoryTimeCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\InvertoryTimeCbm\UpdateInvertoryTimeCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\RankMasterCbm\AddRankCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\RankMasterCbm\CheckRankCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\RankMasterCbm\DeleteRankCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\RankMasterCbm\GetRankCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\RankMasterCbm\UpdateAssetCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\TransferCbm\AddDetailRequestCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\TransferCbm\AddListRequestCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\TransferCbm\CheckAssetTransferCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\TransferCbm\DeleteTransferDetailCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\TransferCbm\GetDeptCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\TransferCbm\GetRoleCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\TransferCbm\GetTransferCodeCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\TransferCbm\GetUserDeptCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\TransferCbm\LoadAfterTransCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\TransferCbm\LoadAllTransferListCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\TransferCbm\LoadBeforeTransCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\TransferCbm\LoadTransferListCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\TransferCbm\UpdateStatusTransferListCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\UnitMasterCbm\AddUnitCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\UnitMasterCbm\CheckUnitCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\UnitMasterCbm\DeleteUnitCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\UnitMasterCbm\GetUnitCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\UnitMasterCbm\UpdateAssetCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\UserLocationMasterCbm\AddUserLocationCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\UserLocationMasterCbm\CheckUserLocationCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\UserLocationMasterCbm\DeleteUserLocationCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\UserLocationMasterCbm\GetUserLocationCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\UserLocationMasterCbm\UpdateUserLocationCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\WareHouseMainCbm\AddWareHouseHistoryMainCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\WareHouseMainCbm\AddWareHouseMainCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\WareHouseMainCbm\GetAssetInvoiceCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\WareHouseMainCbm\GetAssetModelCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\WareHouseMainCbm\GetAssetNameCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\WareHouseMainCbm\GetAssetPOCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\WareHouseMainCbm\GetAssetTypeCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\WareHouseMainCbm\SearchListWareHouseMainCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\WareHouseMainCbm\SearchWareHouseMainCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\WareHouseMainCbm\TotalDEPWareHouseMainCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\WareHouseMainCbm\TotalRankDEPWareHouseMainCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\WareHouseMainCbm\UpdateItemAccountMainCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\WareHouseMainCbm\UpdateWareHouseMainCbm.cs" />
+    <Compile Include="Cbm\AccountWhCbm\WareHouseMainCbm\UpdateWareHouseMainDGVCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\NoiseShow\GetCountNoiseCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\NoiseShow\GetCountThurstCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\SearchUserNameNoiseCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\Shipping\CheckBoxCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\CheckIBarcodeDuplicateCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\Shipping\GetShipSerialCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\AddBarcodeCheckCmb.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\AddGA1ModelNoiseCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\AddGA1ModelThurstCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\CheckDuplicateCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\GetMachineNoiseCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\GetTestTimeCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\GetTestTimeNoiseCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\SearchBarcodeandUpdateNGThurstCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\SearchCountThurstCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\SearchExportNoiseCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\SearchThusrtByBarcodeCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\Shipping\SearchShipmentHistoryCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\Shipping\AddProductCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\Shipping\AddBoxIDCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\Shipping\DeleteBoxIDCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\Shipping\GetBoxIDCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\Shipping\GetNewBoxIDCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\Shipping\GetSerialBoxCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\Shipping\SearchBoxIDCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\Shipping\SearchBoxIDProCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\Shipping\SearchBoxIDProductCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\Shipping\UpdateSerialCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\Shipping\UpdateShipdateCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\GetLineCodeCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\SearchThurstDGVCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\SearchGA1DGVCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\UpdateGA1ModelShippingCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\UpdateGA1ModelOQCCbm.cs" />
+    <Compile Include="Cbm\GA1ModelCbm\UpdateGA1ModelNoiseCbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeCbm\OvenBarcodeCbm\GetBarcodeOvenCbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeCbm\OvenBarcodeCbm\GetLineOvenCbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeCbm\OvenBarcodeCbm\GetLowerOvenCbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeCbm\OvenBarcodeCbm\GetModelOvenCbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeCbm\OvenBarcodeCbm\GetUpperOvenCbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeCbm\OvenBarcodeCbm\SearchOvenCbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeCbm\RangeCbm\AddRangeCbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeCbm\RangeCbm\CheckBarcodeRangeCbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeCbm\RangeCbm\DeleteRangeCbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeCbm\RangeCbm\GetBarcodeRangeCbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeCbm\RangeCbm\GetLineRangeCbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeCbm\RangeCbm\GetModelRangeCbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeCbm\RangeCbm\GetProcessRangeCbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeCbm\RangeCbm\SearchRangeCbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeCbm\RangeCbm\UpdateRangeCbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeLS12Cbm\OvenLS12Cbm\GetBarcodeOvenLS12Cbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeLS12Cbm\OvenLS12Cbm\GetLineOvenLS12Cbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeLS12Cbm\OvenLS12Cbm\GetLowerOvenLS12Cbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeLS12Cbm\OvenLS12Cbm\GetModelOvenLS12Cbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeLS12Cbm\OvenLS12Cbm\GetpProcessOvenLS12Cbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeLS12Cbm\OvenLS12Cbm\GetUpperOvenLS12Cbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeLS12Cbm\OvenLS12Cbm\SearchOvenLS12Cbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeLS12Cbm\RangeLS12Cbm\AddRangeLS12Cbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeLS12Cbm\RangeLS12Cbm\CheckBarcodeRangeLS12Cbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeLS12Cbm\RangeLS12Cbm\DeleteRangeLS12Cbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeLS12Cbm\RangeLS12Cbm\GetModelRangeLS12Cbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeLS12Cbm\RangeLS12Cbm\GetProcessRangeLS12Cbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeLS12Cbm\RangeLS12Cbm\SearchRangeLS12Cbm.cs" />
+    <Compile Include="Cbm\OvenBarcodeLS12Cbm\RangeLS12Cbm\UpdateRangeLS12Cbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\ProductionControllerGA1Cbm\GetProductionRateNGRatioCbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\ProductionControllerGA1Cbm\GetProductionItemCbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\ProductionControllerGA1Cbm\GetProductionModelCbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\ProductionControllerGA1Cbm\GetProductionLineCbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\ProductionControllerGA1Cbm\GetProductionProcessCbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\ProductionControllerGA1Cbm\SearchNGNOICHKfromMesdbCbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\ProductionControllerGA1Cbm\SearchOUTPUTByHourCbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\ProductionControllerGA1Cbm\SearchOutputFinalCbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\ProductionControllerGA1Cbm\SearchProductionNGNOICHKCbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\ProductionControllerGA1Cbm\SearchNGThurstChartCbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\ProductionControllerGA1Cbm\SearchProductionNGThurstCbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\ProductionControllerGA1Cbm\SearchQtyNOICHKfromMesdbCbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\ProductionControllerGA1Cbm\SearchProductionExportDataCbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\ProductionControllerGA1Cbm\SearchProductionoOutputMotorCbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\ProductionControllerGA1Cbm\SearchProductionInputByDateCbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\ProductionControllerGA1Cbm\SearchProductionOUTPUTCbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\ProductionControllerGA1Cbm\SearchProductionProcessCbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\ProductionControllerGA1Cbm\SearchProductionGA1Cbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\ProductionControllerGA1Cbm\SearchProductionTotalCbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\ProductionControllerGA1Cbm\SearchProductionINPUTCbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\ProductionControllerGA1Cbm\TabMain\SearchtabMainDGVCbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\RateNGCbm\CheckRateNGCbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\RateNGCbm\DeleteRateNGCbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\RateNGCbm\GetLineRateNGCbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\RateNGCbm\GetModelRateNGCbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\RateNGCbm\InsertRateNGCbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\RateNGCbm\SearchRateNGCbm.cs" />
+    <Compile Include="Cbm\PQMConnectCbm\RateNGCbm\UpdateRateNGCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\AddPersonProNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\CheckPersonNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\CheckPerson_DuplicateNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\DeletePersonNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\GetLineProNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\GetModelProNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchDetailAllLineProcessCbm\SearchProDetailAllLineAllProcessNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchDetailAllLineProcessCbm\SearchProDetailAllLineFinal_AppNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchDetailAllLineProcessCbm\SearchProDetailAllLineTrustGapNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchDetailAllLineProcessCbm\SearchProDetailAllLineEn1NCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchDetailAllLineProcessCbm\SearchProDetailAllLineEn2NCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchDetailAllLineProcessCbm\SearchProDetailAllLineRotorNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchDetailAllLineProcessCbm\SearchProDetailAllLineBracketMetalNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchDetailAllLineProcessCbm\SearchProDetailAllLineBracketNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchDetailAllLineProcessCbm\SearchProDetailAllLineCaseAssyNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchDetailAllLineProcessCbm\SearchProDetailAllLineCaseMGNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchDetailAllLineProcessCbm\SearchProDetailAllLineMGBondingNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchDetailAllLineProcessCbm\SearchProDetailAllLineWeldingNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchDetailAllLineProcessCbm\SearchProDetailAllLineWingDingNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchDetailAllLineProcessCbm\SearchProDetailEachLineAllProcessNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchMainProByDateAllLineNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchMainProByDateNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchMainProByHourNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchMainProChartAllLineNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchPersonNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchPersonOutputNCVCCbm .cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchProDetailFinalAppNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchProDetailTrustGapNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchProDetailEn1NCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchProDetailEn2NCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchProDetailBracketMetalNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchProDetailCaseAssyNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchProDetailCaseMGNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchProDetailMGBondingNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchProDetailBracketNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\SearchProDetailRotorNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerNCVCCbm\UpdatePersonProNCVCCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\UpdatePersonProCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\CheckPerson_DuplicateCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\DeletePersonCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\AddPersonProCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\CheckPersonCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\GetLineProCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchDetailAllLineProcessCbm\SearchProDetailEachLineAllProcessCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchDetailAllLineProcessCbm\SearchProDetailAllLineAllProcessCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchDetailAllLineProcessCbm\SearchProDetailAllLineAppCheckCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchDetailAllLineProcessCbm\SearchProDetailAllLineCoreCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchDetailAllLineProcessCbm\SearchProDetailAllLineEn1Cbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchDetailAllLineProcessCbm\SearchProDetailAllLineEn2Cbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchDetailAllLineProcessCbm\SearchProDetailAllLineFundouCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchDetailAllLineProcessCbm\SearchProDetailAllLineHolderCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchDetailAllLineProcessCbm\SearchProDetailAllLineInsertCaseCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchDetailAllLineProcessCbm\SearchProDetailAllLineRACaseCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchDetailAllLineProcessCbm\SearchProDetailAllLineSolderRingCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchDetailAllLineProcessCbm\SearchProDetailAllLineSolderWireCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchDetailAllLineProcessCbm\SearchProDetailAllLineWeldingCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchDetailAllLineProcessCbm\SearchProDetailAllLineWingDingCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchPersonOutputCbm .cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchPersonCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchMainProChartAllLineCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchMainProByDateAllLineCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchProDetailCoreCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchProDetailWeldingCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchProDetailWingdingCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchProDetailSolderWireCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchProDetailSolderRingCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchProDetailRACbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchProDetailInsertCaseCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchProDetailEn1Cbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchProDetailFundouCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchProDetailEn2Cbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchProDetailAppCheckCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchProDetailHolderCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchMainProByHourCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\SearchMainProByDateCbm.cs" />
+    <Compile Include="Cbm\ProductionControllerCbm\GetModelProCbm.cs" />
+    <Compile Include="Cbm\ReportDownTimeCbm\CheckPermissionCbm.cs" />
+    <Compile Include="Cbm\ReportDownTimeCbm\DeleteReportDownTimeCbm.cs" />
+    <Compile Include="Cbm\ReportDownTimeCbm\GetProcessWorkCbm.cs" />
+    <Compile Include="Cbm\ReportDownTimeCbm\AddReportDownTimeCbm.cs" />
+    <Compile Include="Cbm\ReportDownTimeCbm\GetActicAndContentCbm.cs" />
+    <Compile Include="Cbm\ReportDownTimeCbm\GetCauseAndDefectiveCbm.cs" />
+    <Compile Include="Cbm\ReportDownTimeCbm\GetDownTimeDataCbm.cs" />
+    <Compile Include="Cbm\ReportDownTimeCbm\GetProcessMoCbm.cs" />
+    <Compile Include="Cbm\ReportDownTimeCbm\GetLineMoCbm.cs" />
+    <Compile Include="Cbm\ReportDownTimeCbm\GetReportDownTimeCbm.cs" />
+    <Compile Include="Cbm\ReportDownTimeCbm\ProcessWork\AddProcessWorkCbm.cs" />
+    <Compile Include="Cbm\ReportDownTimeCbm\ProcessWork\CheckProcessWorkCbm.cs" />
+    <Compile Include="Cbm\ReportDownTimeCbm\ProcessWork\DeleteProcessWorkCbm.cs" />
+    <Compile Include="Cbm\ReportDownTimeCbm\ProcessWork\GetProcessWorkCbm.cs" />
+    <Compile Include="Cbm\ReportDownTimeCbm\ProcessWork\UpdateProcessWorkCbm.cs" />
+    <Compile Include="Cbm\ReportDownTimeCbm\SearchReportDownTimeCbm.cs" />
+    <Compile Include="Cbm\ReportDownTimeCbm\UpdateReportDownTimeCbm.cs" />
+    <Compile Include="Cbm\WorkingStatusCbm\AddSTWorkingStatusCbm.cs" />
+    <Compile Include="Cbm\WorkingStatusCbm\SearchMOLDWorkingStatusCbm.cs" />
+    <Compile Include="Cbm\WorkingStatusCbm\SearchMACWorkingStatusCbm.cs" />
+    <Compile Include="Cbm\WorkingStatusCbm\SearchSPWorkingStatusCbm.cs" />
+    <Compile Include="Cbm\WorkingStatusCbm\SearchTDWorkingStatusCbm.cs" />
+    <Compile Include="Cbm\WorkingStatusCbm\SearchSTWorkingStatusCbm.cs" />
+    <Compile Include="Cbm\WorkingStatusCbm\CallPlanCbm.cs" />
+    <Compile Include="Cbm\WorkingStatusCbm\AddPlanWorkingStatusCbm.cs" />
+    <Compile Include="Common\CSV Class.cs" />
+    <Compile Include="Common\ExcelClass_ProductionControl.cs" />
+    <Compile Include="Common\Excel Class.cs" />
+    <Compile Include="Common\ResetControlValues.cs" />
+    <Compile Include="Common\VBStrings.cs" />
+    <Compile Include="Dao\AccountWhDao\AccountLocationDao\AddAccountLocationDao.cs" />
+    <Compile Include="Dao\AccountWhDao\AccountLocationDao\CheckAccountLocationDao.cs" />
+    <Compile Include="Dao\AccountWhDao\AccountLocationDao\DeleteAccountLocationDao.cs" />
+    <Compile Include="Dao\AccountWhDao\AccountLocationDao\GetAccountLocationDao.cs" />
+    <Compile Include="Dao\AccountWhDao\AccountLocationDao\UpdateAccountLocationDao.cs" />
+    <Compile Include="Dao\AccountWhDao\AccountCodeDao\CheckAccountCodeDao.cs" />
+    <Compile Include="Dao\AccountWhDao\AccountCodeDao\DeleteAccountCodeDao.cs" />
+    <Compile Include="Dao\AccountWhDao\AccountCodeDao\GetAccountCodeDao.cs" />
+    <Compile Include="Dao\AccountWhDao\AccountCodeDao\UpdateAccountCodeDao.cs" />
+    <Compile Include="Dao\AccountWhDao\AccountMainDao\UpdateAccountMainDGVDao.cs" />
+    <Compile Include="Dao\AccountWhDao\InvertoryCheckDao\GetMaxCheckTimeIdDao.cs" />
+    <Compile Include="Dao\AccountWhDao\InvertoryCheckDao\GetAccountMainIdDao.cs" />
+    <Compile Include="Dao\AccountWhDao\InvertoryCheckDao\SearchInvertoryCheckDao.cs" />
+    <Compile Include="Dao\AccountWhDao\InvertoryCheckDao\UpdateACCInvertoryRankDao.cs" />
+    <Compile Include="Dao\AccountWhDao\InvertoryCheckDao\UpdateWHInvertoryRankDao.cs" />
+    <Compile Include="Dao\AccountWhDao\InvertoryCheckDao\UpdateACCInvertoryCheckDao.cs" />
+    <Compile Include="Dao\AccountWhDao\InvertoryCheckDao\UpdateWHInvertoryCheckDao.cs" />
+    <Compile Include="Dao\AccountWhDao\InvertoryCheckDao\AddInvertoryCheckDao.cs" />
+    <Compile Include="Dao\AccountWhDao\InvertoryCheckDao\CheckInvertoryRowDao.cs" />
+    <Compile Include="Dao\AccountWhDao\InvertoryCheckDao\GetWarehouseMainIdDao.cs" />
+    <Compile Include="Dao\AccountWhDao\InvertoryTimeDao\AddInvertoryTimeDao.cs" />
+    <Compile Include="Dao\AccountWhDao\InvertoryTimeDao\CheckInvertoryTimeDao.cs" />
+    <Compile Include="Dao\AccountWhDao\InvertoryTimeDao\DeleteInvertoryTimeDao.cs" />
+    <Compile Include="Dao\AccountWhDao\InvertoryTimeDao\GetInvertoryTimeDao.cs" />
+    <Compile Include="Dao\AccountWhDao\InvertoryTimeDao\UpdateInvertoryTimeDao.cs" />
+    <Compile Include="Dao\AccountWhDao\TransferDao\AddListRequestDao.cs" />
+    <Compile Include="Dao\AccountWhDao\TransferDao\AddDetailRequestDao.cs" />
+    <Compile Include="Dao\AccountWhDao\TransferDao\CheckAssetTransferDao.cs" />
+    <Compile Include="Dao\AccountWhDao\TransferDao\DeleteTransferDetailDao.cs" />
+    <Compile Include="Dao\AccountWhDao\TransferDao\GetUserDeptDao.cs" />
+    <Compile Include="Dao\AccountWhDao\TransferDao\GetRoleDao.cs" />
+    <Compile Include="Dao\AccountWhDao\TransferDao\GetTransferCodeDao.cs" />
+    <Compile Include="Dao\AccountWhDao\TransferDao\GetDeptDao.cs" />
+    <Compile Include="Dao\AccountWhDao\TransferDao\LoadAfterTransDao.cs" />
+    <Compile Include="Dao\AccountWhDao\TransferDao\LoadAllTransferListDao.cs" />
+    <Compile Include="Dao\AccountWhDao\TransferDao\LoadTransferListDao.cs" />
+    <Compile Include="Dao\AccountWhDao\TransferDao\LoadBeforeTransDao.cs" />
+    <Compile Include="Dao\AccountWhDao\TransferDao\UpdateStatusTransferListDao.cs" />
+    <Compile Include="Dao\AccountWhDao\UnitMasterDao\AddUnitDao.cs" />
+    <Compile Include="Dao\AccountWhDao\UnitMasterDao\CheckUnitDao.cs" />
+    <Compile Include="Dao\AccountWhDao\UnitMasterDao\DeleteUnitDao.cs" />
+    <Compile Include="Dao\AccountWhDao\UnitMasterDao\GetUnitDao.cs" />
+    <Compile Include="Dao\AccountWhDao\UnitMasterDao\UpdateUnitDao.cs" />
+    <Compile Include="Dao\AccountWhDao\WareHouseMainDao\AddWareHouseHistoryMainDao.cs" />
+    <Compile Include="Dao\AccountWhDao\WareHouseMainDao\AddWareHouseMainDao.cs" />
+    <Compile Include="Dao\AccountWhDao\WareHouseMainDao\GetAssetInvoiceDao.cs" />
+    <Compile Include="Dao\AccountWhDao\WareHouseMainDao\GetAssetModelDao.cs" />
+    <Compile Include="Dao\AccountWhDao\WareHouseMainDao\GetAssetPODao.cs" />
+    <Compile Include="Dao\AccountWhDao\WareHouseMainDao\GetAssetNameDao.cs" />
+    <Compile Include="Dao\AccountWhDao\WareHouseMainDao\GetAssetTypeDao.cs" />
+    <Compile Include="Dao\AccountWhDao\WareHouseMainDao\SearchListWareHouseMainDao.cs" />
+    <Compile Include="Dao\AccountWhDao\WareHouseMainDao\SearchWareHouseMainDao.cs" />
+    <Compile Include="Dao\AccountWhDao\WareHouseMainDao\TotalDEPWareHouseMainDao.cs" />
+    <Compile Include="Dao\AccountWhDao\WareHouseMainDao\TotalRankDEPWareHouseMainDao.cs" />
+    <Compile Include="Dao\AccountWhDao\WareHouseMainDao\UpdateItemAccountMainDao.cs" />
+    <Compile Include="Dao\AccountWhDao\WareHouseMainDao\UpdateWareHouseMainDGVDao.cs" />
+    <Compile Include="Dao\AccountWhDao\WareHouseMainDao\UpdateWareHouseMainDao.cs" />
+    <Compile Include="Dao\AccountWhDao\AccountMainDao\TotalRankDEPAccountMainDao.cs" />
+    <Compile Include="Dao\AccountWhDao\AccountMainDao\TotalDEPAccountMainDao.cs" />
+    <Compile Include="Dao\AccountWhDao\AccountMainDao\SearchAccountMainDao.cs" />
+    <Compile Include="Dao\AccountWhDao\AccountMainDao\UpdateAccountMainDao.cs" />
+    <Compile Include="Dao\AccountWhDao\AssetMasterDao\AddAssetDao.cs" />
+    <Compile Include="Dao\AccountWhDao\AssetMasterDao\CheckAssetDao.cs" />
+    <Compile Include="Dao\AccountWhDao\AssetMasterDao\DeleteAssetDao.cs" />
+    <Compile Include="Dao\AccountWhDao\AssetMasterDao\GetAssetDao.cs" />
+    <Compile Include="Dao\AccountWhDao\AssetMasterDao\UpdateAssetDao.cs" />
+    <Compile Include="Dao\AccountWhDao\AccountCodeDao\AddAccountCodeDao.cs" />
+    <Compile Include="Dao\AccountWhDao\AccountMainDao\AddAccountMainDao.cs" />
+    <Compile Include="Dao\AccountWhDao\DetailPositionDao\AddDetailPositionDao.cs" />
+    <Compile Include="Dao\AccountWhDao\DetailPositionDao\CheckDetailPositionDao.cs" />
+    <Compile Include="Dao\AccountWhDao\DetailPositionDao\DeleteDetailPositionDao.cs" />
+    <Compile Include="Dao\AccountWhDao\DetailPositionDao\GetDetailPositionDao.cs" />
+    <Compile Include="Dao\AccountWhDao\DetailPositionDao\UpdateDetailPositionDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\CheckDuplicateDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\NoiseShow\GetCountNoiseDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\NoiseShow\GetCountThurstDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\SearchUserNameNoiseDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\Shipping\CheckBoxDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\Shipping\GetShipSerialDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\AddBarcodeCheckDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\AddGA1ModelNoiseDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\AddGA1ModelThurstDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\CheckIBarcodeDuplicateDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\GetMachineNoiseDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\GetTestTimeNoiseDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\GetTestTimeDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\SearchBarcodeandUpdateNGThurstDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\SearchCountThurstDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\SearchExportNoiseDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\SearchThusrtByBarcodeDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\Shipping\SearchShipmentHistoryDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\Shipping\AddProductDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\Shipping\AddBoxIDDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\Shipping\GetBoxIDDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\Shipping\GetNewBoxIDDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\Shipping\GetSerialBoxDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\Shipping\DeleteBoxIDDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\Shipping\SearchBoxIDDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\Shipping\SearchBoxIDProDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\Shipping\SearchBoxIDProductDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\Shipping\UpdateSerialDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\Shipping\UpdateShipdateDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\GetLineCodeDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\SearchGA1DGVDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\SearchThurstDGVDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\UpdateGA1ModelShippingDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\UpdateGA1ModelOQCDao.cs" />
+    <Compile Include="Dao\GA1ModelDao\UpdateGA1ModelNoiseDao.cs" />
+    <Compile Include="Dao\AccountWhDao\RankMasterDao\AddRankDao.cs" />
+    <Compile Include="Dao\AccountWhDao\RankMasterDao\CheckRankDao.cs" />
+    <Compile Include="Dao\AccountWhDao\RankMasterDao\DeleteRankDao.cs" />
+    <Compile Include="Dao\AccountWhDao\RankMasterDao\GetRankDao.cs" />
+    <Compile Include="Dao\AccountWhDao\RankMasterDao\UpdateRankDao.cs" />
+    <Compile Include="Dao\OvenBarcodeDao\OvenBarcodeDao\GetBarcodeOvenDao.cs" />
+    <Compile Include="Dao\OvenBarcodeDao\OvenBarcodeDao\GetLineOvenDao.cs" />
+    <Compile Include="Dao\OvenBarcodeDao\OvenBarcodeDao\GetLowerOvenDao.cs" />
+    <Compile Include="Dao\OvenBarcodeDao\OvenBarcodeDao\GetModelOvenDao.cs" />
+    <Compile Include="Dao\OvenBarcodeDao\OvenBarcodeDao\GetUpperOvenDao.cs" />
+    <Compile Include="Dao\OvenBarcodeDao\OvenBarcodeDao\SearchOvenDao.cs" />
+    <Compile Include="Dao\OvenBarcodeDao\RangeDao\AddRangeDao.cs" />
+    <Compile Include="Dao\OvenBarcodeDao\RangeDao\CheckBarcodeRangeDao.cs" />
+    <Compile Include="Dao\OvenBarcodeDao\RangeDao\DeleteRangeDao.cs" />
+    <Compile Include="Dao\OvenBarcodeDao\RangeDao\GetBarcodeRangeDao.cs" />
+    <Compile Include="Dao\OvenBarcodeDao\RangeDao\GetLineRangeDao.cs" />
+    <Compile Include="Dao\OvenBarcodeDao\RangeDao\GetModelRangeDao.cs" />
+    <Compile Include="Dao\OvenBarcodeDao\RangeDao\GetProcessRangeDao.cs" />
+    <Compile Include="Dao\OvenBarcodeDao\RangeDao\SearchRangeDao.cs" />
+    <Compile Include="Dao\OvenBarcodeDao\RangeDao\UpdateRangeDao.cs" />
+    <Compile Include="Dao\OvenBarcodeLS12Dao\OvenLS12Dao\GetBarcodeOvenLS12Dao.cs" />
+    <Compile Include="Dao\OvenBarcodeLS12Dao\OvenLS12Dao\GetLineOvenLS12Dao.cs" />
+    <Compile Include="Dao\OvenBarcodeLS12Dao\OvenLS12Dao\GetLowerOvenLS12Dao.cs" />
+    <Compile Include="Dao\OvenBarcodeLS12Dao\OvenLS12Dao\GetModelOvenLS12Dao.cs" />
+    <Compile Include="Dao\OvenBarcodeLS12Dao\OvenLS12Dao\GetProcessOvenLS12Dao.cs" />
+    <Compile Include="Dao\OvenBarcodeLS12Dao\OvenLS12Dao\GetUpperOvenLS12Dao.cs" />
+    <Compile Include="Dao\OvenBarcodeLS12Dao\OvenLS12Dao\SearchOvenLS12Dao.cs" />
+    <Compile Include="Dao\OvenBarcodeLS12Dao\RangeLS12Dao\AddRangeLS12Dao.cs" />
+    <Compile Include="Dao\OvenBarcodeLS12Dao\RangeLS12Dao\CheckBarcodeRangeLS12Dao.cs" />
+    <Compile Include="Dao\OvenBarcodeLS12Dao\RangeLS12Dao\DeleteRangeLS12Dao.cs" />
+    <Compile Include="Dao\OvenBarcodeLS12Dao\RangeLS12Dao\GetModelRangeLS12Dao.cs" />
+    <Compile Include="Dao\OvenBarcodeLS12Dao\RangeLS12Dao\GetProcessRangeLS12Dao.cs" />
+    <Compile Include="Dao\OvenBarcodeLS12Dao\RangeLS12Dao\SearchRangeLS12Dao.cs" />
+    <Compile Include="Dao\OvenBarcodeLS12Dao\RangeLS12Dao\UpdateRangeLS12Dao.cs" />
+    <Compile Include="Dao\PQMConnectDao\ProductionControllerGA1Dao\GetProductionItemDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\ProductionControllerGA1Dao\GetProductionRateNGRatioDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\ProductionControllerGA1Dao\GetProductionModelDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\ProductionControllerGA1Dao\GetProductionLineDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\ProductionControllerGA1Dao\GetProductionProcessDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\ProductionControllerGA1Dao\SearchNGNOICHKfromMesdbDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\ProductionControllerGA1Dao\SearchNGThurstChartDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\ProductionControllerGA1Dao\SearchOutputFinalDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\ProductionControllerGA1Dao\SearchProductionNGNOICHKDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\ProductionControllerGA1Dao\SearchProductionNGThurstDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\ProductionControllerGA1Dao\SearchOUTPUTByHourDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\ProductionControllerGA1Dao\SearchQtyNOICHKfromMesdbDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\ProductionControllerGA1Dao\SearchProductionExportDataDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\ProductionControllerGA1Dao\SearchProductionoOutputMotorDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\ProductionControllerGA1Dao\SearchProductionInputByDateDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\ProductionControllerGA1Dao\SearchProductionOUTPUTDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\ProductionControllerGA1Dao\SearchProductionProcessDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\ProductionControllerGA1Dao\SearchProductionGA1Dao.cs" />
+    <Compile Include="Dao\PQMConnectDao\ProductionControllerGA1Dao\SearchProductionTotalDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\ProductionControllerGA1Dao\SearchProductionINPUTDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\ProductionControllerGA1Dao\TabMain\SearchMainChartDGVDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\ProductionControllerGA1Dao\TabMain\SearchtabMainDGVDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\RateNGDao\CheckRateNGDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\RateNGDao\DeleteRateNGDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\RateNGDao\GetLineRateNGDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\RateNGDao\GetModelRateNGDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\RateNGDao\GetRatioNGDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\RateNGDao\InsertRateNGDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\RateNGDao\SearchRateNGDao.cs" />
+    <Compile Include="Dao\PQMConnectDao\RateNGDao\UpdateRateNGDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\AddPersonProNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\CheckPersonNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\CheckPerson_DuplicateNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\DeletePersonNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\GetLineProNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\GetModelProNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchDetailAllLineProcess\SearchProDetailAllLineAllProcessNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchDetailAllLineProcess\SearchProDetailAllLineFinal_AppNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchDetailAllLineProcess\SearchProDetailAllLineTrustGapNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchDetailAllLineProcess\SearchProDetailAllLineEn1NCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchDetailAllLineProcess\SearchProDetailAllLineEn2NCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchDetailAllLineProcess\SearchProDetailAllLineBracketMetalNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchDetailAllLineProcess\SearchProDetailAllLineCaseAssyNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchDetailAllLineProcess\SearchProDetailAllLineCaseMGNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchDetailAllLineProcess\SearchProDetailAllLineMGBondingNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchDetailAllLineProcess\SearchProDetailAllLineBracketNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchDetailAllLineProcess\SearchProDetailAllLineRotorNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchDetailAllLineProcess\SearchProDetailEachLineAllProcessNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchMainProByDateAllLineNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchMainProByDateNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchMainProByHourNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchMainProChartAllLineNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchPersonNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchPersonOutputNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchProDetailFinalAppNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchProDetailBracketMetalNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchProDetailEn1NCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchProDetailEn2NCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchProDetailTrustGapNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchProDetailRotorNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchProDetailBracketNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchProDetailCaseAssyNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchProDetailCaseMGNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\SearchProDetailMGBondingNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerNCVCDao\UpdatePersonProNCVCDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\UpdatePersonProDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\AddPersonProDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\CheckPerson_DuplicateDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\DeletePersonDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\CheckPersonDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\GetLineProDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchDetailAllLineProcess\SearchProDetailEachLineAllProcessDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchDetailAllLineProcess\SearchProDetailAllLineAllProcessDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchDetailAllLineProcess\SearchProDetailAllLineAppCheckDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchDetailAllLineProcess\SearchProDetailAllLineCoreDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchDetailAllLineProcess\SearchProDetailAllLineEn1Dao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchDetailAllLineProcess\SearchProDetailAllLineEn2Dao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchDetailAllLineProcess\SearchProDetailAllLineFundouDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchDetailAllLineProcess\SearchProDetailAllLineHolderDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchDetailAllLineProcess\SearchProDetailAllLineInsertCaseDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchDetailAllLineProcess\SearchProDetailAllLineRACaseDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchDetailAllLineProcess\SearchProDetailAllLineSolderRingDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchDetailAllLineProcess\SearchProDetailAllLineSolderWireDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchDetailAllLineProcess\SearchProDetailAllLineWeldingDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchDetailAllLineProcess\SearchProDetailAllLineWingDingDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchPersonOutputDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchPersonDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchMainProChartAllLineDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchMainProByDateAllLineDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchProDetailEn1Dao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchProDetailCoreDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchProDetailWeldingDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchProDetailWingdingDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchProDetailSolderWireDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchProDetailSolderRingDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchProDetailRADao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchProDetailInsertCaseDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchProDetailFundouDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchProDetailEn2Dao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchProDetailAppCheckDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchProDetailHolderDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchMainProByHourDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\SearchMainProByDateDao.cs" />
+    <Compile Include="Dao\ProductionControllerDao\GetModelProDao.cs" />
+    <Compile Include="Dao\ReportDownTimeDao\CheckPermissionDao.cs" />
+    <Compile Include="Dao\ReportDownTimeDao\AddReportDownTimeDao.cs" />
+    <Compile Include="Dao\ReportDownTimeDao\DeleteReportDownTimeDao.cs" />
+    <Compile Include="Dao\ReportDownTimeDao\GetActicAndContentDao.cs" />
+    <Compile Include="Dao\ReportDownTimeDao\GetCauseAndDefectiveDao.cs" />
+    <Compile Include="Dao\ReportDownTimeDao\GetDownTimeDataDao.cs" />
+    <Compile Include="Dao\ReportDownTimeDao\GetProcessWorkDao.cs" />
+    <Compile Include="Dao\ReportDownTimeDao\GetProcessMoDao.cs" />
+    <Compile Include="Dao\ReportDownTimeDao\GetLineMoDao.cs" />
+    <Compile Include="Dao\ReportDownTimeDao\ProcessWork\AddProcessWorkDao.cs" />
+    <Compile Include="Dao\ReportDownTimeDao\ProcessWork\CheckProcessWorkDao.cs" />
+    <Compile Include="Dao\ReportDownTimeDao\ProcessWork\DeleteProcessWorkDao.cs" />
+    <Compile Include="Dao\ReportDownTimeDao\ProcessWork\GetAllProcessWorkDao.cs" />
+    <Compile Include="Dao\ReportDownTimeDao\ProcessWork\GetProcessWorkDataDao.cs" />
+    <Compile Include="Dao\ReportDownTimeDao\ProcessWork\UpdateProcessWorkDao.cs" />
+    <Compile Include="Dao\ReportDownTimeDao\SearchReportDownTimeDao.cs" />
+    <Compile Include="Dao\ReportDownTimeDao\UpdateReportDownTimeDao.cs" />
+    <Compile Include="Dao\AccountWhDao\UserLocationMasterDao\AddUserLocationDao.cs" />
+    <Compile Include="Dao\AccountWhDao\UserLocationMasterDao\CheckUserLocationDao.cs" />
+    <Compile Include="Dao\AccountWhDao\UserLocationMasterDao\DeleteUserLocationDao.cs" />
+    <Compile Include="Dao\AccountWhDao\UserLocationMasterDao\GetUserLocationDao.cs" />
+    <Compile Include="Dao\AccountWhDao\UserLocationMasterDao\UpdateUserLocationDao.cs" />
+    <Compile Include="Dao\WorkingStatusDao\AddSTWorkingStatusDao.cs" />
+    <Compile Include="Dao\WorkingStatusDao\SearchMACWorkingStatusDao.cs" />
+    <Compile Include="Dao\WorkingStatusDao\SearchSPWorkingStatusDao.cs" />
+    <Compile Include="Dao\WorkingStatusDao\SearchMOLDWorkingStatusDao.cs" />
+    <Compile Include="Dao\WorkingStatusDao\SearchTDWorkingStatusDao.cs" />
+    <Compile Include="Dao\WorkingStatusDao\SearchSTWorkingStatusDao.cs" />
+    <Compile Include="Dao\WorkingStatusDao\AddPlanWorkingStatusDao.cs" />
+    <Compile Include="Dao\WorkingStatusDao\CallPlanDao.cs" />
+    <Compile Include="Form\AccountWhForm\AccountCodeForm\AccountCodeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\AccountCodeForm\AccountCodeForm.Designer.cs">
+      <DependentUpon>AccountCodeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\AccountCodeForm\AddAccountCodeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\AccountCodeForm\AddAccountCodeForm.Designer.cs">
+      <DependentUpon>AddAccountCodeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\AccountMainForm\AddAcountMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\AccountMainForm\AddAcountMainForm.Designer.cs">
+      <DependentUpon>AddAcountMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\AccountLocationForm\AccountLocationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\AccountLocationForm\AccountLocationForm.Designer.cs">
+      <DependentUpon>AccountLocationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\AccountLocationForm\AddAccountLocationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\AccountLocationForm\AddAccountLocationForm.Designer.cs">
+      <DependentUpon>AddAccountLocationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\Asset\AddAssetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\Asset\AddAssetForm.Designer.cs">
+      <DependentUpon>AddAssetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\Asset\AssetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\Asset\AssetForm.Designer.cs">
+      <DependentUpon>AssetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\AccountMainForm\AccountMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\AccountMainForm\AccountMainForm.Designer.cs">
+      <DependentUpon>AccountMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\DetailPositionForm\AddDetailPositionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\DetailPositionForm\AddDetailPositionForm.Designer.cs">
+      <DependentUpon>AddDetailPositionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\DetailPositionForm\DetailPositionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\DetailPositionForm\DetailPositionForm.Designer.cs">
+      <DependentUpon>DetailPositionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\InventoryForm\AddInvertoryTimeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\InventoryForm\AddInvertoryTimeForm.Designer.cs">
+      <DependentUpon>AddInvertoryTimeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\InventoryForm\InvertoryCheckForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\InventoryForm\InvertoryCheckForm.Designer.cs">
+      <DependentUpon>InvertoryCheckForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\InventoryForm\InvertoryTimeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\InventoryForm\InvertoryTimeForm.Designer.cs">
+      <DependentUpon>InvertoryTimeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\TranferForm\TranferRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\TranferForm\TranferRequestForm.Designer.cs">
+      <DependentUpon>TranferRequestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\TranferForm\TranferInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\TranferForm\TranferInfoForm.Designer.cs">
+      <DependentUpon>TranferInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\Units\AddUnitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\Units\AddUnitForm.Designer.cs">
+      <DependentUpon>AddUnitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\Units\UnitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\Units\UnitForm.Designer.cs">
+      <DependentUpon>UnitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\WareHouse\AddWareHouseMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\WareHouse\AddWareHouseMainForm.Designer.cs">
+      <DependentUpon>AddWareHouseMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\WareHouse\WarehouseMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\WareHouse\WarehouseMainForm.Designer.cs">
+      <DependentUpon>WarehouseMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormCommonNCVP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormCommonNCVP.Designer.cs">
+      <DependentUpon>FormCommonNCVP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GA1ModelForm\ShippingForm\AddBoxID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GA1ModelForm\ShippingForm\AddBoxID.Designer.cs">
+      <DependentUpon>AddBoxID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GA1ModelForm\ShippingForm\ReplaceSerialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GA1ModelForm\ShippingForm\ReplaceSerialForm.Designer.cs">
+      <DependentUpon>ReplaceSerialForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GA1ModelForm\ShippingForm\ShipmentHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GA1ModelForm\ShippingForm\ShipmentHistoryForm.Designer.cs">
+      <DependentUpon>ShipmentHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GA1ModelForm\ShippingForm\Shipping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GA1ModelForm\ShippingForm\Shipping.Designer.cs">
+      <DependentUpon>Shipping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GA1ModelForm\ThurstCheckForm\IPQCCheckForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GA1ModelForm\ThurstCheckForm\IPQCCheckForm.Designer.cs">
+      <DependentUpon>IPQCCheckForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GA1ModelForm\ThurstCheckForm\NoiseChartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GA1ModelForm\ThurstCheckForm\NoiseChartForm.Designer.cs">
+      <DependentUpon>NoiseChartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GA1ModelForm\ThurstCheckForm\PassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GA1ModelForm\ThurstCheckForm\PassForm.Designer.cs">
+      <DependentUpon>PassForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GA1ModelForm\ThurstCheckForm\NoiseCheckForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GA1ModelForm\ThurstCheckForm\NoiseCheckForm.Designer.cs">
+      <DependentUpon>NoiseCheckForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GA1ModelForm\ThurstCheckForm\NGThurstForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GA1ModelForm\ThurstCheckForm\NGThurstForm.Designer.cs">
+      <DependentUpon>NGThurstForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GA1ModelForm\ThurstCheckForm\ThurstCheckForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GA1ModelForm\ThurstCheckForm\ThurstCheckForm.Designer.cs">
+      <DependentUpon>ThurstCheckForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GA1ModelForm\ThurstCheckForm\ThusrtChartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GA1ModelForm\ThurstCheckForm\ThusrtChartForm.Designer.cs">
+      <DependentUpon>ThusrtChartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\Rank\AddRankForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\Rank\AddRankForm.Designer.cs">
+      <DependentUpon>AddRankForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\Rank\RankForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\Rank\RankForm.Designer.cs">
+      <DependentUpon>RankForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\OvenBarcodeLS12\OvenBarcodeLS12Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\OvenBarcodeLS12\OvenBarcodeLS12Form.Designer.cs">
+      <DependentUpon>OvenBarcodeLS12Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\OvenBarcodeLS12\RangeLS12\AddRangeLS12Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\OvenBarcodeLS12\RangeLS12\AddRangeLS12Form.Designer.cs">
+      <DependentUpon>AddRangeLS12Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\OvenBarcodeLS12\RangeLS12\RangeLS12Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\OvenBarcodeLS12\RangeLS12\RangeLS12Form.Designer.cs">
+      <DependentUpon>RangeLS12Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\OvenBarcodeMachine\OvenBarcodeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\OvenBarcodeMachine\OvenBarcodeForm.Designer.cs">
+      <DependentUpon>OvenBarcodeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\OvenBarcodeMachine\Range\AddRangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\OvenBarcodeMachine\Range\AddRangeForm.Designer.cs">
+      <DependentUpon>AddRangeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\OvenBarcodeMachine\Range\RangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\OvenBarcodeMachine\Range\RangeForm.Designer.cs">
+      <DependentUpon>RangeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\PQMConnectForm\ProducionControllerGA1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\PQMConnectForm\ProducionControllerGA1Form.Designer.cs">
+      <DependentUpon>ProducionControllerGA1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\PQMConnectForm\RateNG\AddRateNGForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\PQMConnectForm\RateNG\AddRateNGForm.Designer.cs">
+      <DependentUpon>AddRateNGForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\PQMConnectForm\RateNG\RateNGForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\PQMConnectForm\RateNG\RateNGForm.Designer.cs">
+      <DependentUpon>RateNGForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ProductionControllerForm\AddPersonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ProductionControllerForm\AddPersonForm.Designer.cs">
+      <DependentUpon>AddPersonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ProductionControllerForm\ProductionControllerChart_CForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ProductionControllerForm\ProductionControllerChart_CForm.Designer.cs">
+      <DependentUpon>ProductionControllerChart_CForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ProductionControllerForm\ProductionControllerDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ProductionControllerForm\ProductionControllerDetailForm.Designer.cs">
+      <DependentUpon>ProductionControllerDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ProductionControllerForm\ProductionControllerChartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ProductionControllerForm\ProductionControllerChartForm.Designer.cs">
+      <DependentUpon>ProductionControllerChartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ProductionControllerForm\PersonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ProductionControllerForm\PersonForm.Designer.cs">
+      <DependentUpon>PersonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ProductionControllerForm\ProductionControllerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ProductionControllerForm\ProductionControllerForm.Designer.cs">
+      <DependentUpon>ProductionControllerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ProductionControllerNCVCForm\AddPersonNCVCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ProductionControllerNCVCForm\AddPersonNCVCForm.Designer.cs">
+      <DependentUpon>AddPersonNCVCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ProductionControllerNCVCForm\PersonNCVCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ProductionControllerNCVCForm\PersonNCVCForm.Designer.cs">
+      <DependentUpon>PersonNCVCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ProductionControllerNCVCForm\ProductionControllerChartNCVCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ProductionControllerNCVCForm\ProductionControllerChartNCVCForm.Designer.cs">
+      <DependentUpon>ProductionControllerChartNCVCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ProductionControllerNCVCForm\ProductionControllerChart_CNCVCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ProductionControllerNCVCForm\ProductionControllerChart_CNCVCForm.Designer.cs">
+      <DependentUpon>ProductionControllerChart_CNCVCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ProductionControllerNCVCForm\ProductionControllerDetailNCVCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ProductionControllerNCVCForm\ProductionControllerDetailNCVCForm.Designer.cs">
+      <DependentUpon>ProductionControllerDetailNCVCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ProductionControllerNCVCForm\ProductionControllerNCVCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ProductionControllerNCVCForm\ProductionControllerNCVCForm.Designer.cs">
+      <DependentUpon>ProductionControllerNCVCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ReportDownTimeForm\AddUpdateReportDownTimeFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ReportDownTimeForm\AddUpdateReportDownTimeFrom.Designer.cs">
+      <DependentUpon>AddUpdateReportDownTimeFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ReportDownTimeForm\ProcessWork\AddProcessWForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ReportDownTimeForm\ProcessWork\AddProcessWForm.Designer.cs">
+      <DependentUpon>AddProcessWForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ReportDownTimeForm\ProcessWork\ProcessWForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ReportDownTimeForm\ProcessWork\ProcessWForm.Designer.cs">
+      <DependentUpon>ProcessWForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ReportDownTimeForm\ReportDownTimeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ReportDownTimeForm\ReportDownTimeForm.Designer.cs">
+      <DependentUpon>ReportDownTimeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\UserLocation\AddUserLocationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\UserLocation\AddUserLocationForm.Designer.cs">
+      <DependentUpon>AddUserLocationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\UserLocation\UserLocationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AccountWhForm\UserLocation\UserLocationForm.Designer.cs">
+      <DependentUpon>UserLocationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\WorkingStatus\AddMachineStatusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\WorkingStatus\AddMachineStatusForm.Designer.cs">
+      <DependentUpon>AddMachineStatusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\WorkingStatus\AddPlanWorkingStatusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\WorkingStatus\AddPlanWorkingStatusForm.Designer.cs">
+      <DependentUpon>AddPlanWorkingStatusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\WorkingStatus\WorkingStatusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\WorkingStatus\WorkingStatusForm.Designer.cs">
+      <DependentUpon>WorkingStatusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Vo\AccountWhVo\AccountLocationVo.cs" />
+    <Compile Include="Vo\AccountWhVo\AccountCodeVo.cs" />
+    <Compile Include="Vo\AccountWhVo\DetailPositionVo.cs" />
+    <Compile Include="Vo\AccountWhVo\InvertoryVo.cs" />
+    <Compile Include="Vo\AccountWhVo\UnitVo.cs" />
+    <Compile Include="Vo\AccountWhVo\WareHouseMainVo.cs" />
+    <Compile Include="Vo\AccountWhVo\AccountMainVo.cs" />
+    <Compile Include="Vo\AccountWhVo\TransferVo.cs" />
+    <Compile Include="Vo\AddMachineStatusVo.cs" />
+    <Compile Include="Vo\GA1ModelVo.cs" />
+    <Compile Include="Vo\OvenBarcodeVo\OvenBarcodeVo.cs" />
+    <Compile Include="Vo\OvenBarcodeVo\RangeVo.cs" />
+    <Compile Include="Vo\PersonVo.cs" />
+    <Compile Include="Vo\PQMConnectVo\RateNGVo.cs" />
+    <Compile Include="Vo\PQMConnectVo\ProductionControllerGA1Vo.cs" />
+    <Compile Include="Vo\ProcessWorksVo.cs" />
+    <Compile Include="Vo\ProductionControllerNCVCVo.cs" />
+    <Compile Include="Vo\ProductionControllerVo.cs" />
+    <Compile Include="Vo\SeachMachineWorkingStatusVo.cs" />
+    <Compile Include="Vo\PlanWorkingStatusVo.cs" />
+    <Compile Include="Vo\AccountWhVo\AssetVo.cs" />
+    <Compile Include="Vo\AccountWhVo\RankVo.cs" />
+    <Compile Include="Vo\ReportDownTimeVo.cs" />
+    <Compile Include="Vo\AccountWhVo\UserLocationVo.cs" />
+    <Compile Include="Vo\AccountWhVo\WareHouseVo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\AccountWhForm\AccountCodeForm\AccountCodeForm.resx">
+      <DependentUpon>AccountCodeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AccountWhForm\AccountCodeForm\AddAccountCodeForm.resx">
+      <DependentUpon>AddAccountCodeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AccountWhForm\AccountMainForm\AddAcountMainForm.resx">
+      <DependentUpon>AddAcountMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AccountWhForm\AccountLocationForm\AccountLocationForm.resx">
+      <DependentUpon>AccountLocationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AccountWhForm\AccountLocationForm\AddAccountLocationForm.resx">
+      <DependentUpon>AddAccountLocationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AccountWhForm\Asset\AddAssetForm.resx">
+      <DependentUpon>AddAssetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AccountWhForm\Asset\AssetForm.resx">
+      <DependentUpon>AssetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AccountWhForm\AccountMainForm\AccountMainForm.resx">
+      <DependentUpon>AccountMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AccountWhForm\DetailPositionForm\AddDetailPositionForm.resx">
+      <DependentUpon>AddDetailPositionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AccountWhForm\DetailPositionForm\DetailPositionForm.resx">
+      <DependentUpon>DetailPositionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AccountWhForm\InventoryForm\AddInvertoryTimeForm.resx">
+      <DependentUpon>AddInvertoryTimeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AccountWhForm\InventoryForm\InvertoryCheckForm.resx">
+      <DependentUpon>InvertoryCheckForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AccountWhForm\InventoryForm\InvertoryTimeForm.resx">
+      <DependentUpon>InvertoryTimeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AccountWhForm\TranferForm\TranferRequestForm.resx">
+      <DependentUpon>TranferRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AccountWhForm\TranferForm\TranferInfoForm.resx">
+      <DependentUpon>TranferInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AccountWhForm\Units\AddUnitForm.resx">
+      <DependentUpon>AddUnitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AccountWhForm\Units\UnitForm.resx">
+      <DependentUpon>UnitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AccountWhForm\WareHouse\AddWareHouseMainForm.resx">
+      <DependentUpon>AddWareHouseMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AccountWhForm\WareHouse\WarehouseMainForm.resx">
+      <DependentUpon>WarehouseMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GA1ModelForm\ShippingForm\AddBoxID.resx">
+      <DependentUpon>AddBoxID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GA1ModelForm\ShippingForm\ReplaceSerialForm.resx">
+      <DependentUpon>ReplaceSerialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GA1ModelForm\ShippingForm\ShipmentHistoryForm.resx">
+      <DependentUpon>ShipmentHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GA1ModelForm\ShippingForm\Shipping.resx">
+      <DependentUpon>Shipping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GA1ModelForm\ThurstCheckForm\IPQCCheckForm.resx">
+      <DependentUpon>IPQCCheckForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GA1ModelForm\ThurstCheckForm\NoiseChartForm.resx">
+      <DependentUpon>NoiseChartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GA1ModelForm\ThurstCheckForm\PassForm.resx">
+      <DependentUpon>PassForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GA1ModelForm\ThurstCheckForm\NoiseCheckForm.resx">
+      <DependentUpon>NoiseCheckForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GA1ModelForm\ThurstCheckForm\NGThurstForm.resx">
+      <DependentUpon>NGThurstForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GA1ModelForm\ThurstCheckForm\ThurstCheckForm.resx">
+      <DependentUpon>ThurstCheckForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GA1ModelForm\ThurstCheckForm\ThusrtChartForm.resx">
+      <DependentUpon>ThusrtChartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AccountWhForm\Rank\AddRankForm.resx">
+      <DependentUpon>AddRankForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AccountWhForm\Rank\RankForm.resx">
+      <DependentUpon>RankForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\OvenBarcodeLS12\OvenBarcodeLS12Form.resx">
+      <DependentUpon>OvenBarcodeLS12Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\OvenBarcodeLS12\OvenBarcodeLS12Form.vi.resx">
+      <DependentUpon>OvenBarcodeLS12Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\OvenBarcodeLS12\RangeLS12\AddRangeLS12Form.resx">
+      <DependentUpon>AddRangeLS12Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\OvenBarcodeLS12\RangeLS12\RangeLS12Form.resx">
+      <DependentUpon>RangeLS12Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\OvenBarcodeMachine\OvenBarcodeForm.resx">
+      <DependentUpon>OvenBarcodeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\OvenBarcodeMachine\OvenBarcodeForm.vi.resx">
+      <DependentUpon>OvenBarcodeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\OvenBarcodeMachine\Range\AddRangeForm.resx">
+      <DependentUpon>AddRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\OvenBarcodeMachine\Range\RangeForm.resx">
+      <DependentUpon>RangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\PQMConnectForm\ProducionControllerGA1Form.resx">
+      <DependentUpon>ProducionControllerGA1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\PQMConnectForm\RateNG\AddRateNGForm.resx">
+      <DependentUpon>AddRateNGForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\PQMConnectForm\RateNG\RateNGForm.resx">
+      <DependentUpon>RateNGForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ProductionControllerForm\AddPersonForm.resx">
+      <DependentUpon>AddPersonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ProductionControllerForm\AddPersonForm.vi.resx">
+      <DependentUpon>AddPersonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ProductionControllerForm\ProductionControllerChart_CForm.resx">
+      <DependentUpon>ProductionControllerChart_CForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ProductionControllerForm\ProductionControllerChart_CForm.vi.resx">
+      <DependentUpon>ProductionControllerChart_CForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ProductionControllerForm\ProductionControllerDetailForm.resx">
+      <DependentUpon>ProductionControllerDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ProductionControllerForm\ProductionControllerDetailForm.vi.resx">
+      <DependentUpon>ProductionControllerDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ProductionControllerForm\ProductionControllerChartForm.resx">
+      <DependentUpon>ProductionControllerChartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ProductionControllerForm\ProductionControllerChartForm.vi.resx">
+      <DependentUpon>ProductionControllerChartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ProductionControllerForm\PersonForm.resx">
+      <DependentUpon>PersonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ProductionControllerForm\PersonForm.vi.resx">
+      <DependentUpon>PersonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ProductionControllerForm\ProductionControllerForm.resx">
+      <DependentUpon>ProductionControllerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ProductionControllerForm\ProductionControllerForm.vi.resx">
+      <DependentUpon>ProductionControllerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ProductionControllerNCVCForm\AddPersonNCVCForm.resx">
+      <DependentUpon>AddPersonNCVCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ProductionControllerNCVCForm\AddPersonNCVCForm.vi.resx">
+      <DependentUpon>AddPersonNCVCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ProductionControllerNCVCForm\PersonNCVCForm.resx">
+      <DependentUpon>PersonNCVCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ProductionControllerNCVCForm\PersonNCVCForm.vi.resx">
+      <DependentUpon>PersonNCVCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ProductionControllerNCVCForm\ProductionControllerChartNCVCForm.resx">
+      <DependentUpon>ProductionControllerChartNCVCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ProductionControllerNCVCForm\ProductionControllerChartNCVCForm.vi.resx">
+      <DependentUpon>ProductionControllerChartNCVCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ProductionControllerNCVCForm\ProductionControllerChart_CNCVCForm.resx">
+      <DependentUpon>ProductionControllerChart_CNCVCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ProductionControllerNCVCForm\ProductionControllerChart_CNCVCForm.vi.resx">
+      <DependentUpon>ProductionControllerChart_CNCVCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ProductionControllerNCVCForm\ProductionControllerDetailNCVCForm.resx">
+      <DependentUpon>ProductionControllerDetailNCVCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ProductionControllerNCVCForm\ProductionControllerDetailNCVCForm.vi.resx">
+      <DependentUpon>ProductionControllerDetailNCVCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ProductionControllerNCVCForm\ProductionControllerNCVCForm.resx">
+      <DependentUpon>ProductionControllerNCVCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ProductionControllerNCVCForm\ProductionControllerNCVCForm.vi.resx">
+      <DependentUpon>ProductionControllerNCVCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ReportDownTimeForm\AddUpdateReportDownTimeFrom.resx">
+      <DependentUpon>AddUpdateReportDownTimeFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ReportDownTimeForm\AddUpdateReportDownTimeFrom.vi.resx">
+      <DependentUpon>AddUpdateReportDownTimeFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ReportDownTimeForm\ProcessWork\AddProcessWForm.resx">
+      <DependentUpon>AddProcessWForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ReportDownTimeForm\ProcessWork\ProcessWForm.resx">
+      <DependentUpon>ProcessWForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ReportDownTimeForm\ReportDownTimeForm.resx">
+      <DependentUpon>ReportDownTimeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ReportDownTimeForm\ReportDownTimeForm.vi.resx">
+      <DependentUpon>ReportDownTimeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AccountWhForm\UserLocation\AddUserLocationForm.resx">
+      <DependentUpon>AddUserLocationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AccountWhForm\UserLocation\UserLocationForm.resx">
+      <DependentUpon>UserLocationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\WorkingStatus\AddMachineStatusForm.resx">
+      <DependentUpon>AddMachineStatusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\WorkingStatus\AddPlanWorkingStatusForm.resx">
+      <DependentUpon>AddPlanWorkingStatusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\WorkingStatus\WorkingStatusForm.resx">
+      <DependentUpon>WorkingStatusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Images\approved.jpg" />
+    <None Include="Images\rejected.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\NG.jpg" />
+    <Content Include="Images\NoDaTa.jpg" />
+    <Content Include="Images\ok.jpg" />
+    <None Include="Resources\%24this.Icon.ico" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\STANDBY.bmp" />
+    <None Include="Resources\OK_BEAR.png" />
+    <None Include="Resources\NG_BEAR.png" />
+    <None Include="Resources\Capture.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,279 @@
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\NCVP Management System.exe.config
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\NCVP Management System.exe.manifest
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\NCVP Management System.application
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\NCVP Management System.exe
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\NCVP Management System.pdb
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\Framework.dll
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\GlobalMasterMaintenance.dll
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\log4net.dll
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\MachineMaintenance.dll
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\npgsql.dll
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\Framework.pdb
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\GlobalMasterMaintenance.pdb
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\log4net.xml
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\MachineMaintenance.pdb
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\ja-JP\Framework.resources.dll
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\vi-VN\Framework.resources.dll
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\zh-Hans\Framework.resources.dll
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\ca\GlobalMasterMaintenance.resources.dll
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\ja-JP\GlobalMasterMaintenance.resources.dll
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\sq-AL\GlobalMasterMaintenance.resources.dll
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\vi\GlobalMasterMaintenance.resources.dll
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\vi-VN\GlobalMasterMaintenance.resources.dll
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\zh\GlobalMasterMaintenance.resources.dll
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\zh-CHS\GlobalMasterMaintenance.resources.dll
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\zh-Hans\GlobalMasterMaintenance.resources.dll
+D:\NIDEC MES\vcvp\VCVP\VCVP\obj\Debug\Com.Nidec.Mes.VCVP.FormMain.resources
+D:\NIDEC MES\vcvp\VCVP\VCVP\obj\Debug\Com.Nidec.Mes.VCVP.Properties.Resources.resources
+D:\NIDEC MES\vcvp\VCVP\VCVP\obj\Debug\VCVP.csproj.GenerateResource.Cache
+D:\NIDEC MES\vcvp\VCVP\VCVP\obj\Debug\NCVP Management System.TrustInfo.xml
+D:\NIDEC MES\vcvp\VCVP\VCVP\obj\Debug\NCVP Management System.exe.manifest
+D:\NIDEC MES\vcvp\VCVP\VCVP\obj\Debug\NCVP Management System.application
+D:\NIDEC MES\vcvp\VCVP\VCVP\obj\Debug\NCVP Management System.exe
+D:\NIDEC MES\vcvp\VCVP\VCVP\obj\Debug\NCVP Management System.pdb
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\vi\MachineMaintenance.resources.dll
+D:\NIDEC MES\vcvp\VCVP\VCVP\bin\Debug\vi-VN\MachineMaintenance.resources.dll
+D:\NIDEC MES\vcvp\VCVP\VCVP\obj\Debug\VCVP.csprojResolveAssemblyReference.cache
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\bin\Debug\NCVP Management System.exe.config
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\bin\Debug\NCVP Management System.exe.manifest
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\bin\Debug\NCVP Management System.application
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\bin\Debug\NCVP Management System.exe
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\bin\Debug\NCVP Management System.pdb
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\bin\Debug\Framework.dll
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\bin\Debug\GlobalMasterMaintenance.dll
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\bin\Debug\log4net.dll
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\bin\Debug\MachineMaintenance.dll
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\bin\Debug\npgsql.dll
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\bin\Debug\Framework.pdb
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\bin\Debug\GlobalMasterMaintenance.pdb
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\bin\Debug\log4net.xml
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\bin\Debug\MachineMaintenance.pdb
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\bin\Debug\ja-JP\Framework.resources.dll
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\bin\Debug\vi-VN\Framework.resources.dll
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\bin\Debug\zh-Hans\Framework.resources.dll
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\bin\Debug\ca\GlobalMasterMaintenance.resources.dll
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\bin\Debug\ja-JP\GlobalMasterMaintenance.resources.dll
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\bin\Debug\sq-AL\GlobalMasterMaintenance.resources.dll
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\bin\Debug\vi\GlobalMasterMaintenance.resources.dll
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\bin\Debug\vi-VN\GlobalMasterMaintenance.resources.dll
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\bin\Debug\zh\GlobalMasterMaintenance.resources.dll
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\bin\Debug\zh-CHS\GlobalMasterMaintenance.resources.dll
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\bin\Debug\zh-Hans\GlobalMasterMaintenance.resources.dll
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\bin\Debug\vi\MachineMaintenance.resources.dll
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\obj\Debug\Com.Nidec.Mes.VCVP.FormMain.resources
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\obj\Debug\Com.Nidec.Mes.VCVP.Properties.Resources.resources
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\obj\Debug\VCVP.csproj.GenerateResource.Cache
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\obj\Debug\NCVP Management System.TrustInfo.xml
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\obj\Debug\NCVP Management System.exe.manifest
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\obj\Debug\NCVP Management System.application
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\obj\Debug\NCVP Management System.exe
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\obj\Debug\NCVP Management System.pdb
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\NCVP Management System.exe.config
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\obj\Debug\NCVP Management System.exe
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\obj\Debug\NCVP Management System.pdb
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\NCVP Management System.exe.manifest
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\NCVP Management System.application
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\NCVP Management System.exe
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\NCVP Management System.pdb
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\Framework.dll
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\GlobalMasterMaintenance.dll
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\log4net.dll
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\MachineMaintenance.dll
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\npgsql.dll
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\Framework.pdb
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\GlobalMasterMaintenance.pdb
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\log4net.xml
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\MachineMaintenance.pdb
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\ja-JP\Framework.resources.dll
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\vi-VN\Framework.resources.dll
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\zh-Hans\Framework.resources.dll
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\ca\GlobalMasterMaintenance.resources.dll
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\ja-JP\GlobalMasterMaintenance.resources.dll
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\sq-AL\GlobalMasterMaintenance.resources.dll
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\vi\GlobalMasterMaintenance.resources.dll
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\vi-VN\GlobalMasterMaintenance.resources.dll
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\zh\GlobalMasterMaintenance.resources.dll
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\zh-CHS\GlobalMasterMaintenance.resources.dll
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\zh-Hans\GlobalMasterMaintenance.resources.dll
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\vi\MachineMaintenance.resources.dll
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\obj\Debug\VCVP.csprojResolveAssemblyReference.cache
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\obj\Debug\Com.Nidec.Mes.VCVP.FormMain.resources
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\obj\Debug\Com.Nidec.Mes.VCVP.Properties.Resources.resources
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\obj\Debug\VCVP.csproj.GenerateResource.Cache
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\obj\Debug\NCVP Management System.TrustInfo.xml
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\obj\Debug\NCVP Management System.exe.manifest
+D:\GIT_HUB\NIDEC\NCVP_MAIN\VCVP\VCVP\obj\Debug\NCVP Management System.application
+D:\NIDEC MES\LONG_MAIN\VCVP\VCVP\obj\Debug\VCVP.csprojResolveAssemblyReference.cache
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\NCVP Management System.exe.config
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\obj\Debug\NCVP Management System.exe
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\obj\Debug\NCVP Management System.pdb
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\NCVP Management System.exe.manifest
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\NCVP Management System.application
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\NCVP Management System.exe
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\NCVP Management System.pdb
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\Framework.dll
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\GlobalMasterMaintenance.dll
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\log4net.dll
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\MachineMaintenance.dll
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\npgsql.dll
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\Framework.pdb
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\GlobalMasterMaintenance.pdb
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\log4net.xml
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\MachineMaintenance.pdb
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\ja-JP\Framework.resources.dll
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\vi-VN\Framework.resources.dll
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\zh-Hans\Framework.resources.dll
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\ca\GlobalMasterMaintenance.resources.dll
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\ja-JP\GlobalMasterMaintenance.resources.dll
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\sq-AL\GlobalMasterMaintenance.resources.dll
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\vi\GlobalMasterMaintenance.resources.dll
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\vi-VN\GlobalMasterMaintenance.resources.dll
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\zh\GlobalMasterMaintenance.resources.dll
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\zh-CHS\GlobalMasterMaintenance.resources.dll
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\zh-Hans\GlobalMasterMaintenance.resources.dll
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\bin\Debug\vi\MachineMaintenance.resources.dll
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\obj\Debug\VCVP.csprojResolveAssemblyReference.cache
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\obj\Debug\Com.Nidec.Mes.VCVP.FormMain.resources
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\obj\Debug\Com.Nidec.Mes.VCVP.Properties.Resources.resources
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\obj\Debug\VCVP.csproj.GenerateResource.Cache
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\obj\Debug\NCVP Management System.TrustInfo.xml
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\obj\Debug\NCVP Management System.exe.manifest
+D:\NIDEC\NCVP_MAIN\VCVP\VCVP\obj\Debug\NCVP Management System.application
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\NCVP Management System.exe.config
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\NCVP Management System.exe.manifest
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\NCVP Management System.application
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\NCVP Management System.exe
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\NCVP Management System.pdb
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\Framework.dll
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\GlobalMasterMaintenance.dll
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\log4net.dll
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\MachineMaintenance.dll
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\npgsql.dll
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\Framework.pdb
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\GlobalMasterMaintenance.pdb
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\log4net.xml
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\MachineMaintenance.pdb
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\ja-JP\Framework.resources.dll
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\vi-VN\Framework.resources.dll
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\zh-Hans\Framework.resources.dll
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\ca\GlobalMasterMaintenance.resources.dll
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\ja-JP\GlobalMasterMaintenance.resources.dll
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\sq-AL\GlobalMasterMaintenance.resources.dll
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\vi\GlobalMasterMaintenance.resources.dll
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\vi-VN\GlobalMasterMaintenance.resources.dll
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\zh\GlobalMasterMaintenance.resources.dll
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\zh-CHS\GlobalMasterMaintenance.resources.dll
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\zh-Hans\GlobalMasterMaintenance.resources.dll
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\vi\MachineMaintenance.resources.dll
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\bin\Debug\vi-VN\MachineMaintenance.resources.dll
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\obj\Debug\VCVP.csprojResolveAssemblyReference.cache
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\obj\Debug\Com.Nidec.Mes.VCVP.FormMain.resources
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\obj\Debug\Com.Nidec.Mes.VCVP.Properties.Resources.resources
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\obj\Debug\VCVP.csproj.GenerateResource.Cache
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\obj\Debug\NCVP Management System.TrustInfo.xml
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\obj\Debug\NCVP Management System.exe.manifest
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\obj\Debug\NCVP Management System.application
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\obj\Debug\NCVP Management System.exe
+D:\NCVP_GIT\LONG_MAIN\VCVP\VCVP\obj\Debug\NCVP Management System.pdb
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\NCVP Management System.exe.config
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\obj\Debug\NCVP Management System.exe
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\obj\Debug\NCVP Management System.pdb
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\NCVP Management System.exe.manifest
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\NCVP Management System.application
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\NCVP Management System.exe
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\NCVP Management System.pdb
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\Framework.dll
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\GlobalMasterMaintenance.dll
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\MachineMaintenance.dll
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\MySql.Data.dll
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\Framework.pdb
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\GlobalMasterMaintenance.pdb
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\log4net.xml
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\MachineMaintenance.pdb
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\ja-JP\Framework.resources.dll
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\zh-Hans\Framework.resources.dll
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\ja-JP\GlobalMasterMaintenance.resources.dll
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\vi\GlobalMasterMaintenance.resources.dll
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\vi-VN\GlobalMasterMaintenance.resources.dll
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\zh\GlobalMasterMaintenance.resources.dll
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\zh-Hans\GlobalMasterMaintenance.resources.dll
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\vi\MachineMaintenance.resources.dll
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\obj\Debug\Com.Nidec.Mes.VCVP.FormMain.resources
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\obj\Debug\Com.Nidec.Mes.VCVP.Properties.Resources.resources
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\obj\Debug\VCVP.csproj.GenerateResource.Cache
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\obj\Debug\NCVP Management System.TrustInfo.xml
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\obj\Debug\NCVP Management System.exe.manifest
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\obj\Debug\NCVP Management System.application
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\Google.Protobuf.dll
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\log4net.dll
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\npgsql.dll
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\NCVP Management System.exe.config
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\NCVP Management System.exe.manifest
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\NCVP Management System.application
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\NCVP Management System.exe
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\NCVP Management System.pdb
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\Framework.dll
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\GlobalMasterMaintenance.dll
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\log4net.dll
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\MachineMaintenance.dll
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\npgsql.dll
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\MySql.Data.dll
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\Google.Protobuf.dll
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\Framework.pdb
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\GlobalMasterMaintenance.pdb
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\log4net.xml
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\MachineMaintenance.pdb
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\ja-JP\Framework.resources.dll
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\zh-Hans\Framework.resources.dll
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\ja-JP\GlobalMasterMaintenance.resources.dll
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\vi\GlobalMasterMaintenance.resources.dll
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\vi-VN\GlobalMasterMaintenance.resources.dll
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\zh\GlobalMasterMaintenance.resources.dll
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\zh-Hans\GlobalMasterMaintenance.resources.dll
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\vi\MachineMaintenance.resources.dll
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\obj\Debug\Com.Nidec.Mes.VCVP.FormMain.resources
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\obj\Debug\Com.Nidec.Mes.VCVP.Properties.Resources.resources
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\obj\Debug\VCVP.csproj.GenerateResource.Cache
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\obj\Debug\NCVP Management System.TrustInfo.xml
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\obj\Debug\NCVP Management System.exe.manifest
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\obj\Debug\NCVP Management System.application
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\obj\Debug\NCVP Management System.exe
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\obj\Debug\NCVP Management System.pdb
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\bin\Debug\NCVP Management System.exe.config
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\bin\Debug\NCVP Management System.exe.manifest
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\bin\Debug\NCVP Management System.application
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\bin\Debug\NCVP Management System.exe
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\bin\Debug\NCVP Management System.pdb
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\bin\Debug\Framework.dll
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\bin\Debug\GlobalMasterMaintenance.dll
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\bin\Debug\log4net.dll
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\bin\Debug\MachineMaintenance.dll
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\bin\Debug\npgsql.dll
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\bin\Debug\MySql.Data.dll
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\bin\Debug\Google.Protobuf.dll
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\bin\Debug\Framework.pdb
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\bin\Debug\GlobalMasterMaintenance.pdb
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\bin\Debug\log4net.xml
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\bin\Debug\MachineMaintenance.pdb
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\bin\Debug\ja-JP\Framework.resources.dll
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\bin\Debug\zh-Hans\Framework.resources.dll
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\bin\Debug\ja-JP\GlobalMasterMaintenance.resources.dll
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\bin\Debug\vi\GlobalMasterMaintenance.resources.dll
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\bin\Debug\vi-VN\GlobalMasterMaintenance.resources.dll
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\bin\Debug\zh\GlobalMasterMaintenance.resources.dll
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\bin\Debug\zh-Hans\GlobalMasterMaintenance.resources.dll
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\bin\Debug\vi\MachineMaintenance.resources.dll
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\obj\Debug\Com.Nidec.Mes.VCVP.FormMain.resources
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\obj\Debug\Com.Nidec.Mes.VCVP.Properties.Resources.resources
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\obj\Debug\VCVP.csproj.GenerateResource.Cache
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\obj\Debug\NCVP Management System.TrustInfo.xml
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\obj\Debug\NCVP Management System.exe.manifest
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\obj\Debug\NCVP Management System.application
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\obj\Debug\NCVP Management System.exe
+D:\NIDEC MES\GitLocal\NCVP_MAIN\VCVP\obj\Debug\NCVP Management System.pdb
+D:\NCVP_GIT\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\obj\Debug\VCVP.csprojResolveAssemblyReference.cache
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\Framework.dll.config
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\GlobalMasterMaintenance.dll.config
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\obj\Debug\VCVP.csprojAssemblyReference.cache
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\obj\Debug\VCVP.csproj.CoreCompileInputs.cache
+D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\obj\Debug\VCVP.csproj.CopyComplete

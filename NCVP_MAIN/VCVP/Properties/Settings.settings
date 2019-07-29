@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Com.Nidec.Mes.VCVP.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ApplicationTypeName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Com.Nidec.Mes.VCVP.FormMain</Value>
+    </Setting>
+    <Setting Name="AUTHENTIFICATE_FLAG" Type="System.String" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="SERVER_TIME_ZONE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Singapore Standard Time</Value>
+    </Setting>
+    <Setting Name="APPLICATION_ENVIRONMENT_SETTINGS" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.Settings</Value>
+    </Setting>
+    <Setting Name="APPLICATION_ENVIRONMENT_HEADER" Type="System.String" Scope="User">
+      <Value Profile="(Default)">NCVP MANAGEMENT SYSTEM</Value>
+    </Setting>
+    <Setting Name="APPLICATION_HEADER" Type="System.String" Scope="User">
+      <Value Profile="(Default)">NCVP MANAGEMENT SYSTEM</Value>
+    </Setting>
+    <Setting Name="CONNECTION_STRING" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Server=192.168.145.12;Port=5432;UserId=mes;Password=dbuserb;Database=mesdb;;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

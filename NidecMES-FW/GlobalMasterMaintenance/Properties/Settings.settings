@@ -1,0 +1,66 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Com.Nidec.Mes.GlobalMasterMaintenance.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Standard" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Phantom" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="Count" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Weight" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="LINE_PER_PROCESSWORK_CONSTRAINT" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="MACHINE_PER_PROCESSWORK_CONSTRAINT" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="EXCEL_SHEET_USER_MASTER" Type="System.String" Scope="User">
+      <Value Profile="(Default)">UserMaster</Value>
+    </Setting>
+    <Setting Name="TEMPLATE_FILE_MASTER" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Excel_Master_Template.xls</Value>
+    </Setting>
+    <Setting Name="EXCEL_SHEET_DEFECTIVE_REASON" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DefectiveReason</Value>
+    </Setting>
+    <Setting Name="EXCEL_SHEET_USER_ROLE_AUTHORITY" Type="System.String" Scope="User">
+      <Value Profile="(Default)">UserAuthority</Value>
+    </Setting>
+    <Setting Name="EXPORT_TEMPLATE_FILE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Excel_Master_Export_Template.xls</Value>
+    </Setting>
+    <Setting Name="EXCEL_SHEET_MOLD" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Mold</Value>
+    </Setting>
+    <Setting Name="EXCEL_SHEET_LINE_MASTER" Type="System.String" Scope="User">
+      <Value Profile="(Default)">LineMaster</Value>
+    </Setting>
+    <Setting Name="EXCEL_SHEET_MACHINE_MASTER" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MachineMaster</Value>
+    </Setting>
+    <Setting Name="EXCEL_SHEET_SAP_USER" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SapUser</Value>
+    </Setting>
+    <Setting Name="TEMPLATE_FILE_DEFECTIVE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Standard_Excel_File\Defective_Standard_Excel_File.xls</Value>
+    </Setting>
+    <Setting Name="TEMPLATE_FILE_LINE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Standard_Excel_File\Line_Standard_Excel_File.xls</Value>
+    </Setting>
+    <Setting Name="TEMPLATE_FILE_MACHINE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Standard_Excel_File\Machine_Standard_Excel_File.xls</Value>
+    </Setting>
+    <Setting Name="EXCEL_SHEET_CAVITY" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Cavity</Value>
+    </Setting>
+    <Setting Name="TEMPLATE_FILE_MOLD" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Mold</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
