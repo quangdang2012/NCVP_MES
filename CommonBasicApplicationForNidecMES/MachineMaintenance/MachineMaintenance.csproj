@@ -248,6 +248,11 @@
     <Compile Include="Cbm\PQMConnectCbm\RateNGCbm\InsertRateNGCbm.cs" />
     <Compile Include="Cbm\PQMConnectCbm\RateNGCbm\SearchRateNGCbm.cs" />
     <Compile Include="Cbm\PQMConnectCbm\RateNGCbm\UpdateRateNGCbm.cs" />
+    <Compile Include="Cbm\PQMDataViewerCbm\GetSernoDataTablePQMCbm.cs" />
+    <Compile Include="Cbm\PQMDataViewerCbm\GetInspectPQMCbm.cs" />
+    <Compile Include="Cbm\PQMDataViewerCbm\GetProcessPQMCbm.cs" />
+    <Compile Include="Cbm\PQMDataViewerCbm\GetModelPQMCbm.cs" />
+    <Compile Include="Cbm\PQMDataViewerCbm\GetInspectDataTablePQMCbm.cs" />
     <Compile Include="Cbm\ProductionControllerNCVCCbm\AddPersonProNCVCCbm.cs" />
     <Compile Include="Cbm\ProductionControllerNCVCCbm\CheckPersonNCVCCbm.cs" />
     <Compile Include="Cbm\ProductionControllerNCVCCbm\CheckPerson_DuplicateNCVCCbm.cs" />
@@ -353,6 +358,7 @@
     <Compile Include="Common\ExcelClass_ProductionControl.cs" />
     <Compile Include="Common\Excel Class.cs" />
     <Compile Include="Common\ResetControlValues.cs" />
+    <Compile Include="Common\LinQ_Class.cs" />
     <Compile Include="Common\VBStrings.cs" />
     <Compile Include="Dao\AccountWhDao\AccountLocationDao\AddAccountLocationDao.cs" />
     <Compile Include="Dao\AccountWhDao\AccountLocationDao\CheckAccountLocationDao.cs" />
@@ -526,6 +532,11 @@
     <Compile Include="Dao\PQMConnectDao\RateNGDao\InsertRateNGDao.cs" />
     <Compile Include="Dao\PQMConnectDao\RateNGDao\SearchRateNGDao.cs" />
     <Compile Include="Dao\PQMConnectDao\RateNGDao\UpdateRateNGDao.cs" />
+    <Compile Include="Dao\PQMDataViewerDao\GetSernoDataTablePQMDao.cs" />
+    <Compile Include="Dao\PQMDataViewerDao\GetInspectPQMDao.cs" />
+    <Compile Include="Dao\PQMDataViewerDao\GetModelPQMDao.cs" />
+    <Compile Include="Dao\PQMDataViewerDao\GetProcessPQMDao.cs" />
+    <Compile Include="Dao\PQMDataViewerDao\GetInspectDataTablePQMDao.cs" />
     <Compile Include="Dao\ProductionControllerNCVCDao\AddPersonProNCVCDao.cs" />
     <Compile Include="Dao\ProductionControllerNCVCDao\CheckPersonNCVCDao.cs" />
     <Compile Include="Dao\ProductionControllerNCVCDao\CheckPerson_DuplicateNCVCDao.cs" />
@@ -882,6 +893,12 @@
     <Compile Include="Form\PQMConnectForm\RateNG\RateNGForm.Designer.cs">
       <DependentUpon>RateNGForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\PQMDataViewer\PQMDataViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\PQMDataViewer\PQMDataViewerForm.Designer.cs">
+      <DependentUpon>PQMDataViewerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form\ProductionControllerForm\AddPersonForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1037,6 +1054,7 @@
     <Compile Include="Vo\PersonVo.cs" />
     <Compile Include="Vo\PQMConnectVo\RateNGVo.cs" />
     <Compile Include="Vo\PQMConnectVo\ProductionControllerGA1Vo.cs" />
+    <Compile Include="Vo\PQMDataViewerVo\PQMDataViewerVo.cs" />
     <Compile Include="Vo\ProcessWorksVo.cs" />
     <Compile Include="Vo\ProductionControllerNCVCVo.cs" />
     <Compile Include="Vo\ProductionControllerVo.cs" />
@@ -1177,6 +1195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\PQMConnectForm\RateNG\RateNGForm.resx">
       <DependentUpon>RateNGForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\PQMDataViewer\PQMDataViewerForm.resx">
+      <DependentUpon>PQMDataViewerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\ProductionControllerForm\AddPersonForm.resx">
       <DependentUpon>AddPersonForm.cs</DependentUpon>

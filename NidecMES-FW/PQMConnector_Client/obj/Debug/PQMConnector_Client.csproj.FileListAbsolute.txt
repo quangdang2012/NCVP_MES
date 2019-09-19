@@ -22,3 +22,15 @@ D:\NCVP_GIT\NIDEC_MES_NPMS\NidecMES-FW\PQMConnector_Client\obj\Debug\PQMConnecto
 D:\NCVP_GIT\NIDEC_MES_NPMS\NidecMES-FW\PQMConnector_Client\obj\Debug\zh-Hans\PQMConnector_Client.resources.dll
 D:\NCVP_GIT\NIDEC_MES_NPMS\NidecMES-FW\PQMConnector_Client\obj\Debug\PQMConnector_Client.dll
 D:\NCVP_GIT\NIDEC_MES_NPMS\NidecMES-FW\PQMConnector_Client\obj\Debug\PQMConnector_Client.pdb
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Dll\log4net.xml
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Dll\PQMConnector_Client.dll.config
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Dll\PQMConnector_Client.dll
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Dll\PQMConnector_Client.pdb
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Dll\zh-Hans\PQMConnector_Client.resources.dll
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\PQMConnector_Client\obj\Debug\PQMConnector_Client.csprojResolveAssemblyReference.cache
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\PQMConnector_Client\obj\Debug\Com.Nidec.Mes.PQMConnector_Client.Properties.Resources.resources
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\PQMConnector_Client\obj\Debug\Com.Nidec.Mes.PQMConnector_Client.Properties.Resources.zh-Hans.resources
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\PQMConnector_Client\obj\Debug\PQMConnector_Client.csproj.GenerateResource.Cache
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\PQMConnector_Client\obj\Debug\zh-Hans\PQMConnector_Client.resources.dll
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\PQMConnector_Client\obj\Debug\PQMConnector_Client.dll
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\PQMConnector_Client\obj\Debug\PQMConnector_Client.pdb

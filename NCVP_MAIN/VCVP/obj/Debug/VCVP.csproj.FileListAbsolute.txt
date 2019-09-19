@@ -277,3 +277,37 @@ D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\bin\Debug\GlobalMasterMaintenance.dll.c
 D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\obj\Debug\VCVP.csprojAssemblyReference.cache
 D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\obj\Debug\VCVP.csproj.CoreCompileInputs.cache
 D:\GIT_HUB\NIDEC_MES_NPMS\NCVP_MAIN\VCVP\obj\Debug\VCVP.csproj.CopyComplete
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\obj\Debug\VCVP.csprojResolveAssemblyReference.cache
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\obj\Debug\Com.Nidec.Mes.VCVP.FormMain.resources
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\obj\Debug\Com.Nidec.Mes.VCVP.Properties.Resources.resources
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\obj\Debug\VCVP.csproj.GenerateResource.Cache
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\NCVP Management System.exe.config
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\NCVP Management System.exe.manifest
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\NCVP Management System.application
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\NCVP Management System.exe
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\NCVP Management System.pdb
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\Framework.dll
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\GlobalMasterMaintenance.dll
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\log4net.dll
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\MachineMaintenance.dll
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\npgsql.dll
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\MySql.Data.dll
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\Google.Protobuf.dll
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\Framework.pdb
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\GlobalMasterMaintenance.pdb
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\log4net.xml
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\MachineMaintenance.pdb
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\ja-JP\Framework.resources.dll
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\vi-VN\Framework.resources.dll
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\zh-Hans\Framework.resources.dll
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\ja-JP\GlobalMasterMaintenance.resources.dll
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\vi\GlobalMasterMaintenance.resources.dll
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\vi-VN\GlobalMasterMaintenance.resources.dll
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\zh\GlobalMasterMaintenance.resources.dll
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\zh-Hans\GlobalMasterMaintenance.resources.dll
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\vi\MachineMaintenance.resources.dll
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\obj\Debug\NCVP Management System.TrustInfo.xml
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\obj\Debug\NCVP Management System.exe.manifest
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\obj\Debug\NCVP Management System.application
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\obj\Debug\NCVP Management System.exe
+D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\obj\Debug\NCVP Management System.pdb

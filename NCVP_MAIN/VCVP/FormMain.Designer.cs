@@ -101,6 +101,8 @@
             this.WarehouseManagement_New_frm = new Com.Nidec.Mes.Framework.ButtonCommon();
             this.account_equipments_btn = new Com.Nidec.Mes.Framework.ButtonCommon();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.btn_oqccheck = new Com.Nidec.Mes.Framework.ButtonCommon();
+            this.btn_shippingcheck = new Com.Nidec.Mes.Framework.ButtonCommon();
             this.btn_thusrtshow = new Com.Nidec.Mes.Framework.ButtonCommon();
             this.noiseshow_btn = new Com.Nidec.Mes.Framework.ButtonCommon();
             this.btnNGThurst = new Com.Nidec.Mes.Framework.ButtonCommon();
@@ -116,8 +118,8 @@
             this.NcvpMaster_btn = new Com.Nidec.Mes.Framework.ButtonCommon();
             this.SystemMaster_btn = new Com.Nidec.Mes.Framework.ButtonCommon();
             this.Menu_gpb = new Com.Nidec.Mes.Framework.GroupBoxCommon();
-            this.btn_shippingcheck = new Com.Nidec.Mes.Framework.ButtonCommon();
-            this.btn_oqccheck = new Com.Nidec.Mes.Framework.ButtonCommon();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.btnDataViewer = new Com.Nidec.Mes.Framework.ButtonCommon();
             this.NcvpMaster_gpb.SuspendLayout();
             this.Master_tab.SuspendLayout();
             this.Master.SuspendLayout();
@@ -143,6 +145,7 @@
             this.groupBoxCommon7.SuspendLayout();
             this.groupBoxCommon1.SuspendLayout();
             this.Menu_gpb.SuspendLayout();
+            this.tabPage6.SuspendLayout();
             this.SuspendLayout();
             // 
             // NcvpMaster_gpb
@@ -991,6 +994,7 @@
             this.tabControlCommon1.Controls.Add(this.tabPage2);
             this.tabControlCommon1.Controls.Add(this.tabPage3);
             this.tabControlCommon1.Controls.Add(this.tabPage4);
+            this.tabControlCommon1.Controls.Add(this.tabPage6);
             this.tabControlCommon1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControlCommon1.Location = new System.Drawing.Point(6, 49);
             this.tabControlCommon1.Name = "tabControlCommon1";
@@ -1172,6 +1176,34 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "GA1 Model";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // btn_oqccheck
+            // 
+            this.btn_oqccheck.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_oqccheck.ControlId = "cpmb025";
+            this.btn_oqccheck.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btn_oqccheck.Font = new System.Drawing.Font("Arial", 9F);
+            this.btn_oqccheck.Location = new System.Drawing.Point(13, 72);
+            this.btn_oqccheck.Name = "btn_oqccheck";
+            this.btn_oqccheck.Size = new System.Drawing.Size(92, 52);
+            this.btn_oqccheck.TabIndex = 8;
+            this.btn_oqccheck.Text = "Final Check";
+            this.btn_oqccheck.UseVisualStyleBackColor = false;
+            this.btn_oqccheck.Click += new System.EventHandler(this.btn_oqccheck_Click);
+            // 
+            // btn_shippingcheck
+            // 
+            this.btn_shippingcheck.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_shippingcheck.ControlId = "cpmb026";
+            this.btn_shippingcheck.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btn_shippingcheck.Font = new System.Drawing.Font("Arial", 9F);
+            this.btn_shippingcheck.Location = new System.Drawing.Point(120, 72);
+            this.btn_shippingcheck.Name = "btn_shippingcheck";
+            this.btn_shippingcheck.Size = new System.Drawing.Size(92, 52);
+            this.btn_shippingcheck.TabIndex = 7;
+            this.btn_shippingcheck.Text = "Shipping";
+            this.btn_shippingcheck.UseVisualStyleBackColor = false;
+            this.btn_shippingcheck.Click += new System.EventHandler(this.btn_shippingcheck_Click);
             // 
             // btn_thusrtshow
             // 
@@ -1384,33 +1416,31 @@
             this.Menu_gpb.TabStop = false;
             this.Menu_gpb.Text = "Menu";
             // 
-            // btn_shippingcheck
+            // tabPage6
             // 
-            this.btn_shippingcheck.BackColor = System.Drawing.SystemColors.Control;
-            this.btn_shippingcheck.ControlId = "cpmb026";
-            this.btn_shippingcheck.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btn_shippingcheck.Font = new System.Drawing.Font("Arial", 9F);
-            this.btn_shippingcheck.Location = new System.Drawing.Point(120, 72);
-            this.btn_shippingcheck.Name = "btn_shippingcheck";
-            this.btn_shippingcheck.Size = new System.Drawing.Size(92, 52);
-            this.btn_shippingcheck.TabIndex = 7;
-            this.btn_shippingcheck.Text = "Shipping";
-            this.btn_shippingcheck.UseVisualStyleBackColor = false;
-            this.btn_shippingcheck.Click += new System.EventHandler(this.btn_shippingcheck_Click);
+            this.tabPage6.Controls.Add(this.btnDataViewer);
+            this.tabPage6.Location = new System.Drawing.Point(4, 24);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(679, 490);
+            this.tabPage6.TabIndex = 4;
+            this.tabPage6.Text = "PQM Data Viewer";
+            this.tabPage6.UseVisualStyleBackColor = true;
             // 
-            // btn_oqccheck
+            // btnDataViewer
             // 
-            this.btn_oqccheck.BackColor = System.Drawing.SystemColors.Control;
-            this.btn_oqccheck.ControlId = "cpmb025";
-            this.btn_oqccheck.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btn_oqccheck.Font = new System.Drawing.Font("Arial", 9F);
-            this.btn_oqccheck.Location = new System.Drawing.Point(13, 72);
-            this.btn_oqccheck.Name = "btn_oqccheck";
-            this.btn_oqccheck.Size = new System.Drawing.Size(92, 52);
-            this.btn_oqccheck.TabIndex = 8;
-            this.btn_oqccheck.Text = "Final Check";
-            this.btn_oqccheck.UseVisualStyleBackColor = false;
-            this.btn_oqccheck.Click += new System.EventHandler(this.btn_oqccheck_Click);
+            this.btnDataViewer.BackColor = System.Drawing.SystemColors.Control;
+            this.btnDataViewer.ControlId = "cpmb013";
+            this.btnDataViewer.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnDataViewer.Font = new System.Drawing.Font("Arial", 9F);
+            this.btnDataViewer.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnDataViewer.Location = new System.Drawing.Point(13, 16);
+            this.btnDataViewer.Name = "btnDataViewer";
+            this.btnDataViewer.Size = new System.Drawing.Size(210, 64);
+            this.btnDataViewer.TabIndex = 2;
+            this.btnDataViewer.Text = "Data Viewer";
+            this.btnDataViewer.UseVisualStyleBackColor = false;
+            this.btnDataViewer.Click += new System.EventHandler(this.btnDataViewer_Click);
             // 
             // FormMain
             // 
@@ -1457,6 +1487,7 @@
             this.groupBoxCommon7.ResumeLayout(false);
             this.groupBoxCommon1.ResumeLayout(false);
             this.Menu_gpb.ResumeLayout(false);
+            this.tabPage6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1551,5 +1582,7 @@
         private Framework.ButtonCommon btn_thusrtshow;
         private Framework.ButtonCommon btn_oqccheck;
         private Framework.ButtonCommon btn_shippingcheck;
+        private System.Windows.Forms.TabPage tabPage6;
+        private Framework.ButtonCommon btnDataViewer;
     }
 }

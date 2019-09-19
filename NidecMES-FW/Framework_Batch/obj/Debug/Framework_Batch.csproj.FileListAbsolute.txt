@@ -24,3 +24,16 @@ D:\NCVP_GIT\NIDEC_MES_NPMS\NidecMES-FW\Framework_Batch\obj\Debug\Framework_Batch
 D:\NCVP_GIT\NIDEC_MES_NPMS\NidecMES-FW\Framework_Batch\obj\Debug\zh-Hans\Framework_Batch.resources.dll
 D:\NCVP_GIT\NIDEC_MES_NPMS\NidecMES-FW\Framework_Batch\obj\Debug\Framework_Batch.dll
 D:\NCVP_GIT\NIDEC_MES_NPMS\NidecMES-FW\Framework_Batch\obj\Debug\Framework_Batch.pdb
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Dll\log4net.xml
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Dll\Framework_Batch.dll.config
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Dll\Framework_Batch.dll
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Dll\Framework_Batch.pdb
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Dll\zh-Hans\Framework_Batch.resources.dll
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Framework_Batch\obj\Debug\Framework_Batch.csprojResolveAssemblyReference.cache
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Framework_Batch\obj\Debug\Com.Nidec.Mes.Framework_Batch.ChangeBatchProcessStatusForm.resources
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Framework_Batch\obj\Debug\Com.Nidec.Mes.Framework_Batch.Properties.Resources.resources
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Framework_Batch\obj\Debug\Com.Nidec.Mes.Framework_Batch.ChangeBatchProcessStatusForm.zh-Hans.resources
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Framework_Batch\obj\Debug\Framework_Batch.csproj.GenerateResource.Cache
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Framework_Batch\obj\Debug\zh-Hans\Framework_Batch.resources.dll
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Framework_Batch\obj\Debug\Framework_Batch.dll
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Framework_Batch\obj\Debug\Framework_Batch.pdb

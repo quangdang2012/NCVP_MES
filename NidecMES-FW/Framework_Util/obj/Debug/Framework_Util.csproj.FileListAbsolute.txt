@@ -25,3 +25,7 @@ D:\NCVP_GIT\NIDEC_MES_NPMS\NidecMES-FW\Framework_Util\obj\Debug\Com.Nidec.Mes.Fr
 D:\NCVP_GIT\NIDEC_MES_NPMS\NidecMES-FW\Framework_Util\obj\Debug\Framework_Util.csproj.GenerateResource.Cache
 D:\NCVP_GIT\NIDEC_MES_NPMS\NidecMES-FW\Framework_Util\obj\Debug\Framework_Util.dll
 D:\NCVP_GIT\NIDEC_MES_NPMS\NidecMES-FW\Framework_Util\obj\Debug\Framework_Util.pdb
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Framework_Util\obj\Debug\Framework_Util.csprojResolveAssemblyReference.cache
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Framework_Util\obj\Debug\Com.Nidec.Mes.Framework_Util.CameraBarcodeScannerForm.resources
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Framework_Util\obj\Debug\Com.Nidec.Mes.Framework_Util.Properties.Resources.resources
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Framework_Util\obj\Debug\Framework_Util.csproj.GenerateResource.Cache

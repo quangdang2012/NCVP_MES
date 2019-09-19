@@ -1471,3 +1471,18 @@ Npgsql.NpgsqlException (0x80004005): Exception while writing to stream ---> Syst
 2019-06-25 10:03:31,167 INFO  [Com.Nidec.Mes.Framework.Login.LoginForm] [llce00001]Login Click. End : 2019/06/25 10:03:31
 2019-06-25 10:04:51,487 INFO  [Com.Nidec.Mes.Framework.Login.LoginForm] [llce00001]Login Click. Start : 2019/06/25 10:04:51
 2019-06-25 10:04:57,682 INFO  [Com.Nidec.Mes.Framework.Login.LoginForm] [llce00001]Login Click. End : 2019/06/25 10:04:57
+2019-09-18 08:13:05,026 INFO  [Com.Nidec.Mes.Framework.Login.LoginForm] [llce00001]Login Click. Start : 2019-09-18 08:13:05
+2019-09-18 08:38:43,116 INFO  [Com.Nidec.Mes.Framework.Login.LoginForm] [llce00001]Login Click. Start : 2019-09-18 08:38:43
+2019-09-18 08:38:52,994 INFO  [Com.Nidec.Mes.GlobalMasterMaintenance.FormCommonMaster] [mmci00004][Void FormCommonMaster_Load(System.Object, System.EventArgs)].[FormName : User Master - NCVP MANAGEMENT SYSTEM].[LoginUser : Nguyễn Đăng Khoa] Start.
+2019-09-18 08:38:56,020 INFO  [Com.Nidec.Mes.GlobalMasterMaintenance.FormCommonMaster] [mmci00005][Void FormCommonMaster_FormClosed(System.Object, System.Windows.Forms.FormClosedEventArgs)].[FormName : User Master - NCVP MANAGEMENT SYSTEM].[LoginUser : Nguyễn Đăng Khoa] End.
+2019-09-18 08:38:57,639 INFO  [Com.Nidec.Mes.GlobalMasterMaintenance.FormCommonMaster] [mmci00004][Void FormCommonMaster_Load(System.Object, System.EventArgs)].[FormName : Country Language Master - NCVP MANAGEMENT SYSTEM].[LoginUser : Nguyễn Đăng Khoa] Start.
+2019-09-18 08:39:03,184 INFO  [Com.Nidec.Mes.GlobalMasterMaintenance.FormCommonMaster] [mmci00005][Void FormCommonMaster_FormClosed(System.Object, System.Windows.Forms.FormClosedEventArgs)].[FormName : Country Language Master - NCVP MANAGEMENT SYSTEM].[LoginUser : Nguyễn Đăng Khoa] End.
+2019-09-18 08:39:05,229 INFO  [Com.Nidec.Mes.GlobalMasterMaintenance.FormCommonMaster] [mmci00004][Void FormCommonMaster_Load(System.Object, System.EventArgs)].[FormName : User Factory - NCVP MANAGEMENT SYSTEM].[LoginUser : Nguyễn Đăng Khoa] Start.
+2019-09-18 08:39:07,091 INFO  [Com.Nidec.Mes.GlobalMasterMaintenance.FormCommonMaster] [mmci00005][Void FormCommonMaster_FormClosed(System.Object, System.Windows.Forms.FormClosedEventArgs)].[FormName : User Factory - NCVP MANAGEMENT SYSTEM].[LoginUser : Nguyễn Đăng Khoa] End.
+2019-09-18 08:39:08,921 INFO  [Com.Nidec.Mes.GlobalMasterMaintenance.FormCommonMaster] [mmci00004][Void FormCommonMaster_Load(System.Object, System.EventArgs)].[FormName : Authority Control Master - NCVP MANAGEMENT SYSTEM].[LoginUser : Nguyễn Đăng Khoa] Start.
+2019-09-18 08:39:10,694 INFO  [Com.Nidec.Mes.GlobalMasterMaintenance.FormCommonMaster] [mmci00005][Void FormCommonMaster_FormClosed(System.Object, System.Windows.Forms.FormClosedEventArgs)].[FormName : Authority Control Master - NCVP MANAGEMENT SYSTEM].[LoginUser : Nguyễn Đăng Khoa] End.
+2019-09-18 08:39:55,356 INFO  [Com.Nidec.Mes.Framework.Login.LoginForm] [llce00001]Login Click. End : 2019-09-18 08:39:55
+2019-09-18 12:50:49,991 INFO  [Com.Nidec.Mes.Framework.Login.LoginForm] [llce00001]Login Click. Start : 2019-09-18 12:50:49
+2019-09-18 12:55:06,026 INFO  [Com.Nidec.Mes.Framework.Login.LoginForm] [llce00001]Login Click. End : 2019-09-18 12:55:06
+2019-09-19 12:55:54,325 INFO  [Com.Nidec.Mes.Framework.Login.LoginForm] [llce00001]Login Click. Start : 2019-09-19 12:55:54
+2019-09-19 12:55:59,198 INFO  [Com.Nidec.Mes.Framework.Login.LoginForm] [llce00001]Login Click. End : 2019-09-19 12:55:59

@@ -22,3 +22,15 @@ D:\NCVP_GIT\NIDEC_MES_NPMS\NidecMES-FW\SAPConnector_Client\obj\Debug\SAPConnecto
 D:\NCVP_GIT\NIDEC_MES_NPMS\NidecMES-FW\SAPConnector_Client\obj\Debug\zh-Hans\SAPConnector_Client.resources.dll
 D:\NCVP_GIT\NIDEC_MES_NPMS\NidecMES-FW\SAPConnector_Client\obj\Debug\SAPConnector_Client.dll
 D:\NCVP_GIT\NIDEC_MES_NPMS\NidecMES-FW\SAPConnector_Client\obj\Debug\SAPConnector_Client.pdb
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Dll\log4net.xml
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Dll\SAPConnector_Client.dll.config
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Dll\SAPConnector_Client.dll
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Dll\SAPConnector_Client.pdb
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Dll\zh-Hans\SAPConnector_Client.resources.dll
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\SAPConnector_Client\obj\Debug\SAPConnector_Client.csprojResolveAssemblyReference.cache
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\SAPConnector_Client\obj\Debug\Com.Nidec.Mes.SAPConnector_Client.Properties.Resources.resources
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\SAPConnector_Client\obj\Debug\Com.Nidec.Mes.SAPConnector_Client.Properties.Resources.zh-Hans.resources
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\SAPConnector_Client\obj\Debug\SAPConnector_Client.csproj.GenerateResource.Cache
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\SAPConnector_Client\obj\Debug\zh-Hans\SAPConnector_Client.resources.dll
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\SAPConnector_Client\obj\Debug\SAPConnector_Client.dll
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\SAPConnector_Client\obj\Debug\SAPConnector_Client.pdb

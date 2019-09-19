@@ -482,5 +482,11 @@ namespace Com.Nidec.Mes.VCVP
             tf.ShowDialog();
 
         }
+
+        private void btnDataViewer_Click(object sender, EventArgs e)
+        {
+            PQMDataViewerForm pf = new PQMDataViewerForm();
+            pf.ShowDialog();
+        }
     }
 }

@@ -23,5 +23,8 @@
     <Setting Name="CONNECTION_STRING" Type="System.String" Scope="User">
       <Value Profile="(Default)">Server=192.168.145.12;Port=5432;UserId=mes;Password=dbuserb;Database=mesdb;;</Value>
     </Setting>
+    <Setting Name="PQM_CONNECTION_STRING" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Server=192.168.145.12;Port=5432;UserId=pqm;Password=dbuser;Database=pqmdb;</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

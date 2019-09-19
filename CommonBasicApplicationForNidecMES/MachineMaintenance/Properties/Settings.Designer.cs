@@ -12,7 +12,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "14.0.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -104,6 +104,18 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Properties {
             }
             set {
                 this["APPLICATION_HEADER"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Server=192.168.145.12;Port=5432;UserId=pqm;Password=dbuser;Database=pqmdb;")]
+        public string PQM_CONNECTION_STRING {
+            get {
+                return ((string)(this["PQM_CONNECTION_STRING"]));
+            }
+            set {
+                this["PQM_CONNECTION_STRING"] = value;
             }
         }
     }

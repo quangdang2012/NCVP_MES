@@ -22,3 +22,15 @@ D:\NCVP_GIT\NIDEC_MES_NPMS\NidecMES-FW\Framework_Server\obj\Debug\Framework_Serv
 D:\NCVP_GIT\NIDEC_MES_NPMS\NidecMES-FW\Framework_Server\obj\Debug\zh-Hans\Framework_Server.resources.dll
 D:\NCVP_GIT\NIDEC_MES_NPMS\NidecMES-FW\Framework_Server\obj\Debug\Framework_Server.dll
 D:\NCVP_GIT\NIDEC_MES_NPMS\NidecMES-FW\Framework_Server\obj\Debug\Framework_Server.pdb
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Dll\log4net.xml
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Dll\Framework_Server.dll.config
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Dll\Framework_Server.dll
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Dll\Framework_Server.pdb
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Dll\zh-Hans\Framework_Server.resources.dll
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Framework_Server\obj\Debug\Framework_Server.csprojResolveAssemblyReference.cache
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Framework_Server\obj\Debug\Com.Nidec.Mes.Framework_Server.Properties.Resources.resources
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Framework_Server\obj\Debug\Com.Nidec.Mes.Framework_Server.Properties.Resources.zh-Hans.resources
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Framework_Server\obj\Debug\Framework_Server.csproj.GenerateResource.Cache
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Framework_Server\obj\Debug\zh-Hans\Framework_Server.resources.dll
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Framework_Server\obj\Debug\Framework_Server.dll
+D:\GIT\DangKhoa\NCVP_MES\NidecMES-FW\Framework_Server\obj\Debug\Framework_Server.pdb
