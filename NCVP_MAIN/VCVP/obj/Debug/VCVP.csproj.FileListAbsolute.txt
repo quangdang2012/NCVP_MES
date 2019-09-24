@@ -298,7 +298,6 @@ D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\GlobalMasterMaintenance.pdb
 D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\log4net.xml
 D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\MachineMaintenance.pdb
 D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\ja-JP\Framework.resources.dll
-D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\vi-VN\Framework.resources.dll
 D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\zh-Hans\Framework.resources.dll
 D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\ja-JP\GlobalMasterMaintenance.resources.dll
 D:\GIT\DangKhoa\NCVP_MES\NCVP_MAIN\VCVP\bin\Debug\vi\GlobalMasterMaintenance.resources.dll

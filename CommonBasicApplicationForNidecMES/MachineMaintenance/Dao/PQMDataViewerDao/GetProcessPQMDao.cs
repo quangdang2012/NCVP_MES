@@ -19,13 +19,13 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao
             DbCommandAdaptor sqlCommandAdapter = base.GetDbCommandAdaptor(trxContext, sql.ToString());
             DbParameterList sqlParameter = sqlCommandAdapter.CreateParameterList();
             //ADD COMMAND
-            sql.Append(@"select distinct process from processtbl where 1=1");
-            if(!string.IsNullOrEmpty(InVo.Model))
+            if (!string.IsNullOrEmpty(InVo.Model))
             {
+                sql.Append(@"select distinct process from processtbl where 1=1");
                 sql.Append(@" and model = :model ");
                 sqlParameter.AddParameterString("model", InVo.Model);
+                sql.Append(@"order by process asc");
             }
-            sql.Append(@"order by process asc");
             sqlCommandAdapter = base.GetDbCommandAdaptor(trxContext, sql.ToString());
             //EXECUTE READER FROM COMMAND
             IDataReader datareader = sqlCommandAdapter.ExecuteReader(trxContext, sqlParameter);

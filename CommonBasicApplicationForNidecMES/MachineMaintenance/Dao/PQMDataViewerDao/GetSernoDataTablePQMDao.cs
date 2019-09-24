@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Text;
 using System.Data;
 using Com.Nidec.Mes.Framework;
 using Com.Nidec.Mes.Common.Basic.MachineMaintenance.Vo;
@@ -14,31 +11,39 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao
         {
             PQMDataViewerVo InVo = (PQMDataViewerVo)vo;
             StringBuilder sql = new StringBuilder();
+            DataTable temp = new DataTable();
+            DataTable dt = new DataTable();
+            //CREATE SQL ADAPTER AND PARAMETER LIST
             DbCommandAdaptor sqlCommandAdapter = base.GetDbCommandAdaptor(trxContext, sql.ToString());
             DbParameterList sqlParameter = sqlCommandAdapter.CreateParameterList();
             //ADD COMMAND
             foreach (string table in InVo.SernoDBList)
             {
-                sql.Append(@"select serno, lot, model, site, factory, line, process, inspectdate from " + table + " where 1=1");
-                if (!string.IsNullOrEmpty(InVo.SernoList))
+                sql.Append("select serno, lot, model, site, factory, line, process, inspectdate from " + table + " where 1=1");
+                if (InVo.SernoList.Length > 0)
                 {
-                    sql.Append(@" and serno in (:sernolist) ");
-                    sqlParameter.AddParameterString("sernolist", InVo.SernoList);
+                    sql.Append(" and serno in (" + InVo.SernoList.ToString() + ")");
                 }
                 else
                 {
-                    sql.Append(@" and inspectdate > :datetimefrom and inspectdate < :datetimeto ");
-                    sqlParameter.AddParameterString("datetimefrom", InVo.DateTimeFrom.ToString("yyyy-MM-dd HH:mm:ss"));
-                    sqlParameter.AddParameterString("datetimeto", InVo.DateTimeTo.ToString("yyyy-MM-dd HH:mm:ss"));
+                    sql.Append(" and inspectdate >= '" + InVo.DateTimeFrom.ToString("yyyy-MM-dd HH:mm:ss")
+                        + "' and inspectdate <= '" + InVo.DateTimeTo.ToString("yyyy-MM-dd HH:mm:ss") + "'");
                 }
-                sql.Append(@"order by inspectdate asc");
+                sql.Append("order by inspectdate asc");
                 sqlCommandAdapter = base.GetDbCommandAdaptor(trxContext, sql.ToString());
-                //EXECUTE TO DATASET
-                DataSet ds = sqlCommandAdapter.ExecuteDataSet(sqlParameter);
-                DataTable temp = ds.Tables[0];
-                InVo.SernoDataTable.Merge(temp);
+                sql.Clear();
+                //EXECUTE READER FROM COMMAND
+                IDataReader datareader = sqlCommandAdapter.ExecuteReader(trxContext, sqlParameter);
+                //GET DATATABLE FROM SQL
+                temp.Load(datareader);
+                dt.Merge(temp);
+                temp.Clear();
             }
-            return InVo;
+            PQMDataViewerVo OutVo = new PQMDataViewerVo
+            {
+                SernoDataTable = dt
+            };
+            return OutVo;
         }
     }
 }

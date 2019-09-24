@@ -35,7 +35,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Dao
                 //CREATE OJECT INCLUDE MODEL VALUE
                 PQMDataViewerVo outVo = new PQMDataViewerVo()
                 {
-                    Process = datareader["inspect"].ToString(),
+                    Inspect = datareader["inspect"].ToString(),
                 };
                 VoList.add(outVo);
             }

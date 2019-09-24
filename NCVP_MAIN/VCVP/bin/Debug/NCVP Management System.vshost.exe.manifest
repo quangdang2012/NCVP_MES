@@ -50,7 +50,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>bS+/6B8s7qufuXZ8yA4F8PYkrPjorzBK1FlYB4hrd2M=</dsig:DigestValue>
+        <dsig:DigestValue>BO112lhv7ZBa0dUvjJ25+gM7oOvksIFH0ynURKJ2XBo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,19 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>tTp5DkrxiT+9/bUKefewk1gcaZmk2k3zBT5Bnucdit4=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="vi-VN\Framework.resources.dll" size="46592">
-      <assemblyIdentity name="Framework.resources" version="1.0.0.0" language="vi-VN" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>E8Rcy+uvMA4K7xpGCiRGJtBo9MIliHlzl34SVeKxDRI=</dsig:DigestValue>
+        <dsig:DigestValue>7ittZyA8Qk3fHlGxTfztB2BmTlKwfeWZohyf/I8vgdQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -86,7 +74,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>NwTuT5t+eVeZpHUvDc7MnzULgxgtXXoPP/er7cC6Hlo=</dsig:DigestValue>
+        <dsig:DigestValue>By2MwaVeRDgbaCcXN3WKTZtsPyptJwicRKeQT7opnC0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -187,14 +175,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MachineMaintenance.dll" size="5236736">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MachineMaintenance.dll" size="5238784">
       <assemblyIdentity name="MachineMaintenance" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>h5Rd0a46gKk1LUPwbfyRcz9EzIMGmgiegk/8Zc3xQWU=</dsig:DigestValue>
+        <dsig:DigestValue>UhyboyB2yNrTRzamfX9ERYiHWUnCriXpKRQhz9ioBP8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -206,7 +194,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>0oMazHvwXma2KFjhDSJiGMRRcwHw6oVYy1jTZYxllTk=</dsig:DigestValue>
+        <dsig:DigestValue>JBZH78q5VGmdkyNcTCq9xxeWI6J9fbl7RYVH3K3Otpk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -230,7 +218,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>TInhJEa8S0+Bpbv5vr4EY12r5uz7DP0ADe2gRYr0yDo=</dsig:DigestValue>
+        <dsig:DigestValue>xkocF7porI32WWtqVoRaTpdkcfY+cGHtOefB6/zfXZM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

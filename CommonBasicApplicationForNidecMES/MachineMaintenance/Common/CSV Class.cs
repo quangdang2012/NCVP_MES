@@ -81,7 +81,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Common
 
         public void ReadLineCSVtoList(string path, ref List<string> itemlist)
         {
-            var lines = System.IO.File.ReadAllText(path).Split('\n').ToList();
+            List<string> lines = System.IO.File.ReadAllText(path).Split('\r').ToList();
             itemlist = lines;
         }
 

@@ -6,94 +6,130 @@ using System.Threading;
 using System.Windows.Forms;
 using Com.Nidec.Mes.Framework;
 using Com.Nidec.Mes.Common.Basic.MachineMaintenance.Vo;
-using Com.Nidec.Mes.Common.Basic.MachineMaintenance.Cbm.PQMDataViewerCbm;
 using Com.Nidec.Mes.Common.Basic.MachineMaintenance.Common;
+using Com.Nidec.Mes.Common.Basic.MachineMaintenance.Cbm.PQMDataViewerCbm;
+
 
 namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form
 {
     public partial class PQMDataViewerForm : FormCommonNCVP
     {
+        #region Variables
         public string connection = Properties.Settings.Default.PQM_CONNECTION_STRING;
         PQMDataViewerVo Vo = new PQMDataViewerVo();
-        List<PQMDataViewerVo> process = new List<PQMDataViewerVo>();
-        List<PQMDataViewerVo> inspect = new List<PQMDataViewerVo>();
+        List<string> temp = new List<string>();
+        Thread GetTable;
 
+        #endregion
+        #region Setup and load form (LOAD COMBOBOX MODEL)
         public PQMDataViewerForm()
         {
             InitializeComponent();
+            Vo.JoinedTable = new DataTable();
+            Vo.InspectList = new System.Text.StringBuilder();
+            Vo.SernoList = new System.Text.StringBuilder();
+            Vo.SernoDBList = new List<string>();
+            Vo.ThreadComplete = false;
         }
         //****************************************************************************************************************//
         //                                            LOAD COMBOBOX MODEL                                                 //
         //****************************************************************************************************************//
         private void PQMDataViewerForm_Load(object sender, EventArgs e)
         {
+            dtDatef.SetDateTime(new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 00, 00, 00));
+            dtDatet.SetDateTime(new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 23, 59, 00));
             ValueObjectList<PQMDataViewerVo> model = (ValueObjectList<PQMDataViewerVo>)DefaultCbmInvoker
                                                    .Invoke(new GetModelPQMCbm(), new PQMDataViewerVo(), connection);
             cmbModel.DisplayMember = "Model";
             cmbModel.DataSource = model.GetList();
-            cmbModel.Text = "-----Select Model-----";
+            cmbModel.Text = null;
         }
+        #endregion
+        #region LOAD INSPECT TREEVIEW
         //****************************************************************************************************************//
         //                                            LOAD INSPECT TREEVIEW                                               //
         //****************************************************************************************************************//
         private void cmbModel_SelectedIndexChanged(object sender, EventArgs e)
         {
             trInspect.Nodes.Clear();
-            process = (List<PQMDataViewerVo>)DefaultCbmInvoker
-                                                     .Invoke(new GetProcessPQMCbm(), new PQMDataViewerVo(), connection);
-            inspect = (List<PQMDataViewerVo>)DefaultCbmInvoker
-                                                     .Invoke(new GetInspectPQMCbm(), new PQMDataViewerVo(), connection);
-            foreach (PQMDataViewerVo root in process)
+            Vo.Model = cmbModel.Text;
+            ValueObjectList<PQMDataViewerVo> process = (ValueObjectList<PQMDataViewerVo>)DefaultCbmInvoker
+                .Invoke(new GetProcessPQMCbm(), new PQMDataViewerVo() { Model = cmbModel.Text }, connection);
+            foreach (PQMDataViewerVo root in process.GetList())
             {
                 TreeNode Root = new TreeNode(root.Process);
-                trInspect.Nodes.Add(root.Process);
-                GetNodes(Root, inspect);
+                trInspect.Nodes.Add(Root);
+                GetNodes(Root);
             }
         }
 
-        private void GetNodes(TreeNode root, List<PQMDataViewerVo> nodeslist)
+        private void GetNodes(TreeNode root)
         {
-            foreach (PQMDataViewerVo node in nodeslist)
+            ValueObjectList<PQMDataViewerVo> inspect = (ValueObjectList<PQMDataViewerVo>)DefaultCbmInvoker
+                .Invoke(new GetInspectPQMCbm(), new PQMDataViewerVo() { Process = root.Text }, connection);
+            foreach (PQMDataViewerVo node in inspect.GetList())
+            {
                 root.Nodes.Add(node.Inspect);
+            }
         }
 
-        private void trInspect_AfterSelect(object sender, TreeViewEventArgs e)
+        private void trInspect_AfterCheck(object sender, TreeViewEventArgs e)
         {
             CheckedNode(e.Node, e.Node.Checked);
         }
 
-        private void CheckedNode(TreeNode Root, bool check)
+        private void CheckedNode(TreeNode Root, bool Rootchecked)
         {
             foreach (TreeNode node in Root.Nodes)
             {
-                if (node.Checked != check) node.Checked = check;
+                if (node.Checked != Rootchecked) node.Checked = Rootchecked;
                 if (Root.Nodes.Count > 0) CheckedNode(node, node.Checked);
             }
         }
+        #endregion
+        #region LOAD INSPECT LIST FOR SQL COMMAND
         //****************************************************************************************************************//
         //                                            LOAD INSPECT LIST                                                   //
         //****************************************************************************************************************//
-        private void SelectedNode(TreeNode Root)
+        private void SelectedNode(TreeNodeCollection Root)
         {
-            List<string> inslist = (from i in inspect
-                                    where i.Inspect == (from n in Root.Nodes.Cast<TreeNode>().ToList() select n.Text).ToString()
-                                    select i.Inspect).ToList();
-            Vo.InspectList = "'" + inslist[0] + "'";
-            foreach (string i in inslist)
+            foreach (TreeNode node in Root)
             {
-                Vo.InspectList += ",'" + i + "'";
+                if (node.Checked)
+                    temp.Add(node.Text);
+                if (node.Nodes.Count > 0)
+                    SelectedNode(node.Nodes);
             }
         }
+
+        private void GetInslist()
+        {
+            temp = temp.Distinct().ToList();
+            foreach (string i in temp)
+            {
+                if (temp.IndexOf(i) == 0)
+                    Vo.InspectList.Append("'" + i + "'");
+                else
+                    Vo.InspectList.Append(",'" + i + "'");
+            }
+        }
+        #endregion
+        #region LOAD SERIAL NUMBER LIST FOR SQL COMMAND
         //****************************************************************************************************************//
         //                                    LOAD SERIAL NO FROM TEXTBOX TO LIST                                         //
         //****************************************************************************************************************//
-        private void txtBarcode_TextChanged_1(object sender, EventArgs e)
+        private void GetSernoList()
         {
-            Vo.SernoList = "0";
-            foreach (string s in txtBarcode.Lines)
-                Vo.SernoList += ",'" + s + "'";
-            lbSerRows.Text = txtBarcode.Lines.Length.ToString() + " rows";
+            if (txtBarcode.Lines.Length > 0)
+            {
+                Vo.SernoList.Append("'" + txtBarcode.Lines[0] + "'");
+                foreach (string s in txtBarcode.Lines)
+                    Vo.SernoList.Append(",'" + s + "'");
+                tsSernoRows.Text = txtBarcode.Lines.Count().ToString() + " rows";
+            }
         }
+        #endregion
+        #region LOAD SERIAL NUMBER FROM CSV FILE TO LIST
         //****************************************************************************************************************//
         //                                     LOAD SERIAL NO FROM CSV TO LIST                                            //
         //****************************************************************************************************************//
@@ -111,45 +147,88 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form
 
         private void btnLoad_Click(object sender, EventArgs e)
         {
-            Vo.SernoList = "";
-            List<string> listserno = new List<string>();
-            CSV_Class csv = new CSV_Class();
-            csv.ReadLineCSVtoList(Vo.OpenPath, ref listserno);
-            Vo.SernoList += "'" + listserno[0] + "'";
-            listserno.RemoveAt(0);
-            foreach (string s in listserno)
-                Vo.SernoList += ",'" + s + "'";
+            if (Vo.OpenPath.Length > 0)
+            {
+                List<string> listserno = new List<string>();
+                string s_trim = "";
+                CSV_Class csv = new CSV_Class();
+                csv.ReadLineCSVtoList(Vo.OpenPath, ref listserno);
+                Vo.SernoList.Append("'" + listserno[0] + "'");
+                listserno.RemoveAt(0);
+                foreach (string s in listserno)
+                {
+                    s_trim = s.Trim('\n');
+                    Vo.SernoList.Append(",'" + s_trim + "'");
+                }
+                tsSernoRows.Text = listserno.Count().ToString() + " rows";
+            }
+            else Vo.SernoList.Clear();
         }
+        #endregion
+        #region GET DATA FROM SQL TO DATATABLE
         //****************************************************************************************************************//
         //                                            GET DATA TO TABLE                                                   //
         //****************************************************************************************************************//
-        private void getTableName()
+        private void GetTableName()
         {
             string name = "";
             Vo.SernoDBList.Clear();
-            Vo.DateTimeFrom = dtDatef.GetDateTime();
-            Vo.DateTimeTo = dtDatet.GetDateTime();
-            for (int i = Vo.DateTimeFrom.Month; i <= Vo.DateTimeTo.Month; i++)
+            for (int i = dtDatef.GetDateTime().Month; i <= dtDatet.GetDateTime().Month; i++)
             {
-                name = cmbModel.Text + Vo.DateTimeFrom.Year.ToString("0000") + i.ToString("00");
+                name = Vo.Model + dtDatef.GetDateTime().Year.ToString("0000") + i.ToString("00");
                 Vo.SernoDBList.Add(name);
             }
+            Vo.DateTimeFrom = dtDatef.GetDateTime();
+            Vo.DateTimeTo = dtDatet.GetDateTime();
         }
 
         private void GetDataToTable()
         {
-            getTableName();
-            Vo = (PQMDataViewerVo)DefaultCbmInvoker
-                .Invoke(new GetInspectDataTablePQMCbm(), new PQMDataViewerVo(), connection);
-            Vo = (PQMDataViewerVo)DefaultCbmInvoker
-                .Invoke(new GetSernoDataTablePQMCbm(), new PQMDataViewerVo(), connection);
-
-            DataTable pivot = new DataTable();
-            pivot = LinQ_Class.Pivot(Vo.InspectDataTable, Vo.InspectDataTable.Columns["inspect"]
-                    , Vo.InspectDataTable.Columns["inspectdata"]);
-            Vo.JoinedTable = LinQ_Class.Joined(Vo.SernoDataTable, pivot);
-            Vo.ThreadComplete = true;
+            try
+            {
+                GetTableName();
+                GetSernoList();
+                GetInslist();
+                Vo.SernoDataTable = new DataTable();
+                Vo.InspectDataTable = new DataTable();
+                PQMDataViewerVo inspectable = (PQMDataViewerVo)DefaultCbmInvoker
+                    .Invoke(new GetInspectDataTablePQMCbm(), new PQMDataViewerVo()
+                    {
+                        PQMConnectionString = Vo.PQMConnectionString,
+                        SernoDBList = Vo.SernoDBList,
+                        InspectList = Vo.InspectList,
+                        SernoList = Vo.SernoList,
+                        DateTimeFrom = Vo.DateTimeFrom,
+                        DateTimeTo = Vo.DateTimeTo
+                    }
+                    , connection);
+                PQMDataViewerVo sernotable = (PQMDataViewerVo)DefaultCbmInvoker
+                    .Invoke(new GetSernoDataTablePQMCbm(), new PQMDataViewerVo()
+                    {
+                        PQMConnectionString = Vo.PQMConnectionString,
+                        SernoDBList = Vo.SernoDBList,
+                        SernoList = Vo.SernoList,
+                        DateTimeFrom = Vo.DateTimeFrom,
+                        DateTimeTo = Vo.DateTimeTo
+                    }
+                    , connection);
+                Vo.InspectDataTable = inspectable.InspectDataTable;
+                Vo.SernoDataTable = sernotable.SernoDataTable;
+                DataTable pivot = new DataTable();
+                pivot = LinQ_Class.Pivot(Vo.InspectDataTable, Vo.InspectDataTable.Columns["inspect"]
+                        , Vo.InspectDataTable.Columns["inspectdata"]);
+                Vo.JoinedTable = LinQ_Class.Joined(Vo.SernoDataTable, pivot);
+                pivot.Clear();
+                Vo.ThreadComplete = true;
+                GetTable.Abort();
+            }
+            catch(Framework.SystemException ex)
+            {
+                MessageBox.Show(ex.GetMessageData().ToString());
+            }
         }
+        #endregion
+        #region BUTTON CLICK TO SEARCH DATA
         //****************************************************************************************************************//
         //                                            SEARCH DATA                                                         //
         //****************************************************************************************************************//
@@ -157,10 +236,10 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form
         {
             try
             {
-                Vo.Timer_Counter = 0;
+                RenewData();
                 timer1.Enabled = true;
                 //CREATE THREAD TO RUN IN BACKGROUND
-                Thread GetTable = new Thread(GetDataToTable);
+                GetTable = new Thread(GetDataToTable);
                 GetTable.Start();
                 GetTable.IsBackground = true;
                 tsProcessing.Text = "processing...";
@@ -174,7 +253,7 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form
         private void timer1_Tick(object sender, EventArgs e)
         {
             int c = Vo.Timer_Counter;
-            c++;
+            Vo.Timer_Counter++;
             tsTime.Text = (c / 100).ToString() + "," + ((c % 100) / 10).ToString() + " s";
             if (Vo.ThreadComplete)
             {
@@ -184,16 +263,16 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form
                 timer1.Enabled = false;
             }
         }
-        //----------------------------------------------------------------------------------------------------------------//
-        //------------------------------------------EXPORT TO CSV---------------------------------------------------------//
-        //----------------------------------------------------------------------------------------------------------------//
+        #endregion
+        #region EXPORT DATA TO CSV FILE
+        //*****************************************************************************************************************//
+        //                                         EXPORT DATA TO CSV FILE                                                 //
+        //*****************************************************************************************************************//
         private void btnCSV_Click(object sender, EventArgs e)
         {
             try
             {
-                Vo.Timer_Counter = 0;
-                timer2.Enabled = true;
-                //File.Create("data.csv");
+                RenewData();
                 sfSaveCSV = new SaveFileDialog();
                 sfSaveCSV.RestoreDirectory = true;
                 sfSaveCSV.Title = "Save file...";
@@ -201,8 +280,9 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form
                 if (sfSaveCSV.ShowDialog() == DialogResult.OK)
                 {
                     Vo.SavePath = sfSaveCSV.FileName;
+                    timer2.Enabled = true;
                     //CREATE THREAD TO RUN IN BACKGROUND
-                    Thread GetTable = new Thread(GetDataToTable);
+                    GetTable = new Thread(GetDataToTable);
                     GetTable.Start();
                     GetTable.IsBackground = true;
                     tsProcessing.Text = "processing...";
@@ -217,12 +297,11 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form
         private void timer2_Tick(object sender, EventArgs e)
         {
             int c = Vo.Timer_Counter;
-            c++;
+            Vo.Timer_Counter++;
             tsTime.Text = (c / 100).ToString() + "," + ((c % 100) / 10).ToString() + " s";
             if (Vo.ThreadComplete)
             {
                 Vo.ThreadComplete = false;
-                //ds.ToCSV(@"D:\data.csv");
                 CSV_Class csv = new CSV_Class();
                 DataTable dt = new DataTable();
                 dt = Vo.JoinedTable;
@@ -231,5 +310,36 @@ namespace Com.Nidec.Mes.Common.Basic.MachineMaintenance.Form
                 timer2.Enabled = false;
             }
         }
+        #endregion
+        #region RENEW DATA
+        //*****************************************************************************************************************//
+        //                                                  RENEW DATA                                                     //
+        //*****************************************************************************************************************//
+        private void RenewData()
+        {
+            Vo.ThreadComplete = false;
+            Vo.Timer_Counter = 0;
+            Vo.InspectList.Clear();
+            Vo.JoinedTable.Clear();
+            dgvdt.Refresh();
+            SelectedNode(trInspect.Nodes);
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            if (txtBarcode.Lines.Length > 0)
+            {
+                txtBarcode.Clear();
+                Vo.SernoList.Clear();
+            }
+            if (txtURL.Text.Length > 0)
+            {
+                txtURL.Clear();
+                Vo.SernoList.Clear();
+            }
+            tsSernoRows.Text = Vo.SernoList.Length.ToString() + " rows";
+        }
+        #endregion
+
     }
 }

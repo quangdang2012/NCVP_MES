@@ -14,14 +14,14 @@
     <framework targetVersion="4.5.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="NCVP Management System.exe.manifest" size="15872">
+    <dependentAssembly dependencyType="install" codebase="NCVP Management System.exe.manifest" size="15212">
       <assemblyIdentity name="NCVP Management System.exe" version="1.4.9.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2olhysxeGHYHo7VX62ha09pgsjCoQfa0ggUDC3PtSKg=</dsig:DigestValue>
+        <dsig:DigestValue>Crk4dM+dPPGpoL8T40+Gk4WkXpKZYICAQzyNlDAzmiM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

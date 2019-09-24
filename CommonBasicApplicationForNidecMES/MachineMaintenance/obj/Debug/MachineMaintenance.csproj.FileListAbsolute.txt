@@ -829,3 +829,4 @@ D:\GIT\DangKhoa\NCVP_MES\CommonBasicApplicationForNidecMES\MachineMaintenance\ob
 D:\GIT\DangKhoa\NCVP_MES\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\vi\MachineMaintenance.resources.dll
 D:\GIT\DangKhoa\NCVP_MES\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\MachineMaintenance.dll
 D:\GIT\DangKhoa\NCVP_MES\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\MachineMaintenance.pdb
+D:\GIT\DangKhoa\NCVP_MES\CommonBasicApplicationForNidecMES\MachineMaintenance\obj\Debug\MachineMaintenance.csprojResolveAssemblyReference.cache
