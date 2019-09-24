@@ -1486,3 +1486,5 @@ Npgsql.NpgsqlException (0x80004005): Exception while writing to stream ---> Syst
 2019-09-18 12:55:06,026 INFO  [Com.Nidec.Mes.Framework.Login.LoginForm] [llce00001]Login Click. End : 2019-09-18 12:55:06
 2019-09-19 12:55:54,325 INFO  [Com.Nidec.Mes.Framework.Login.LoginForm] [llce00001]Login Click. Start : 2019-09-19 12:55:54
 2019-09-19 12:55:59,198 INFO  [Com.Nidec.Mes.Framework.Login.LoginForm] [llce00001]Login Click. End : 2019-09-19 12:55:59
+2019-09-19 16:41:19,754 INFO  [Com.Nidec.Mes.Framework.Login.LoginForm] [llce00001]Login Click. Start : 2019-09-19 16:41:19
+2019-09-19 16:41:26,400 INFO  [Com.Nidec.Mes.Framework.Login.LoginForm] [llce00001]Login Click. End : 2019-09-19 16:41:26
